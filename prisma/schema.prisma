@@ -1,0 +1,450 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// Core module
+
+model Game {
+  id          String    @id @default(uuid())
+  name        String
+  slug        String    @unique
+  description String?
+  releaseDate DateTime? @map("release_date")
+
+  campaigns              Campaign[]
+  survivors              Survivor[]
+  specialInfected        SpecialInfected[]
+  commonInfectedVariants CommonInfectedVariant[]
+  items                  Item[]
+  weapons                Weapon[]
+
+  @@index([slug])
+  @@map("games")
+}
+
+model ContentSource {
+  id   String @id @default(uuid())
+  name String @unique
+
+  campaigns Campaign[]
+
+  @@index([name])
+  @@map("content_sources")
+}
+
+model Campaign {
+  id              String    @id @default(uuid())
+  gameId          String    @map("game_id")
+  contentSourceId String    @map("content_source_id")
+  name            String
+  slug            String    @unique
+  description     String?
+  releaseDate     DateTime? @map("release_date")
+
+  game          Game          @relation(fields: [gameId], references: [id], onUpdate: Cascade, onDelete: Restrict)
+  contentSource ContentSource @relation(fields: [contentSourceId], references: [id])
+
+  chapters      Chapter[]
+  campaignMedia CampaignMedia[]
+
+  @@index([slug])
+  @@index([gameId])
+  @@index([contentSourceId])
+  @@map("campaigns")
+}
+
+model Chapter {
+  id            String  @id @default(uuid())
+  campaignId    String  @map("campaign_id")
+  chapterNumber Int     @map("chapter_number")
+  name          String
+  slug          String  @unique
+  description   String?
+
+  campaign     Campaign       @relation(fields: [campaignId], references: [id], onUpdate: Cascade, onDelete: Restrict)
+  chapterMedia ChapterMedia[]
+
+  @@unique([campaignId, chapterNumber])
+  @@index([slug])
+  @@index([campaignId])
+  @@index([chapterNumber])
+  @@map("chapters")
+}
+
+// Characters Module
+
+enum Gender {
+  MALE
+  FEMALE
+}
+
+model Survivor {
+  id          String  @id @default(uuid())
+  gameId      String  @map("game_id")
+  name        String
+  slug        String  @unique
+  description String?
+  biography   String?
+  gender      Gender?
+  age         Int?    @db.SmallInt
+  occupation  String?
+
+  game          Game            @relation(fields: [gameId], references: [id], onUpdate: Cascade, onDelete: Restrict)
+  survivorMedia SurvivorMedia[]
+
+  @@index([slug])
+  @@index([gameId])
+  @@map("survivors")
+}
+
+model SpecialInfected {
+  id          String  @id @default(uuid())
+  gameId      String  @map("game_id")
+  name        String
+  slug        String  @unique
+  description String?
+
+  game                 Game                   @relation(fields: [gameId], references: [id], onUpdate: Cascade, onDelete: Restrict)
+  specialInfectedMedia SpecialInfectedMedia[]
+
+  @@index([slug])
+  @@index([gameId])
+  @@map("special_infected")
+}
+
+model CommonInfectedVariant {
+  id           String  @id @default(uuid())
+  gameId       String  @map("game_id")
+  name         String
+  slug         String  @unique
+  description  String?
+  specialTrait String  @map("special_trait")
+
+  game                       Game                         @relation(fields: [gameId], references: [id], onUpdate: Cascade, onDelete: Restrict)
+  commonInfectedVariantMedia CommonInfectedVariantMedia[]
+
+  @@index([slug])
+  @@index([gameId])
+  @@map("common_infected_variants")
+}
+
+// Combat Module
+
+model WeaponCategory {
+  id   String @id @default(uuid())
+  name String @unique
+
+  weaponClasses WeaponClass[]
+
+  @@index([name])
+  @@map("weapon_categories")
+}
+
+model WeaponClass {
+  id               String @id @default(uuid())
+  weaponCategoryId String @map("weapon_category_id")
+  name             String @unique
+
+  weapons Weapon[]
+
+  weaponCategory WeaponCategory @relation(fields: [weaponCategoryId], references: [id], onUpdate: Cascade, onDelete: Restrict)
+
+  @@unique([weaponCategoryId, name])
+  @@index([name])
+  @@index([weaponCategoryId])
+  @@map("weapon_classes")
+}
+
+model WeaponTier {
+  id         String @id @default(uuid())
+  name       String @unique
+  orderValue Int    @map("order_value") @db.SmallInt
+
+  weapons Weapon[]
+
+  @@index([orderValue])
+  @@map("weapon_tiers")
+}
+
+model AmmoType {
+  id   String @id @default(uuid())
+  name String @unique
+
+  weapons Weapon[]
+
+  @@index([name])
+  @@map("ammo_types")
+}
+
+model Weapon {
+  id            String  @id @default(uuid())
+  gameId        String  @map("game_id")
+  weaponClassId String  @map("weapon_class_id")
+  weaponTierId  String  @map("weapon_tier_id")
+  ammoTypeId    String  @map("ammo_type_id")
+  name          String
+  slug          String  @unique
+  description   String?
+
+  weaponClass WeaponClass   @relation(fields: [weaponClassId], references: [id], onUpdate: Cascade, onDelete: Restrict)
+  weaponTier  WeaponTier    @relation(fields: [weaponTierId], references: [id], onUpdate: Cascade, onDelete: Restrict)
+  ammoType    AmmoType      @relation(fields: [ammoTypeId], references: [id], onUpdate: Cascade, onDelete: Restrict)
+  game        Game          @relation(fields: [gameId], references: [id], onUpdate: Cascade, onDelete: Restrict)
+  weaponMedia WeaponMedia[]
+
+  rangedStats    RangedWeaponStats?
+  meleeStats     MeleeWeaponStats?
+  throwableStats ThrowableWeaponStats?
+
+  @@index([gameId])
+  @@index([slug])
+  @@index([weaponClassId])
+  @@index([weaponTierId])
+  @@index([ammoTypeId])
+  @@map("weapons")
+}
+
+model RangedWeaponStats {
+  weaponId    String @id @map("weapon_id")
+  damage      Float
+  clipSize    Int?   @map("clip_size") @db.SmallInt
+  reserveAmmo Int?   @map("reserve_ammo") @db.SmallInt
+  reloadTime  Float? @map("reload_time")
+  fireRate    Float? @map("fire_rate")
+  accuracy    Float?
+  spread      Float?
+  range       Float?
+
+  weapon Weapon @relation(fields: [weaponId], references: [id], onDelete: Cascade)
+
+  @@map("ranged_weapon_stats")
+}
+
+model MeleeWeaponStats {
+  weaponId     String @id @map("weapon_id")
+  damage       Float
+  swingSpeed   Float? @map("swing_speed")
+  stumblePower Float? @map("stumble_power")
+
+  weapon Weapon @relation(fields: [weaponId], references: [id], onDelete: Cascade)
+
+  @@map("melee_weapon_stats")
+}
+
+model ThrowableWeaponStats {
+  weaponId    String @id @map("weapon_id")
+  damage      Float?
+  blastRadius Float? @map("blast_radius")
+  fuseTime    Float? @map("fuse_time")
+
+  weapon Weapon @relation(fields: [weaponId], references: [id], onDelete: Cascade)
+
+  @@map("throwable_weapon_stats")
+}
+
+// Items module
+
+model ItemCategory {
+  id   String @id @default(uuid())
+  name String @unique
+
+  items Item[]
+
+  @@index([name])
+  @@map("item_categories")
+}
+
+model Item {
+  id             String  @id @default(uuid())
+  gameId         String  @map("game_id")
+  itemCategoryId String  @map("item_category_id")
+  name           String
+  slug           String  @unique
+  description    String?
+
+  game         Game         @relation(fields: [gameId], references: [id], onUpdate: Cascade, onDelete: Restrict)
+  itemCategory ItemCategory @relation(fields: [itemCategoryId], references: [id], onUpdate: Cascade, onDelete: Restrict)
+  itemMedia    ItemMedia[]
+
+  @@index([gameId])
+  @@index([itemCategoryId])
+  @@index([slug])
+  @@map("items")
+}
+
+// Media module
+
+model MediaType {
+  id         String @id @default(uuid())
+  name       String @unique
+  mimePrefix String @unique @map("mime_prefix")
+
+  media Media[]
+
+  @@map("media_types")
+}
+
+model MediaRole {
+  id   String @id @default(uuid())
+  name String @unique
+
+  weaponMedia                WeaponMedia[]
+  survivorMedia              SurvivorMedia[]
+  specialInfectedMedia       SpecialInfectedMedia[]
+  commonInfectedVariantMedia CommonInfectedVariantMedia[]
+  itemMedia                  ItemMedia[]
+  campaignMedia              CampaignMedia[]
+  chapterMedia               ChapterMedia[]
+
+  @@map("media_roles")
+}
+
+model Media {
+  id          String @id @default(uuid())
+  mediaTypeId String @map("media_type_id")
+  storagePath String @unique @map("storage_path")
+  filename    String
+  mimeType    String @map("mime_type")
+  fileSize    Int?   @map("file_size")
+  width       Int?
+  height      Int?
+  duration    Float?
+
+  mediaType MediaType @relation(fields: [mediaTypeId], references: [id], onUpdate: Cascade, onDelete: Restrict)
+
+  weaponMedia                WeaponMedia[]
+  survivorMedia              SurvivorMedia[]
+  specialInfectedMedia       SpecialInfectedMedia[]
+  commonInfectedVariantMedia CommonInfectedVariantMedia[]
+  itemMedia                  ItemMedia[]
+  campaignMedia              CampaignMedia[]
+  chapterMedia               ChapterMedia[]
+
+  @@index([mediaTypeId])
+  @@index([storagePath])
+  @@map("media")
+}
+
+model WeaponMedia {
+  weaponId     String @map("weapon_id")
+  mediaId      String @map("media_id")
+  mediaRoleId  String @map("media_role_id")
+  displayOrder Int    @map("display_order")
+
+  weapon    Weapon    @relation(fields: [weaponId], references: [id], onDelete: Cascade)
+  media     Media     @relation(fields: [mediaId], references: [id], onDelete: Cascade)
+  mediaRole MediaRole @relation(fields: [mediaRoleId], references: [id], onUpdate: Cascade, onDelete: Restrict)
+
+  @@id([weaponId, mediaId, mediaRoleId])
+  @@unique([weaponId, mediaRoleId, displayOrder])
+  @@index([weaponId])
+  @@index([mediaId])
+  @@map("weapon_media")
+}
+
+model CampaignMedia {
+  campaignId   String @map("campaign_id")
+  mediaId      String @map("media_id")
+  mediaRoleId  String @map("media_role_id")
+  displayOrder Int    @map("display_order")
+
+  campaign  Campaign  @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  media     Media     @relation(fields: [mediaId], references: [id], onDelete: Cascade)
+  mediaRole MediaRole @relation(fields: [mediaRoleId], references: [id], onUpdate: Cascade, onDelete: Restrict)
+
+  @@id([campaignId, mediaId, mediaRoleId])
+  @@unique([campaignId, mediaRoleId, displayOrder])
+  @@index([campaignId])
+  @@index([mediaId])
+  @@map("campaign_media")
+}
+
+model ChapterMedia {
+  chapterId    String @map("chapter_id")
+  mediaId      String @map("media_id")
+  mediaRoleId  String @map("media_role_id")
+  displayOrder Int    @map("display_order")
+
+  chapter   Chapter   @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  media     Media     @relation(fields: [mediaId], references: [id], onDelete: Cascade)
+  mediaRole MediaRole @relation(fields: [mediaRoleId], references: [id], onUpdate: Cascade, onDelete: Restrict)
+
+  @@id([chapterId, mediaId, mediaRoleId])
+  @@unique([chapterId, mediaRoleId, displayOrder])
+  @@index([chapterId])
+  @@index([mediaId])
+  @@map("chapter_media")
+}
+
+model SurvivorMedia {
+  survivorId   String @map("survivor_id")
+  mediaId      String @map("media_id")
+  mediaRoleId  String @map("media_role_id")
+  displayOrder Int    @map("display_order")
+
+  survivor  Survivor  @relation(fields: [survivorId], references: [id], onDelete: Cascade)
+  media     Media     @relation(fields: [mediaId], references: [id], onDelete: Cascade)
+  mediaRole MediaRole @relation(fields: [mediaRoleId], references: [id], onUpdate: Cascade, onDelete: Restrict)
+
+  @@id([survivorId, mediaId, mediaRoleId])
+  @@unique([survivorId, mediaRoleId, displayOrder])
+  @@index([survivorId])
+  @@index([mediaId])
+  @@map("survivor_media")
+}
+
+model SpecialInfectedMedia {
+  specialInfectedId String @map("special_infected_id")
+  mediaId           String @map("media_id")
+  mediaRoleId       String @map("media_role_id")
+  displayOrder      Int    @map("display_order")
+
+  specialInfected SpecialInfected @relation(fields: [specialInfectedId], references: [id], onDelete: Cascade)
+  media           Media           @relation(fields: [mediaId], references: [id], onDelete: Cascade)
+  mediaRole       MediaRole       @relation(fields: [mediaRoleId], references: [id], onUpdate: Cascade, onDelete: Restrict)
+
+  @@id([specialInfectedId, mediaId, mediaRoleId])
+  @@unique([specialInfectedId, mediaRoleId, displayOrder])
+  @@index([specialInfectedId])
+  @@index([mediaId])
+  @@map("special_infected_media")
+}
+
+model CommonInfectedVariantMedia {
+  commonInfectedVariantId String @map("common_infected_variant_id")
+  mediaId                 String @map("media_id")
+  mediaRoleId             String @map("media_role_id")
+  displayOrder            Int    @map("display_order")
+
+  commonInfectedVariant CommonInfectedVariant @relation(fields: [commonInfectedVariantId], references: [id], onDelete: Cascade)
+  media                 Media                 @relation(fields: [mediaId], references: [id], onDelete: Cascade)
+  mediaRole             MediaRole             @relation(fields: [mediaRoleId], references: [id], onUpdate: Cascade, onDelete: Restrict)
+
+  @@id([commonInfectedVariantId, mediaId, mediaRoleId])
+  @@unique([commonInfectedVariantId, mediaRoleId, displayOrder])
+  @@index([commonInfectedVariantId])
+  @@index([mediaId])
+  @@map("common_infected_variant_media")
+}
+
+model ItemMedia {
+  itemId       String @map("item_id")
+  mediaId      String @map("media_id")
+  mediaRoleId  String @map("media_role_id")
+  displayOrder Int    @map("display_order")
+
+  item      Item      @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  media     Media     @relation(fields: [mediaId], references: [id], onDelete: Cascade)
+  mediaRole MediaRole @relation(fields: [mediaRoleId], references: [id], onUpdate: Cascade, onDelete: Restrict)
+
+  @@id([itemId, mediaId, mediaRoleId])
+  @@unique([itemId, mediaRoleId, displayOrder])
+  @@index([itemId])
+  @@index([mediaId])
+  @@map("item_media")
+}
