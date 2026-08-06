@@ -188,6 +188,7 @@ export type GameWhereInput = {
   commonInfectedVariants?: Prisma.CommonInfectedVariantListRelationFilter
   items?: Prisma.ItemListRelationFilter
   weapons?: Prisma.WeaponListRelationFilter
+  gameMedia?: Prisma.GameMediaListRelationFilter
 }
 
 export type GameOrderByWithRelationInput = {
@@ -202,6 +203,7 @@ export type GameOrderByWithRelationInput = {
   commonInfectedVariants?: Prisma.CommonInfectedVariantOrderByRelationAggregateInput
   items?: Prisma.ItemOrderByRelationAggregateInput
   weapons?: Prisma.WeaponOrderByRelationAggregateInput
+  gameMedia?: Prisma.GameMediaOrderByRelationAggregateInput
 }
 
 export type GameWhereUniqueInput = Prisma.AtLeast<{
@@ -219,6 +221,7 @@ export type GameWhereUniqueInput = Prisma.AtLeast<{
   commonInfectedVariants?: Prisma.CommonInfectedVariantListRelationFilter
   items?: Prisma.ItemListRelationFilter
   weapons?: Prisma.WeaponListRelationFilter
+  gameMedia?: Prisma.GameMediaListRelationFilter
 }, "id" | "slug">
 
 export type GameOrderByWithAggregationInput = {
@@ -255,6 +258,7 @@ export type GameCreateInput = {
   commonInfectedVariants?: Prisma.CommonInfectedVariantCreateNestedManyWithoutGameInput
   items?: Prisma.ItemCreateNestedManyWithoutGameInput
   weapons?: Prisma.WeaponCreateNestedManyWithoutGameInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutGameInput
 }
 
 export type GameUncheckedCreateInput = {
@@ -269,6 +273,7 @@ export type GameUncheckedCreateInput = {
   commonInfectedVariants?: Prisma.CommonInfectedVariantUncheckedCreateNestedManyWithoutGameInput
   items?: Prisma.ItemUncheckedCreateNestedManyWithoutGameInput
   weapons?: Prisma.WeaponUncheckedCreateNestedManyWithoutGameInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutGameInput
 }
 
 export type GameUpdateInput = {
@@ -283,6 +288,7 @@ export type GameUpdateInput = {
   commonInfectedVariants?: Prisma.CommonInfectedVariantUpdateManyWithoutGameNestedInput
   items?: Prisma.ItemUpdateManyWithoutGameNestedInput
   weapons?: Prisma.WeaponUpdateManyWithoutGameNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutGameNestedInput
 }
 
 export type GameUncheckedUpdateInput = {
@@ -297,6 +303,7 @@ export type GameUncheckedUpdateInput = {
   commonInfectedVariants?: Prisma.CommonInfectedVariantUncheckedUpdateManyWithoutGameNestedInput
   items?: Prisma.ItemUncheckedUpdateManyWithoutGameNestedInput
   weapons?: Prisma.WeaponUncheckedUpdateManyWithoutGameNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutGameNestedInput
 }
 
 export type GameCreateManyInput = {
@@ -448,6 +455,20 @@ export type GameUpdateOneRequiredWithoutItemsNestedInput = {
   update?: Prisma.XOR<Prisma.XOR<Prisma.GameUpdateToOneWithWhereWithoutItemsInput, Prisma.GameUpdateWithoutItemsInput>, Prisma.GameUncheckedUpdateWithoutItemsInput>
 }
 
+export type GameCreateNestedOneWithoutGameMediaInput = {
+  create?: Prisma.XOR<Prisma.GameCreateWithoutGameMediaInput, Prisma.GameUncheckedCreateWithoutGameMediaInput>
+  connectOrCreate?: Prisma.GameCreateOrConnectWithoutGameMediaInput
+  connect?: Prisma.GameWhereUniqueInput
+}
+
+export type GameUpdateOneRequiredWithoutGameMediaNestedInput = {
+  create?: Prisma.XOR<Prisma.GameCreateWithoutGameMediaInput, Prisma.GameUncheckedCreateWithoutGameMediaInput>
+  connectOrCreate?: Prisma.GameCreateOrConnectWithoutGameMediaInput
+  upsert?: Prisma.GameUpsertWithoutGameMediaInput
+  connect?: Prisma.GameWhereUniqueInput
+  update?: Prisma.XOR<Prisma.XOR<Prisma.GameUpdateToOneWithWhereWithoutGameMediaInput, Prisma.GameUpdateWithoutGameMediaInput>, Prisma.GameUncheckedUpdateWithoutGameMediaInput>
+}
+
 export type GameCreateWithoutCampaignsInput = {
   id?: string
   name: string
@@ -459,6 +480,7 @@ export type GameCreateWithoutCampaignsInput = {
   commonInfectedVariants?: Prisma.CommonInfectedVariantCreateNestedManyWithoutGameInput
   items?: Prisma.ItemCreateNestedManyWithoutGameInput
   weapons?: Prisma.WeaponCreateNestedManyWithoutGameInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutGameInput
 }
 
 export type GameUncheckedCreateWithoutCampaignsInput = {
@@ -472,6 +494,7 @@ export type GameUncheckedCreateWithoutCampaignsInput = {
   commonInfectedVariants?: Prisma.CommonInfectedVariantUncheckedCreateNestedManyWithoutGameInput
   items?: Prisma.ItemUncheckedCreateNestedManyWithoutGameInput
   weapons?: Prisma.WeaponUncheckedCreateNestedManyWithoutGameInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutGameInput
 }
 
 export type GameCreateOrConnectWithoutCampaignsInput = {
@@ -501,6 +524,7 @@ export type GameUpdateWithoutCampaignsInput = {
   commonInfectedVariants?: Prisma.CommonInfectedVariantUpdateManyWithoutGameNestedInput
   items?: Prisma.ItemUpdateManyWithoutGameNestedInput
   weapons?: Prisma.WeaponUpdateManyWithoutGameNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutGameNestedInput
 }
 
 export type GameUncheckedUpdateWithoutCampaignsInput = {
@@ -514,6 +538,7 @@ export type GameUncheckedUpdateWithoutCampaignsInput = {
   commonInfectedVariants?: Prisma.CommonInfectedVariantUncheckedUpdateManyWithoutGameNestedInput
   items?: Prisma.ItemUncheckedUpdateManyWithoutGameNestedInput
   weapons?: Prisma.WeaponUncheckedUpdateManyWithoutGameNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutGameNestedInput
 }
 
 export type GameCreateWithoutSurvivorsInput = {
@@ -527,6 +552,7 @@ export type GameCreateWithoutSurvivorsInput = {
   commonInfectedVariants?: Prisma.CommonInfectedVariantCreateNestedManyWithoutGameInput
   items?: Prisma.ItemCreateNestedManyWithoutGameInput
   weapons?: Prisma.WeaponCreateNestedManyWithoutGameInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutGameInput
 }
 
 export type GameUncheckedCreateWithoutSurvivorsInput = {
@@ -540,6 +566,7 @@ export type GameUncheckedCreateWithoutSurvivorsInput = {
   commonInfectedVariants?: Prisma.CommonInfectedVariantUncheckedCreateNestedManyWithoutGameInput
   items?: Prisma.ItemUncheckedCreateNestedManyWithoutGameInput
   weapons?: Prisma.WeaponUncheckedCreateNestedManyWithoutGameInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutGameInput
 }
 
 export type GameCreateOrConnectWithoutSurvivorsInput = {
@@ -569,6 +596,7 @@ export type GameUpdateWithoutSurvivorsInput = {
   commonInfectedVariants?: Prisma.CommonInfectedVariantUpdateManyWithoutGameNestedInput
   items?: Prisma.ItemUpdateManyWithoutGameNestedInput
   weapons?: Prisma.WeaponUpdateManyWithoutGameNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutGameNestedInput
 }
 
 export type GameUncheckedUpdateWithoutSurvivorsInput = {
@@ -582,6 +610,7 @@ export type GameUncheckedUpdateWithoutSurvivorsInput = {
   commonInfectedVariants?: Prisma.CommonInfectedVariantUncheckedUpdateManyWithoutGameNestedInput
   items?: Prisma.ItemUncheckedUpdateManyWithoutGameNestedInput
   weapons?: Prisma.WeaponUncheckedUpdateManyWithoutGameNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutGameNestedInput
 }
 
 export type GameCreateWithoutSpecialInfectedInput = {
@@ -595,6 +624,7 @@ export type GameCreateWithoutSpecialInfectedInput = {
   commonInfectedVariants?: Prisma.CommonInfectedVariantCreateNestedManyWithoutGameInput
   items?: Prisma.ItemCreateNestedManyWithoutGameInput
   weapons?: Prisma.WeaponCreateNestedManyWithoutGameInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutGameInput
 }
 
 export type GameUncheckedCreateWithoutSpecialInfectedInput = {
@@ -608,6 +638,7 @@ export type GameUncheckedCreateWithoutSpecialInfectedInput = {
   commonInfectedVariants?: Prisma.CommonInfectedVariantUncheckedCreateNestedManyWithoutGameInput
   items?: Prisma.ItemUncheckedCreateNestedManyWithoutGameInput
   weapons?: Prisma.WeaponUncheckedCreateNestedManyWithoutGameInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutGameInput
 }
 
 export type GameCreateOrConnectWithoutSpecialInfectedInput = {
@@ -637,6 +668,7 @@ export type GameUpdateWithoutSpecialInfectedInput = {
   commonInfectedVariants?: Prisma.CommonInfectedVariantUpdateManyWithoutGameNestedInput
   items?: Prisma.ItemUpdateManyWithoutGameNestedInput
   weapons?: Prisma.WeaponUpdateManyWithoutGameNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutGameNestedInput
 }
 
 export type GameUncheckedUpdateWithoutSpecialInfectedInput = {
@@ -650,6 +682,7 @@ export type GameUncheckedUpdateWithoutSpecialInfectedInput = {
   commonInfectedVariants?: Prisma.CommonInfectedVariantUncheckedUpdateManyWithoutGameNestedInput
   items?: Prisma.ItemUncheckedUpdateManyWithoutGameNestedInput
   weapons?: Prisma.WeaponUncheckedUpdateManyWithoutGameNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutGameNestedInput
 }
 
 export type GameCreateWithoutCommonInfectedVariantsInput = {
@@ -663,6 +696,7 @@ export type GameCreateWithoutCommonInfectedVariantsInput = {
   specialInfected?: Prisma.SpecialInfectedCreateNestedManyWithoutGameInput
   items?: Prisma.ItemCreateNestedManyWithoutGameInput
   weapons?: Prisma.WeaponCreateNestedManyWithoutGameInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutGameInput
 }
 
 export type GameUncheckedCreateWithoutCommonInfectedVariantsInput = {
@@ -676,6 +710,7 @@ export type GameUncheckedCreateWithoutCommonInfectedVariantsInput = {
   specialInfected?: Prisma.SpecialInfectedUncheckedCreateNestedManyWithoutGameInput
   items?: Prisma.ItemUncheckedCreateNestedManyWithoutGameInput
   weapons?: Prisma.WeaponUncheckedCreateNestedManyWithoutGameInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutGameInput
 }
 
 export type GameCreateOrConnectWithoutCommonInfectedVariantsInput = {
@@ -705,6 +740,7 @@ export type GameUpdateWithoutCommonInfectedVariantsInput = {
   specialInfected?: Prisma.SpecialInfectedUpdateManyWithoutGameNestedInput
   items?: Prisma.ItemUpdateManyWithoutGameNestedInput
   weapons?: Prisma.WeaponUpdateManyWithoutGameNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutGameNestedInput
 }
 
 export type GameUncheckedUpdateWithoutCommonInfectedVariantsInput = {
@@ -718,6 +754,7 @@ export type GameUncheckedUpdateWithoutCommonInfectedVariantsInput = {
   specialInfected?: Prisma.SpecialInfectedUncheckedUpdateManyWithoutGameNestedInput
   items?: Prisma.ItemUncheckedUpdateManyWithoutGameNestedInput
   weapons?: Prisma.WeaponUncheckedUpdateManyWithoutGameNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutGameNestedInput
 }
 
 export type GameCreateWithoutWeaponsInput = {
@@ -731,6 +768,7 @@ export type GameCreateWithoutWeaponsInput = {
   specialInfected?: Prisma.SpecialInfectedCreateNestedManyWithoutGameInput
   commonInfectedVariants?: Prisma.CommonInfectedVariantCreateNestedManyWithoutGameInput
   items?: Prisma.ItemCreateNestedManyWithoutGameInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutGameInput
 }
 
 export type GameUncheckedCreateWithoutWeaponsInput = {
@@ -744,6 +782,7 @@ export type GameUncheckedCreateWithoutWeaponsInput = {
   specialInfected?: Prisma.SpecialInfectedUncheckedCreateNestedManyWithoutGameInput
   commonInfectedVariants?: Prisma.CommonInfectedVariantUncheckedCreateNestedManyWithoutGameInput
   items?: Prisma.ItemUncheckedCreateNestedManyWithoutGameInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutGameInput
 }
 
 export type GameCreateOrConnectWithoutWeaponsInput = {
@@ -773,6 +812,7 @@ export type GameUpdateWithoutWeaponsInput = {
   specialInfected?: Prisma.SpecialInfectedUpdateManyWithoutGameNestedInput
   commonInfectedVariants?: Prisma.CommonInfectedVariantUpdateManyWithoutGameNestedInput
   items?: Prisma.ItemUpdateManyWithoutGameNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutGameNestedInput
 }
 
 export type GameUncheckedUpdateWithoutWeaponsInput = {
@@ -786,6 +826,7 @@ export type GameUncheckedUpdateWithoutWeaponsInput = {
   specialInfected?: Prisma.SpecialInfectedUncheckedUpdateManyWithoutGameNestedInput
   commonInfectedVariants?: Prisma.CommonInfectedVariantUncheckedUpdateManyWithoutGameNestedInput
   items?: Prisma.ItemUncheckedUpdateManyWithoutGameNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutGameNestedInput
 }
 
 export type GameCreateWithoutItemsInput = {
@@ -799,6 +840,7 @@ export type GameCreateWithoutItemsInput = {
   specialInfected?: Prisma.SpecialInfectedCreateNestedManyWithoutGameInput
   commonInfectedVariants?: Prisma.CommonInfectedVariantCreateNestedManyWithoutGameInput
   weapons?: Prisma.WeaponCreateNestedManyWithoutGameInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutGameInput
 }
 
 export type GameUncheckedCreateWithoutItemsInput = {
@@ -812,6 +854,7 @@ export type GameUncheckedCreateWithoutItemsInput = {
   specialInfected?: Prisma.SpecialInfectedUncheckedCreateNestedManyWithoutGameInput
   commonInfectedVariants?: Prisma.CommonInfectedVariantUncheckedCreateNestedManyWithoutGameInput
   weapons?: Prisma.WeaponUncheckedCreateNestedManyWithoutGameInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutGameInput
 }
 
 export type GameCreateOrConnectWithoutItemsInput = {
@@ -841,6 +884,7 @@ export type GameUpdateWithoutItemsInput = {
   specialInfected?: Prisma.SpecialInfectedUpdateManyWithoutGameNestedInput
   commonInfectedVariants?: Prisma.CommonInfectedVariantUpdateManyWithoutGameNestedInput
   weapons?: Prisma.WeaponUpdateManyWithoutGameNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutGameNestedInput
 }
 
 export type GameUncheckedUpdateWithoutItemsInput = {
@@ -853,6 +897,79 @@ export type GameUncheckedUpdateWithoutItemsInput = {
   survivors?: Prisma.SurvivorUncheckedUpdateManyWithoutGameNestedInput
   specialInfected?: Prisma.SpecialInfectedUncheckedUpdateManyWithoutGameNestedInput
   commonInfectedVariants?: Prisma.CommonInfectedVariantUncheckedUpdateManyWithoutGameNestedInput
+  weapons?: Prisma.WeaponUncheckedUpdateManyWithoutGameNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutGameNestedInput
+}
+
+export type GameCreateWithoutGameMediaInput = {
+  id?: string
+  name: string
+  slug: string
+  description?: string | null
+  releaseDate?: Date | string | null
+  campaigns?: Prisma.CampaignCreateNestedManyWithoutGameInput
+  survivors?: Prisma.SurvivorCreateNestedManyWithoutGameInput
+  specialInfected?: Prisma.SpecialInfectedCreateNestedManyWithoutGameInput
+  commonInfectedVariants?: Prisma.CommonInfectedVariantCreateNestedManyWithoutGameInput
+  items?: Prisma.ItemCreateNestedManyWithoutGameInput
+  weapons?: Prisma.WeaponCreateNestedManyWithoutGameInput
+}
+
+export type GameUncheckedCreateWithoutGameMediaInput = {
+  id?: string
+  name: string
+  slug: string
+  description?: string | null
+  releaseDate?: Date | string | null
+  campaigns?: Prisma.CampaignUncheckedCreateNestedManyWithoutGameInput
+  survivors?: Prisma.SurvivorUncheckedCreateNestedManyWithoutGameInput
+  specialInfected?: Prisma.SpecialInfectedUncheckedCreateNestedManyWithoutGameInput
+  commonInfectedVariants?: Prisma.CommonInfectedVariantUncheckedCreateNestedManyWithoutGameInput
+  items?: Prisma.ItemUncheckedCreateNestedManyWithoutGameInput
+  weapons?: Prisma.WeaponUncheckedCreateNestedManyWithoutGameInput
+}
+
+export type GameCreateOrConnectWithoutGameMediaInput = {
+  where: Prisma.GameWhereUniqueInput
+  create: Prisma.XOR<Prisma.GameCreateWithoutGameMediaInput, Prisma.GameUncheckedCreateWithoutGameMediaInput>
+}
+
+export type GameUpsertWithoutGameMediaInput = {
+  update: Prisma.XOR<Prisma.GameUpdateWithoutGameMediaInput, Prisma.GameUncheckedUpdateWithoutGameMediaInput>
+  create: Prisma.XOR<Prisma.GameCreateWithoutGameMediaInput, Prisma.GameUncheckedCreateWithoutGameMediaInput>
+  where?: Prisma.GameWhereInput
+}
+
+export type GameUpdateToOneWithWhereWithoutGameMediaInput = {
+  where?: Prisma.GameWhereInput
+  data: Prisma.XOR<Prisma.GameUpdateWithoutGameMediaInput, Prisma.GameUncheckedUpdateWithoutGameMediaInput>
+}
+
+export type GameUpdateWithoutGameMediaInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  name?: Prisma.StringFieldUpdateOperationsInput | string
+  slug?: Prisma.StringFieldUpdateOperationsInput | string
+  description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  releaseDate?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+  campaigns?: Prisma.CampaignUpdateManyWithoutGameNestedInput
+  survivors?: Prisma.SurvivorUpdateManyWithoutGameNestedInput
+  specialInfected?: Prisma.SpecialInfectedUpdateManyWithoutGameNestedInput
+  commonInfectedVariants?: Prisma.CommonInfectedVariantUpdateManyWithoutGameNestedInput
+  items?: Prisma.ItemUpdateManyWithoutGameNestedInput
+  weapons?: Prisma.WeaponUpdateManyWithoutGameNestedInput
+}
+
+export type GameUncheckedUpdateWithoutGameMediaInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  name?: Prisma.StringFieldUpdateOperationsInput | string
+  slug?: Prisma.StringFieldUpdateOperationsInput | string
+  description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  releaseDate?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+  campaigns?: Prisma.CampaignUncheckedUpdateManyWithoutGameNestedInput
+  survivors?: Prisma.SurvivorUncheckedUpdateManyWithoutGameNestedInput
+  specialInfected?: Prisma.SpecialInfectedUncheckedUpdateManyWithoutGameNestedInput
+  commonInfectedVariants?: Prisma.CommonInfectedVariantUncheckedUpdateManyWithoutGameNestedInput
+  items?: Prisma.ItemUncheckedUpdateManyWithoutGameNestedInput
   weapons?: Prisma.WeaponUncheckedUpdateManyWithoutGameNestedInput
 }
 
@@ -868,6 +985,7 @@ export type GameCountOutputType = {
   commonInfectedVariants: number
   items: number
   weapons: number
+  gameMedia: number
 }
 
 export type GameCountOutputTypeSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
@@ -877,6 +995,7 @@ export type GameCountOutputTypeSelect<ExtArgs extends runtime.Types.Extensions.I
   commonInfectedVariants?: boolean | GameCountOutputTypeCountCommonInfectedVariantsArgs
   items?: boolean | GameCountOutputTypeCountItemsArgs
   weapons?: boolean | GameCountOutputTypeCountWeaponsArgs
+  gameMedia?: boolean | GameCountOutputTypeCountGameMediaArgs
 }
 
 /**
@@ -931,6 +1050,13 @@ export type GameCountOutputTypeCountWeaponsArgs<ExtArgs extends runtime.Types.Ex
   where?: Prisma.WeaponWhereInput
 }
 
+/**
+ * GameCountOutputType without action
+ */
+export type GameCountOutputTypeCountGameMediaArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  where?: Prisma.GameMediaWhereInput
+}
+
 
 export type GameSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
@@ -944,6 +1070,7 @@ export type GameSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = r
   commonInfectedVariants?: boolean | Prisma.Game$commonInfectedVariantsArgs<ExtArgs>
   items?: boolean | Prisma.Game$itemsArgs<ExtArgs>
   weapons?: boolean | Prisma.Game$weaponsArgs<ExtArgs>
+  gameMedia?: boolean | Prisma.Game$gameMediaArgs<ExtArgs>
   _count?: boolean | Prisma.GameCountOutputTypeDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["game"]>
 
@@ -979,6 +1106,7 @@ export type GameInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = 
   commonInfectedVariants?: boolean | Prisma.Game$commonInfectedVariantsArgs<ExtArgs>
   items?: boolean | Prisma.Game$itemsArgs<ExtArgs>
   weapons?: boolean | Prisma.Game$weaponsArgs<ExtArgs>
+  gameMedia?: boolean | Prisma.Game$gameMediaArgs<ExtArgs>
   _count?: boolean | Prisma.GameCountOutputTypeDefaultArgs<ExtArgs>
 }
 export type GameIncludeCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {}
@@ -993,6 +1121,7 @@ export type $GamePayload<ExtArgs extends runtime.Types.Extensions.InternalArgs =
     commonInfectedVariants: Prisma.$CommonInfectedVariantPayload<ExtArgs>[]
     items: Prisma.$ItemPayload<ExtArgs>[]
     weapons: Prisma.$WeaponPayload<ExtArgs>[]
+    gameMedia: Prisma.$GameMediaPayload<ExtArgs>[]
   }
   scalars: runtime.Types.Extensions.GetPayloadResult<{
     id: string
@@ -1400,6 +1529,7 @@ export interface Prisma__GameClient<T, Null = never, ExtArgs extends runtime.Typ
   commonInfectedVariants<T extends Prisma.Game$commonInfectedVariantsArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Game$commonInfectedVariantsArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$CommonInfectedVariantPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   items<T extends Prisma.Game$itemsArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Game$itemsArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$ItemPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   weapons<T extends Prisma.Game$weaponsArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Game$weaponsArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$WeaponPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+  gameMedia<T extends Prisma.Game$gameMediaArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Game$gameMediaArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$GameMediaPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   /**
    * Attaches callbacks for the resolution and/or rejection of the Promise.
    * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -1968,6 +2098,30 @@ export type Game$weaponsArgs<ExtArgs extends runtime.Types.Extensions.InternalAr
   take?: number
   skip?: number
   distinct?: Prisma.WeaponScalarFieldEnum | Prisma.WeaponScalarFieldEnum[]
+}
+
+/**
+ * Game.gameMedia
+ */
+export type Game$gameMediaArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  /**
+   * Select specific fields to fetch from the GameMedia
+   */
+  select?: Prisma.GameMediaSelect<ExtArgs> | null
+  /**
+   * Omit specific fields from the GameMedia
+   */
+  omit?: Prisma.GameMediaOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.GameMediaInclude<ExtArgs> | null
+  where?: Prisma.GameMediaWhereInput
+  orderBy?: Prisma.GameMediaOrderByWithRelationInput | Prisma.GameMediaOrderByWithRelationInput[]
+  cursor?: Prisma.GameMediaWhereUniqueInput
+  take?: number
+  skip?: number
+  distinct?: Prisma.GameMediaScalarFieldEnum | Prisma.GameMediaScalarFieldEnum[]
 }
 
 /**

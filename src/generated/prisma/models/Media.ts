@@ -268,6 +268,7 @@ export type MediaWhereInput = {
   itemMedia?: Prisma.ItemMediaListRelationFilter
   campaignMedia?: Prisma.CampaignMediaListRelationFilter
   chapterMedia?: Prisma.ChapterMediaListRelationFilter
+  gameMedia?: Prisma.GameMediaListRelationFilter
 }
 
 export type MediaOrderByWithRelationInput = {
@@ -288,6 +289,7 @@ export type MediaOrderByWithRelationInput = {
   itemMedia?: Prisma.ItemMediaOrderByRelationAggregateInput
   campaignMedia?: Prisma.CampaignMediaOrderByRelationAggregateInput
   chapterMedia?: Prisma.ChapterMediaOrderByRelationAggregateInput
+  gameMedia?: Prisma.GameMediaOrderByRelationAggregateInput
 }
 
 export type MediaWhereUniqueInput = Prisma.AtLeast<{
@@ -311,6 +313,7 @@ export type MediaWhereUniqueInput = Prisma.AtLeast<{
   itemMedia?: Prisma.ItemMediaListRelationFilter
   campaignMedia?: Prisma.CampaignMediaListRelationFilter
   chapterMedia?: Prisma.ChapterMediaListRelationFilter
+  gameMedia?: Prisma.GameMediaListRelationFilter
 }, "id" | "storagePath">
 
 export type MediaOrderByWithAggregationInput = {
@@ -362,6 +365,7 @@ export type MediaCreateInput = {
   itemMedia?: Prisma.ItemMediaCreateNestedManyWithoutMediaInput
   campaignMedia?: Prisma.CampaignMediaCreateNestedManyWithoutMediaInput
   chapterMedia?: Prisma.ChapterMediaCreateNestedManyWithoutMediaInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutMediaInput
 }
 
 export type MediaUncheckedCreateInput = {
@@ -381,6 +385,7 @@ export type MediaUncheckedCreateInput = {
   itemMedia?: Prisma.ItemMediaUncheckedCreateNestedManyWithoutMediaInput
   campaignMedia?: Prisma.CampaignMediaUncheckedCreateNestedManyWithoutMediaInput
   chapterMedia?: Prisma.ChapterMediaUncheckedCreateNestedManyWithoutMediaInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutMediaInput
 }
 
 export type MediaUpdateInput = {
@@ -400,6 +405,7 @@ export type MediaUpdateInput = {
   itemMedia?: Prisma.ItemMediaUpdateManyWithoutMediaNestedInput
   campaignMedia?: Prisma.CampaignMediaUpdateManyWithoutMediaNestedInput
   chapterMedia?: Prisma.ChapterMediaUpdateManyWithoutMediaNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutMediaNestedInput
 }
 
 export type MediaUncheckedUpdateInput = {
@@ -419,6 +425,7 @@ export type MediaUncheckedUpdateInput = {
   itemMedia?: Prisma.ItemMediaUncheckedUpdateManyWithoutMediaNestedInput
   campaignMedia?: Prisma.CampaignMediaUncheckedUpdateManyWithoutMediaNestedInput
   chapterMedia?: Prisma.ChapterMediaUncheckedUpdateManyWithoutMediaNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutMediaNestedInput
 }
 
 export type MediaCreateManyInput = {
@@ -563,6 +570,20 @@ export type MediaUncheckedUpdateManyWithoutMediaTypeNestedInput = {
   deleteMany?: Prisma.MediaScalarWhereInput | Prisma.MediaScalarWhereInput[]
 }
 
+export type MediaCreateNestedOneWithoutGameMediaInput = {
+  create?: Prisma.XOR<Prisma.MediaCreateWithoutGameMediaInput, Prisma.MediaUncheckedCreateWithoutGameMediaInput>
+  connectOrCreate?: Prisma.MediaCreateOrConnectWithoutGameMediaInput
+  connect?: Prisma.MediaWhereUniqueInput
+}
+
+export type MediaUpdateOneRequiredWithoutGameMediaNestedInput = {
+  create?: Prisma.XOR<Prisma.MediaCreateWithoutGameMediaInput, Prisma.MediaUncheckedCreateWithoutGameMediaInput>
+  connectOrCreate?: Prisma.MediaCreateOrConnectWithoutGameMediaInput
+  upsert?: Prisma.MediaUpsertWithoutGameMediaInput
+  connect?: Prisma.MediaWhereUniqueInput
+  update?: Prisma.XOR<Prisma.XOR<Prisma.MediaUpdateToOneWithWhereWithoutGameMediaInput, Prisma.MediaUpdateWithoutGameMediaInput>, Prisma.MediaUncheckedUpdateWithoutGameMediaInput>
+}
+
 export type MediaCreateNestedOneWithoutWeaponMediaInput = {
   create?: Prisma.XOR<Prisma.MediaCreateWithoutWeaponMediaInput, Prisma.MediaUncheckedCreateWithoutWeaponMediaInput>
   connectOrCreate?: Prisma.MediaCreateOrConnectWithoutWeaponMediaInput
@@ -677,6 +698,7 @@ export type MediaCreateWithoutMediaTypeInput = {
   itemMedia?: Prisma.ItemMediaCreateNestedManyWithoutMediaInput
   campaignMedia?: Prisma.CampaignMediaCreateNestedManyWithoutMediaInput
   chapterMedia?: Prisma.ChapterMediaCreateNestedManyWithoutMediaInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutMediaInput
 }
 
 export type MediaUncheckedCreateWithoutMediaTypeInput = {
@@ -695,6 +717,7 @@ export type MediaUncheckedCreateWithoutMediaTypeInput = {
   itemMedia?: Prisma.ItemMediaUncheckedCreateNestedManyWithoutMediaInput
   campaignMedia?: Prisma.CampaignMediaUncheckedCreateNestedManyWithoutMediaInput
   chapterMedia?: Prisma.ChapterMediaUncheckedCreateNestedManyWithoutMediaInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutMediaInput
 }
 
 export type MediaCreateOrConnectWithoutMediaTypeInput = {
@@ -738,6 +761,98 @@ export type MediaScalarWhereInput = {
   duration?: Prisma.FloatNullableFilter<"Media"> | number | null
 }
 
+export type MediaCreateWithoutGameMediaInput = {
+  id?: string
+  storagePath: string
+  filename: string
+  mimeType: string
+  fileSize?: number | null
+  width?: number | null
+  height?: number | null
+  duration?: number | null
+  mediaType: Prisma.MediaTypeCreateNestedOneWithoutMediaInput
+  weaponMedia?: Prisma.WeaponMediaCreateNestedManyWithoutMediaInput
+  survivorMedia?: Prisma.SurvivorMediaCreateNestedManyWithoutMediaInput
+  specialInfectedMedia?: Prisma.SpecialInfectedMediaCreateNestedManyWithoutMediaInput
+  commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaCreateNestedManyWithoutMediaInput
+  itemMedia?: Prisma.ItemMediaCreateNestedManyWithoutMediaInput
+  campaignMedia?: Prisma.CampaignMediaCreateNestedManyWithoutMediaInput
+  chapterMedia?: Prisma.ChapterMediaCreateNestedManyWithoutMediaInput
+}
+
+export type MediaUncheckedCreateWithoutGameMediaInput = {
+  id?: string
+  mediaTypeId: string
+  storagePath: string
+  filename: string
+  mimeType: string
+  fileSize?: number | null
+  width?: number | null
+  height?: number | null
+  duration?: number | null
+  weaponMedia?: Prisma.WeaponMediaUncheckedCreateNestedManyWithoutMediaInput
+  survivorMedia?: Prisma.SurvivorMediaUncheckedCreateNestedManyWithoutMediaInput
+  specialInfectedMedia?: Prisma.SpecialInfectedMediaUncheckedCreateNestedManyWithoutMediaInput
+  commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUncheckedCreateNestedManyWithoutMediaInput
+  itemMedia?: Prisma.ItemMediaUncheckedCreateNestedManyWithoutMediaInput
+  campaignMedia?: Prisma.CampaignMediaUncheckedCreateNestedManyWithoutMediaInput
+  chapterMedia?: Prisma.ChapterMediaUncheckedCreateNestedManyWithoutMediaInput
+}
+
+export type MediaCreateOrConnectWithoutGameMediaInput = {
+  where: Prisma.MediaWhereUniqueInput
+  create: Prisma.XOR<Prisma.MediaCreateWithoutGameMediaInput, Prisma.MediaUncheckedCreateWithoutGameMediaInput>
+}
+
+export type MediaUpsertWithoutGameMediaInput = {
+  update: Prisma.XOR<Prisma.MediaUpdateWithoutGameMediaInput, Prisma.MediaUncheckedUpdateWithoutGameMediaInput>
+  create: Prisma.XOR<Prisma.MediaCreateWithoutGameMediaInput, Prisma.MediaUncheckedCreateWithoutGameMediaInput>
+  where?: Prisma.MediaWhereInput
+}
+
+export type MediaUpdateToOneWithWhereWithoutGameMediaInput = {
+  where?: Prisma.MediaWhereInput
+  data: Prisma.XOR<Prisma.MediaUpdateWithoutGameMediaInput, Prisma.MediaUncheckedUpdateWithoutGameMediaInput>
+}
+
+export type MediaUpdateWithoutGameMediaInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  storagePath?: Prisma.StringFieldUpdateOperationsInput | string
+  filename?: Prisma.StringFieldUpdateOperationsInput | string
+  mimeType?: Prisma.StringFieldUpdateOperationsInput | string
+  fileSize?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
+  width?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
+  height?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
+  duration?: Prisma.NullableFloatFieldUpdateOperationsInput | number | null
+  mediaType?: Prisma.MediaTypeUpdateOneRequiredWithoutMediaNestedInput
+  weaponMedia?: Prisma.WeaponMediaUpdateManyWithoutMediaNestedInput
+  survivorMedia?: Prisma.SurvivorMediaUpdateManyWithoutMediaNestedInput
+  specialInfectedMedia?: Prisma.SpecialInfectedMediaUpdateManyWithoutMediaNestedInput
+  commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUpdateManyWithoutMediaNestedInput
+  itemMedia?: Prisma.ItemMediaUpdateManyWithoutMediaNestedInput
+  campaignMedia?: Prisma.CampaignMediaUpdateManyWithoutMediaNestedInput
+  chapterMedia?: Prisma.ChapterMediaUpdateManyWithoutMediaNestedInput
+}
+
+export type MediaUncheckedUpdateWithoutGameMediaInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  mediaTypeId?: Prisma.StringFieldUpdateOperationsInput | string
+  storagePath?: Prisma.StringFieldUpdateOperationsInput | string
+  filename?: Prisma.StringFieldUpdateOperationsInput | string
+  mimeType?: Prisma.StringFieldUpdateOperationsInput | string
+  fileSize?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
+  width?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
+  height?: Prisma.NullableIntFieldUpdateOperationsInput | number | null
+  duration?: Prisma.NullableFloatFieldUpdateOperationsInput | number | null
+  weaponMedia?: Prisma.WeaponMediaUncheckedUpdateManyWithoutMediaNestedInput
+  survivorMedia?: Prisma.SurvivorMediaUncheckedUpdateManyWithoutMediaNestedInput
+  specialInfectedMedia?: Prisma.SpecialInfectedMediaUncheckedUpdateManyWithoutMediaNestedInput
+  commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUncheckedUpdateManyWithoutMediaNestedInput
+  itemMedia?: Prisma.ItemMediaUncheckedUpdateManyWithoutMediaNestedInput
+  campaignMedia?: Prisma.CampaignMediaUncheckedUpdateManyWithoutMediaNestedInput
+  chapterMedia?: Prisma.ChapterMediaUncheckedUpdateManyWithoutMediaNestedInput
+}
+
 export type MediaCreateWithoutWeaponMediaInput = {
   id?: string
   storagePath: string
@@ -754,6 +869,7 @@ export type MediaCreateWithoutWeaponMediaInput = {
   itemMedia?: Prisma.ItemMediaCreateNestedManyWithoutMediaInput
   campaignMedia?: Prisma.CampaignMediaCreateNestedManyWithoutMediaInput
   chapterMedia?: Prisma.ChapterMediaCreateNestedManyWithoutMediaInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutMediaInput
 }
 
 export type MediaUncheckedCreateWithoutWeaponMediaInput = {
@@ -772,6 +888,7 @@ export type MediaUncheckedCreateWithoutWeaponMediaInput = {
   itemMedia?: Prisma.ItemMediaUncheckedCreateNestedManyWithoutMediaInput
   campaignMedia?: Prisma.CampaignMediaUncheckedCreateNestedManyWithoutMediaInput
   chapterMedia?: Prisma.ChapterMediaUncheckedCreateNestedManyWithoutMediaInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutMediaInput
 }
 
 export type MediaCreateOrConnectWithoutWeaponMediaInput = {
@@ -806,6 +923,7 @@ export type MediaUpdateWithoutWeaponMediaInput = {
   itemMedia?: Prisma.ItemMediaUpdateManyWithoutMediaNestedInput
   campaignMedia?: Prisma.CampaignMediaUpdateManyWithoutMediaNestedInput
   chapterMedia?: Prisma.ChapterMediaUpdateManyWithoutMediaNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutMediaNestedInput
 }
 
 export type MediaUncheckedUpdateWithoutWeaponMediaInput = {
@@ -824,6 +942,7 @@ export type MediaUncheckedUpdateWithoutWeaponMediaInput = {
   itemMedia?: Prisma.ItemMediaUncheckedUpdateManyWithoutMediaNestedInput
   campaignMedia?: Prisma.CampaignMediaUncheckedUpdateManyWithoutMediaNestedInput
   chapterMedia?: Prisma.ChapterMediaUncheckedUpdateManyWithoutMediaNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutMediaNestedInput
 }
 
 export type MediaCreateWithoutCampaignMediaInput = {
@@ -842,6 +961,7 @@ export type MediaCreateWithoutCampaignMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaCreateNestedManyWithoutMediaInput
   itemMedia?: Prisma.ItemMediaCreateNestedManyWithoutMediaInput
   chapterMedia?: Prisma.ChapterMediaCreateNestedManyWithoutMediaInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutMediaInput
 }
 
 export type MediaUncheckedCreateWithoutCampaignMediaInput = {
@@ -860,6 +980,7 @@ export type MediaUncheckedCreateWithoutCampaignMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUncheckedCreateNestedManyWithoutMediaInput
   itemMedia?: Prisma.ItemMediaUncheckedCreateNestedManyWithoutMediaInput
   chapterMedia?: Prisma.ChapterMediaUncheckedCreateNestedManyWithoutMediaInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutMediaInput
 }
 
 export type MediaCreateOrConnectWithoutCampaignMediaInput = {
@@ -894,6 +1015,7 @@ export type MediaUpdateWithoutCampaignMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUpdateManyWithoutMediaNestedInput
   itemMedia?: Prisma.ItemMediaUpdateManyWithoutMediaNestedInput
   chapterMedia?: Prisma.ChapterMediaUpdateManyWithoutMediaNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutMediaNestedInput
 }
 
 export type MediaUncheckedUpdateWithoutCampaignMediaInput = {
@@ -912,6 +1034,7 @@ export type MediaUncheckedUpdateWithoutCampaignMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUncheckedUpdateManyWithoutMediaNestedInput
   itemMedia?: Prisma.ItemMediaUncheckedUpdateManyWithoutMediaNestedInput
   chapterMedia?: Prisma.ChapterMediaUncheckedUpdateManyWithoutMediaNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutMediaNestedInput
 }
 
 export type MediaCreateWithoutChapterMediaInput = {
@@ -930,6 +1053,7 @@ export type MediaCreateWithoutChapterMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaCreateNestedManyWithoutMediaInput
   itemMedia?: Prisma.ItemMediaCreateNestedManyWithoutMediaInput
   campaignMedia?: Prisma.CampaignMediaCreateNestedManyWithoutMediaInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutMediaInput
 }
 
 export type MediaUncheckedCreateWithoutChapterMediaInput = {
@@ -948,6 +1072,7 @@ export type MediaUncheckedCreateWithoutChapterMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUncheckedCreateNestedManyWithoutMediaInput
   itemMedia?: Prisma.ItemMediaUncheckedCreateNestedManyWithoutMediaInput
   campaignMedia?: Prisma.CampaignMediaUncheckedCreateNestedManyWithoutMediaInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutMediaInput
 }
 
 export type MediaCreateOrConnectWithoutChapterMediaInput = {
@@ -982,6 +1107,7 @@ export type MediaUpdateWithoutChapterMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUpdateManyWithoutMediaNestedInput
   itemMedia?: Prisma.ItemMediaUpdateManyWithoutMediaNestedInput
   campaignMedia?: Prisma.CampaignMediaUpdateManyWithoutMediaNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutMediaNestedInput
 }
 
 export type MediaUncheckedUpdateWithoutChapterMediaInput = {
@@ -1000,6 +1126,7 @@ export type MediaUncheckedUpdateWithoutChapterMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUncheckedUpdateManyWithoutMediaNestedInput
   itemMedia?: Prisma.ItemMediaUncheckedUpdateManyWithoutMediaNestedInput
   campaignMedia?: Prisma.CampaignMediaUncheckedUpdateManyWithoutMediaNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutMediaNestedInput
 }
 
 export type MediaCreateWithoutSurvivorMediaInput = {
@@ -1018,6 +1145,7 @@ export type MediaCreateWithoutSurvivorMediaInput = {
   itemMedia?: Prisma.ItemMediaCreateNestedManyWithoutMediaInput
   campaignMedia?: Prisma.CampaignMediaCreateNestedManyWithoutMediaInput
   chapterMedia?: Prisma.ChapterMediaCreateNestedManyWithoutMediaInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutMediaInput
 }
 
 export type MediaUncheckedCreateWithoutSurvivorMediaInput = {
@@ -1036,6 +1164,7 @@ export type MediaUncheckedCreateWithoutSurvivorMediaInput = {
   itemMedia?: Prisma.ItemMediaUncheckedCreateNestedManyWithoutMediaInput
   campaignMedia?: Prisma.CampaignMediaUncheckedCreateNestedManyWithoutMediaInput
   chapterMedia?: Prisma.ChapterMediaUncheckedCreateNestedManyWithoutMediaInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutMediaInput
 }
 
 export type MediaCreateOrConnectWithoutSurvivorMediaInput = {
@@ -1070,6 +1199,7 @@ export type MediaUpdateWithoutSurvivorMediaInput = {
   itemMedia?: Prisma.ItemMediaUpdateManyWithoutMediaNestedInput
   campaignMedia?: Prisma.CampaignMediaUpdateManyWithoutMediaNestedInput
   chapterMedia?: Prisma.ChapterMediaUpdateManyWithoutMediaNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutMediaNestedInput
 }
 
 export type MediaUncheckedUpdateWithoutSurvivorMediaInput = {
@@ -1088,6 +1218,7 @@ export type MediaUncheckedUpdateWithoutSurvivorMediaInput = {
   itemMedia?: Prisma.ItemMediaUncheckedUpdateManyWithoutMediaNestedInput
   campaignMedia?: Prisma.CampaignMediaUncheckedUpdateManyWithoutMediaNestedInput
   chapterMedia?: Prisma.ChapterMediaUncheckedUpdateManyWithoutMediaNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutMediaNestedInput
 }
 
 export type MediaCreateWithoutSpecialInfectedMediaInput = {
@@ -1106,6 +1237,7 @@ export type MediaCreateWithoutSpecialInfectedMediaInput = {
   itemMedia?: Prisma.ItemMediaCreateNestedManyWithoutMediaInput
   campaignMedia?: Prisma.CampaignMediaCreateNestedManyWithoutMediaInput
   chapterMedia?: Prisma.ChapterMediaCreateNestedManyWithoutMediaInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutMediaInput
 }
 
 export type MediaUncheckedCreateWithoutSpecialInfectedMediaInput = {
@@ -1124,6 +1256,7 @@ export type MediaUncheckedCreateWithoutSpecialInfectedMediaInput = {
   itemMedia?: Prisma.ItemMediaUncheckedCreateNestedManyWithoutMediaInput
   campaignMedia?: Prisma.CampaignMediaUncheckedCreateNestedManyWithoutMediaInput
   chapterMedia?: Prisma.ChapterMediaUncheckedCreateNestedManyWithoutMediaInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutMediaInput
 }
 
 export type MediaCreateOrConnectWithoutSpecialInfectedMediaInput = {
@@ -1158,6 +1291,7 @@ export type MediaUpdateWithoutSpecialInfectedMediaInput = {
   itemMedia?: Prisma.ItemMediaUpdateManyWithoutMediaNestedInput
   campaignMedia?: Prisma.CampaignMediaUpdateManyWithoutMediaNestedInput
   chapterMedia?: Prisma.ChapterMediaUpdateManyWithoutMediaNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutMediaNestedInput
 }
 
 export type MediaUncheckedUpdateWithoutSpecialInfectedMediaInput = {
@@ -1176,6 +1310,7 @@ export type MediaUncheckedUpdateWithoutSpecialInfectedMediaInput = {
   itemMedia?: Prisma.ItemMediaUncheckedUpdateManyWithoutMediaNestedInput
   campaignMedia?: Prisma.CampaignMediaUncheckedUpdateManyWithoutMediaNestedInput
   chapterMedia?: Prisma.ChapterMediaUncheckedUpdateManyWithoutMediaNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutMediaNestedInput
 }
 
 export type MediaCreateWithoutCommonInfectedVariantMediaInput = {
@@ -1194,6 +1329,7 @@ export type MediaCreateWithoutCommonInfectedVariantMediaInput = {
   itemMedia?: Prisma.ItemMediaCreateNestedManyWithoutMediaInput
   campaignMedia?: Prisma.CampaignMediaCreateNestedManyWithoutMediaInput
   chapterMedia?: Prisma.ChapterMediaCreateNestedManyWithoutMediaInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutMediaInput
 }
 
 export type MediaUncheckedCreateWithoutCommonInfectedVariantMediaInput = {
@@ -1212,6 +1348,7 @@ export type MediaUncheckedCreateWithoutCommonInfectedVariantMediaInput = {
   itemMedia?: Prisma.ItemMediaUncheckedCreateNestedManyWithoutMediaInput
   campaignMedia?: Prisma.CampaignMediaUncheckedCreateNestedManyWithoutMediaInput
   chapterMedia?: Prisma.ChapterMediaUncheckedCreateNestedManyWithoutMediaInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutMediaInput
 }
 
 export type MediaCreateOrConnectWithoutCommonInfectedVariantMediaInput = {
@@ -1246,6 +1383,7 @@ export type MediaUpdateWithoutCommonInfectedVariantMediaInput = {
   itemMedia?: Prisma.ItemMediaUpdateManyWithoutMediaNestedInput
   campaignMedia?: Prisma.CampaignMediaUpdateManyWithoutMediaNestedInput
   chapterMedia?: Prisma.ChapterMediaUpdateManyWithoutMediaNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutMediaNestedInput
 }
 
 export type MediaUncheckedUpdateWithoutCommonInfectedVariantMediaInput = {
@@ -1264,6 +1402,7 @@ export type MediaUncheckedUpdateWithoutCommonInfectedVariantMediaInput = {
   itemMedia?: Prisma.ItemMediaUncheckedUpdateManyWithoutMediaNestedInput
   campaignMedia?: Prisma.CampaignMediaUncheckedUpdateManyWithoutMediaNestedInput
   chapterMedia?: Prisma.ChapterMediaUncheckedUpdateManyWithoutMediaNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutMediaNestedInput
 }
 
 export type MediaCreateWithoutItemMediaInput = {
@@ -1282,6 +1421,7 @@ export type MediaCreateWithoutItemMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaCreateNestedManyWithoutMediaInput
   campaignMedia?: Prisma.CampaignMediaCreateNestedManyWithoutMediaInput
   chapterMedia?: Prisma.ChapterMediaCreateNestedManyWithoutMediaInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutMediaInput
 }
 
 export type MediaUncheckedCreateWithoutItemMediaInput = {
@@ -1300,6 +1440,7 @@ export type MediaUncheckedCreateWithoutItemMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUncheckedCreateNestedManyWithoutMediaInput
   campaignMedia?: Prisma.CampaignMediaUncheckedCreateNestedManyWithoutMediaInput
   chapterMedia?: Prisma.ChapterMediaUncheckedCreateNestedManyWithoutMediaInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutMediaInput
 }
 
 export type MediaCreateOrConnectWithoutItemMediaInput = {
@@ -1334,6 +1475,7 @@ export type MediaUpdateWithoutItemMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUpdateManyWithoutMediaNestedInput
   campaignMedia?: Prisma.CampaignMediaUpdateManyWithoutMediaNestedInput
   chapterMedia?: Prisma.ChapterMediaUpdateManyWithoutMediaNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutMediaNestedInput
 }
 
 export type MediaUncheckedUpdateWithoutItemMediaInput = {
@@ -1352,6 +1494,7 @@ export type MediaUncheckedUpdateWithoutItemMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUncheckedUpdateManyWithoutMediaNestedInput
   campaignMedia?: Prisma.CampaignMediaUncheckedUpdateManyWithoutMediaNestedInput
   chapterMedia?: Prisma.ChapterMediaUncheckedUpdateManyWithoutMediaNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutMediaNestedInput
 }
 
 export type MediaCreateManyMediaTypeInput = {
@@ -1381,6 +1524,7 @@ export type MediaUpdateWithoutMediaTypeInput = {
   itemMedia?: Prisma.ItemMediaUpdateManyWithoutMediaNestedInput
   campaignMedia?: Prisma.CampaignMediaUpdateManyWithoutMediaNestedInput
   chapterMedia?: Prisma.ChapterMediaUpdateManyWithoutMediaNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutMediaNestedInput
 }
 
 export type MediaUncheckedUpdateWithoutMediaTypeInput = {
@@ -1399,6 +1543,7 @@ export type MediaUncheckedUpdateWithoutMediaTypeInput = {
   itemMedia?: Prisma.ItemMediaUncheckedUpdateManyWithoutMediaNestedInput
   campaignMedia?: Prisma.CampaignMediaUncheckedUpdateManyWithoutMediaNestedInput
   chapterMedia?: Prisma.ChapterMediaUncheckedUpdateManyWithoutMediaNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutMediaNestedInput
 }
 
 export type MediaUncheckedUpdateManyWithoutMediaTypeInput = {
@@ -1425,6 +1570,7 @@ export type MediaCountOutputType = {
   itemMedia: number
   campaignMedia: number
   chapterMedia: number
+  gameMedia: number
 }
 
 export type MediaCountOutputTypeSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
@@ -1435,6 +1581,7 @@ export type MediaCountOutputTypeSelect<ExtArgs extends runtime.Types.Extensions.
   itemMedia?: boolean | MediaCountOutputTypeCountItemMediaArgs
   campaignMedia?: boolean | MediaCountOutputTypeCountCampaignMediaArgs
   chapterMedia?: boolean | MediaCountOutputTypeCountChapterMediaArgs
+  gameMedia?: boolean | MediaCountOutputTypeCountGameMediaArgs
 }
 
 /**
@@ -1496,6 +1643,13 @@ export type MediaCountOutputTypeCountChapterMediaArgs<ExtArgs extends runtime.Ty
   where?: Prisma.ChapterMediaWhereInput
 }
 
+/**
+ * MediaCountOutputType without action
+ */
+export type MediaCountOutputTypeCountGameMediaArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  where?: Prisma.GameMediaWhereInput
+}
+
 
 export type MediaSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
@@ -1515,6 +1669,7 @@ export type MediaSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = 
   itemMedia?: boolean | Prisma.Media$itemMediaArgs<ExtArgs>
   campaignMedia?: boolean | Prisma.Media$campaignMediaArgs<ExtArgs>
   chapterMedia?: boolean | Prisma.Media$chapterMediaArgs<ExtArgs>
+  gameMedia?: boolean | Prisma.Media$gameMediaArgs<ExtArgs>
   _count?: boolean | Prisma.MediaCountOutputTypeDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["media"]>
 
@@ -1566,6 +1721,7 @@ export type MediaInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs =
   itemMedia?: boolean | Prisma.Media$itemMediaArgs<ExtArgs>
   campaignMedia?: boolean | Prisma.Media$campaignMediaArgs<ExtArgs>
   chapterMedia?: boolean | Prisma.Media$chapterMediaArgs<ExtArgs>
+  gameMedia?: boolean | Prisma.Media$gameMediaArgs<ExtArgs>
   _count?: boolean | Prisma.MediaCountOutputTypeDefaultArgs<ExtArgs>
 }
 export type MediaIncludeCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
@@ -1586,6 +1742,7 @@ export type $MediaPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs 
     itemMedia: Prisma.$ItemMediaPayload<ExtArgs>[]
     campaignMedia: Prisma.$CampaignMediaPayload<ExtArgs>[]
     chapterMedia: Prisma.$ChapterMediaPayload<ExtArgs>[]
+    gameMedia: Prisma.$GameMediaPayload<ExtArgs>[]
   }
   scalars: runtime.Types.Extensions.GetPayloadResult<{
     id: string
@@ -1999,6 +2156,7 @@ export interface Prisma__MediaClient<T, Null = never, ExtArgs extends runtime.Ty
   itemMedia<T extends Prisma.Media$itemMediaArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Media$itemMediaArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$ItemMediaPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   campaignMedia<T extends Prisma.Media$campaignMediaArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Media$campaignMediaArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$CampaignMediaPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   chapterMedia<T extends Prisma.Media$chapterMediaArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Media$chapterMediaArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$ChapterMediaPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+  gameMedia<T extends Prisma.Media$gameMediaArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Media$gameMediaArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$GameMediaPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   /**
    * Attaches callbacks for the resolution and/or rejection of the Promise.
    * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -2603,6 +2761,30 @@ export type Media$chapterMediaArgs<ExtArgs extends runtime.Types.Extensions.Inte
   take?: number
   skip?: number
   distinct?: Prisma.ChapterMediaScalarFieldEnum | Prisma.ChapterMediaScalarFieldEnum[]
+}
+
+/**
+ * Media.gameMedia
+ */
+export type Media$gameMediaArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  /**
+   * Select specific fields to fetch from the GameMedia
+   */
+  select?: Prisma.GameMediaSelect<ExtArgs> | null
+  /**
+   * Omit specific fields from the GameMedia
+   */
+  omit?: Prisma.GameMediaOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.GameMediaInclude<ExtArgs> | null
+  where?: Prisma.GameMediaWhereInput
+  orderBy?: Prisma.GameMediaOrderByWithRelationInput | Prisma.GameMediaOrderByWithRelationInput[]
+  cursor?: Prisma.GameMediaWhereUniqueInput
+  take?: number
+  skip?: number
+  distinct?: Prisma.GameMediaScalarFieldEnum | Prisma.GameMediaScalarFieldEnum[]
 }
 
 /**

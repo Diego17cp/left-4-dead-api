@@ -71,6 +71,7 @@ export const ModelName = {
   MediaType: 'MediaType',
   MediaRole: 'MediaRole',
   Media: 'Media',
+  GameMedia: 'GameMedia',
   WeaponMedia: 'WeaponMedia',
   CampaignMedia: 'CampaignMedia',
   ChapterMedia: 'ChapterMedia',
@@ -311,6 +312,16 @@ export const MediaScalarFieldEnum = {
 } as const
 
 export type MediaScalarFieldEnum = (typeof MediaScalarFieldEnum)[keyof typeof MediaScalarFieldEnum]
+
+
+export const GameMediaScalarFieldEnum = {
+  gameId: 'gameId',
+  mediaId: 'mediaId',
+  mediaRoleId: 'mediaRoleId',
+  displayOrder: 'displayOrder'
+} as const
+
+export type GameMediaScalarFieldEnum = (typeof GameMediaScalarFieldEnum)[keyof typeof GameMediaScalarFieldEnum]
 
 
 export const WeaponMediaScalarFieldEnum = {

@@ -417,6 +417,7 @@ export const ModelName = {
   MediaType: 'MediaType',
   MediaRole: 'MediaRole',
   Media: 'Media',
+  GameMedia: 'GameMedia',
   WeaponMedia: 'WeaponMedia',
   CampaignMedia: 'CampaignMedia',
   ChapterMedia: 'ChapterMedia',
@@ -439,7 +440,7 @@ export type TypeMap<ExtArgs extends runtime.Types.Extensions.InternalArgs = runt
     omit: GlobalOmitOptions
   }
   meta: {
-    modelProps: "game" | "contentSource" | "campaign" | "chapter" | "survivor" | "specialInfected" | "commonInfectedVariant" | "weaponCategory" | "weaponClass" | "weaponTier" | "ammoType" | "weapon" | "rangedWeaponStats" | "meleeWeaponStats" | "throwableWeaponStats" | "itemCategory" | "item" | "mediaType" | "mediaRole" | "media" | "weaponMedia" | "campaignMedia" | "chapterMedia" | "survivorMedia" | "specialInfectedMedia" | "commonInfectedVariantMedia" | "itemMedia"
+    modelProps: "game" | "contentSource" | "campaign" | "chapter" | "survivor" | "specialInfected" | "commonInfectedVariant" | "weaponCategory" | "weaponClass" | "weaponTier" | "ammoType" | "weapon" | "rangedWeaponStats" | "meleeWeaponStats" | "throwableWeaponStats" | "itemCategory" | "item" | "mediaType" | "mediaRole" | "media" | "gameMedia" | "weaponMedia" | "campaignMedia" | "chapterMedia" | "survivorMedia" | "specialInfectedMedia" | "commonInfectedVariantMedia" | "itemMedia"
     txIsolationLevel: TransactionIsolationLevel
   }
   model: {
@@ -1923,6 +1924,80 @@ export type TypeMap<ExtArgs extends runtime.Types.Extensions.InternalArgs = runt
         }
       }
     }
+    GameMedia: {
+      payload: Prisma.$GameMediaPayload<ExtArgs>
+      fields: Prisma.GameMediaFieldRefs
+      operations: {
+        findUnique: {
+          args: Prisma.GameMediaFindUniqueArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$GameMediaPayload> | null
+        }
+        findUniqueOrThrow: {
+          args: Prisma.GameMediaFindUniqueOrThrowArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$GameMediaPayload>
+        }
+        findFirst: {
+          args: Prisma.GameMediaFindFirstArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$GameMediaPayload> | null
+        }
+        findFirstOrThrow: {
+          args: Prisma.GameMediaFindFirstOrThrowArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$GameMediaPayload>
+        }
+        findMany: {
+          args: Prisma.GameMediaFindManyArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$GameMediaPayload>[]
+        }
+        create: {
+          args: Prisma.GameMediaCreateArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$GameMediaPayload>
+        }
+        createMany: {
+          args: Prisma.GameMediaCreateManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        createManyAndReturn: {
+          args: Prisma.GameMediaCreateManyAndReturnArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$GameMediaPayload>[]
+        }
+        delete: {
+          args: Prisma.GameMediaDeleteArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$GameMediaPayload>
+        }
+        update: {
+          args: Prisma.GameMediaUpdateArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$GameMediaPayload>
+        }
+        deleteMany: {
+          args: Prisma.GameMediaDeleteManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        updateMany: {
+          args: Prisma.GameMediaUpdateManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        updateManyAndReturn: {
+          args: Prisma.GameMediaUpdateManyAndReturnArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$GameMediaPayload>[]
+        }
+        upsert: {
+          args: Prisma.GameMediaUpsertArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$GameMediaPayload>
+        }
+        aggregate: {
+          args: Prisma.GameMediaAggregateArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.AggregateGameMedia>
+        }
+        groupBy: {
+          args: Prisma.GameMediaGroupByArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.GameMediaGroupByOutputType>[]
+        }
+        count: {
+          args: Prisma.GameMediaCountArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.GameMediaCountAggregateOutputType> | number
+        }
+      }
+    }
     WeaponMedia: {
       payload: Prisma.$WeaponMediaPayload<ExtArgs>
       fields: Prisma.WeaponMediaFieldRefs
@@ -2697,6 +2772,16 @@ export const MediaScalarFieldEnum = {
 export type MediaScalarFieldEnum = (typeof MediaScalarFieldEnum)[keyof typeof MediaScalarFieldEnum]
 
 
+export const GameMediaScalarFieldEnum = {
+  gameId: 'gameId',
+  mediaId: 'mediaId',
+  mediaRoleId: 'mediaRoleId',
+  displayOrder: 'displayOrder'
+} as const
+
+export type GameMediaScalarFieldEnum = (typeof GameMediaScalarFieldEnum)[keyof typeof GameMediaScalarFieldEnum]
+
+
 export const WeaponMediaScalarFieldEnum = {
   weaponId: 'weaponId',
   mediaId: 'mediaId',
@@ -3037,6 +3122,7 @@ export type GlobalOmitConfig = {
   mediaType?: Prisma.MediaTypeOmit
   mediaRole?: Prisma.MediaRoleOmit
   media?: Prisma.MediaOmit
+  gameMedia?: Prisma.GameMediaOmit
   weaponMedia?: Prisma.WeaponMediaOmit
   campaignMedia?: Prisma.CampaignMediaOmit
   chapterMedia?: Prisma.ChapterMediaOmit

@@ -165,6 +165,7 @@ export type MediaRoleWhereInput = {
   itemMedia?: Prisma.ItemMediaListRelationFilter
   campaignMedia?: Prisma.CampaignMediaListRelationFilter
   chapterMedia?: Prisma.ChapterMediaListRelationFilter
+  gameMedia?: Prisma.GameMediaListRelationFilter
 }
 
 export type MediaRoleOrderByWithRelationInput = {
@@ -177,6 +178,7 @@ export type MediaRoleOrderByWithRelationInput = {
   itemMedia?: Prisma.ItemMediaOrderByRelationAggregateInput
   campaignMedia?: Prisma.CampaignMediaOrderByRelationAggregateInput
   chapterMedia?: Prisma.ChapterMediaOrderByRelationAggregateInput
+  gameMedia?: Prisma.GameMediaOrderByRelationAggregateInput
 }
 
 export type MediaRoleWhereUniqueInput = Prisma.AtLeast<{
@@ -192,6 +194,7 @@ export type MediaRoleWhereUniqueInput = Prisma.AtLeast<{
   itemMedia?: Prisma.ItemMediaListRelationFilter
   campaignMedia?: Prisma.CampaignMediaListRelationFilter
   chapterMedia?: Prisma.ChapterMediaListRelationFilter
+  gameMedia?: Prisma.GameMediaListRelationFilter
 }, "id" | "name">
 
 export type MediaRoleOrderByWithAggregationInput = {
@@ -220,6 +223,7 @@ export type MediaRoleCreateInput = {
   itemMedia?: Prisma.ItemMediaCreateNestedManyWithoutMediaRoleInput
   campaignMedia?: Prisma.CampaignMediaCreateNestedManyWithoutMediaRoleInput
   chapterMedia?: Prisma.ChapterMediaCreateNestedManyWithoutMediaRoleInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutMediaRoleInput
 }
 
 export type MediaRoleUncheckedCreateInput = {
@@ -232,6 +236,7 @@ export type MediaRoleUncheckedCreateInput = {
   itemMedia?: Prisma.ItemMediaUncheckedCreateNestedManyWithoutMediaRoleInput
   campaignMedia?: Prisma.CampaignMediaUncheckedCreateNestedManyWithoutMediaRoleInput
   chapterMedia?: Prisma.ChapterMediaUncheckedCreateNestedManyWithoutMediaRoleInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutMediaRoleInput
 }
 
 export type MediaRoleUpdateInput = {
@@ -244,6 +249,7 @@ export type MediaRoleUpdateInput = {
   itemMedia?: Prisma.ItemMediaUpdateManyWithoutMediaRoleNestedInput
   campaignMedia?: Prisma.CampaignMediaUpdateManyWithoutMediaRoleNestedInput
   chapterMedia?: Prisma.ChapterMediaUpdateManyWithoutMediaRoleNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutMediaRoleNestedInput
 }
 
 export type MediaRoleUncheckedUpdateInput = {
@@ -256,6 +262,7 @@ export type MediaRoleUncheckedUpdateInput = {
   itemMedia?: Prisma.ItemMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
   campaignMedia?: Prisma.CampaignMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
   chapterMedia?: Prisma.ChapterMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
 }
 
 export type MediaRoleCreateManyInput = {
@@ -291,6 +298,20 @@ export type MediaRoleMinOrderByAggregateInput = {
 export type MediaRoleScalarRelationFilter = {
   is?: Prisma.MediaRoleWhereInput
   isNot?: Prisma.MediaRoleWhereInput
+}
+
+export type MediaRoleCreateNestedOneWithoutGameMediaInput = {
+  create?: Prisma.XOR<Prisma.MediaRoleCreateWithoutGameMediaInput, Prisma.MediaRoleUncheckedCreateWithoutGameMediaInput>
+  connectOrCreate?: Prisma.MediaRoleCreateOrConnectWithoutGameMediaInput
+  connect?: Prisma.MediaRoleWhereUniqueInput
+}
+
+export type MediaRoleUpdateOneRequiredWithoutGameMediaNestedInput = {
+  create?: Prisma.XOR<Prisma.MediaRoleCreateWithoutGameMediaInput, Prisma.MediaRoleUncheckedCreateWithoutGameMediaInput>
+  connectOrCreate?: Prisma.MediaRoleCreateOrConnectWithoutGameMediaInput
+  upsert?: Prisma.MediaRoleUpsertWithoutGameMediaInput
+  connect?: Prisma.MediaRoleWhereUniqueInput
+  update?: Prisma.XOR<Prisma.XOR<Prisma.MediaRoleUpdateToOneWithWhereWithoutGameMediaInput, Prisma.MediaRoleUpdateWithoutGameMediaInput>, Prisma.MediaRoleUncheckedUpdateWithoutGameMediaInput>
 }
 
 export type MediaRoleCreateNestedOneWithoutWeaponMediaInput = {
@@ -391,6 +412,70 @@ export type MediaRoleUpdateOneRequiredWithoutItemMediaNestedInput = {
   update?: Prisma.XOR<Prisma.XOR<Prisma.MediaRoleUpdateToOneWithWhereWithoutItemMediaInput, Prisma.MediaRoleUpdateWithoutItemMediaInput>, Prisma.MediaRoleUncheckedUpdateWithoutItemMediaInput>
 }
 
+export type MediaRoleCreateWithoutGameMediaInput = {
+  id?: string
+  name: string
+  weaponMedia?: Prisma.WeaponMediaCreateNestedManyWithoutMediaRoleInput
+  survivorMedia?: Prisma.SurvivorMediaCreateNestedManyWithoutMediaRoleInput
+  specialInfectedMedia?: Prisma.SpecialInfectedMediaCreateNestedManyWithoutMediaRoleInput
+  commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaCreateNestedManyWithoutMediaRoleInput
+  itemMedia?: Prisma.ItemMediaCreateNestedManyWithoutMediaRoleInput
+  campaignMedia?: Prisma.CampaignMediaCreateNestedManyWithoutMediaRoleInput
+  chapterMedia?: Prisma.ChapterMediaCreateNestedManyWithoutMediaRoleInput
+}
+
+export type MediaRoleUncheckedCreateWithoutGameMediaInput = {
+  id?: string
+  name: string
+  weaponMedia?: Prisma.WeaponMediaUncheckedCreateNestedManyWithoutMediaRoleInput
+  survivorMedia?: Prisma.SurvivorMediaUncheckedCreateNestedManyWithoutMediaRoleInput
+  specialInfectedMedia?: Prisma.SpecialInfectedMediaUncheckedCreateNestedManyWithoutMediaRoleInput
+  commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUncheckedCreateNestedManyWithoutMediaRoleInput
+  itemMedia?: Prisma.ItemMediaUncheckedCreateNestedManyWithoutMediaRoleInput
+  campaignMedia?: Prisma.CampaignMediaUncheckedCreateNestedManyWithoutMediaRoleInput
+  chapterMedia?: Prisma.ChapterMediaUncheckedCreateNestedManyWithoutMediaRoleInput
+}
+
+export type MediaRoleCreateOrConnectWithoutGameMediaInput = {
+  where: Prisma.MediaRoleWhereUniqueInput
+  create: Prisma.XOR<Prisma.MediaRoleCreateWithoutGameMediaInput, Prisma.MediaRoleUncheckedCreateWithoutGameMediaInput>
+}
+
+export type MediaRoleUpsertWithoutGameMediaInput = {
+  update: Prisma.XOR<Prisma.MediaRoleUpdateWithoutGameMediaInput, Prisma.MediaRoleUncheckedUpdateWithoutGameMediaInput>
+  create: Prisma.XOR<Prisma.MediaRoleCreateWithoutGameMediaInput, Prisma.MediaRoleUncheckedCreateWithoutGameMediaInput>
+  where?: Prisma.MediaRoleWhereInput
+}
+
+export type MediaRoleUpdateToOneWithWhereWithoutGameMediaInput = {
+  where?: Prisma.MediaRoleWhereInput
+  data: Prisma.XOR<Prisma.MediaRoleUpdateWithoutGameMediaInput, Prisma.MediaRoleUncheckedUpdateWithoutGameMediaInput>
+}
+
+export type MediaRoleUpdateWithoutGameMediaInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  name?: Prisma.StringFieldUpdateOperationsInput | string
+  weaponMedia?: Prisma.WeaponMediaUpdateManyWithoutMediaRoleNestedInput
+  survivorMedia?: Prisma.SurvivorMediaUpdateManyWithoutMediaRoleNestedInput
+  specialInfectedMedia?: Prisma.SpecialInfectedMediaUpdateManyWithoutMediaRoleNestedInput
+  commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUpdateManyWithoutMediaRoleNestedInput
+  itemMedia?: Prisma.ItemMediaUpdateManyWithoutMediaRoleNestedInput
+  campaignMedia?: Prisma.CampaignMediaUpdateManyWithoutMediaRoleNestedInput
+  chapterMedia?: Prisma.ChapterMediaUpdateManyWithoutMediaRoleNestedInput
+}
+
+export type MediaRoleUncheckedUpdateWithoutGameMediaInput = {
+  id?: Prisma.StringFieldUpdateOperationsInput | string
+  name?: Prisma.StringFieldUpdateOperationsInput | string
+  weaponMedia?: Prisma.WeaponMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
+  survivorMedia?: Prisma.SurvivorMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
+  specialInfectedMedia?: Prisma.SpecialInfectedMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
+  commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
+  itemMedia?: Prisma.ItemMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
+  campaignMedia?: Prisma.CampaignMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
+  chapterMedia?: Prisma.ChapterMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
+}
+
 export type MediaRoleCreateWithoutWeaponMediaInput = {
   id?: string
   name: string
@@ -400,6 +485,7 @@ export type MediaRoleCreateWithoutWeaponMediaInput = {
   itemMedia?: Prisma.ItemMediaCreateNestedManyWithoutMediaRoleInput
   campaignMedia?: Prisma.CampaignMediaCreateNestedManyWithoutMediaRoleInput
   chapterMedia?: Prisma.ChapterMediaCreateNestedManyWithoutMediaRoleInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutMediaRoleInput
 }
 
 export type MediaRoleUncheckedCreateWithoutWeaponMediaInput = {
@@ -411,6 +497,7 @@ export type MediaRoleUncheckedCreateWithoutWeaponMediaInput = {
   itemMedia?: Prisma.ItemMediaUncheckedCreateNestedManyWithoutMediaRoleInput
   campaignMedia?: Prisma.CampaignMediaUncheckedCreateNestedManyWithoutMediaRoleInput
   chapterMedia?: Prisma.ChapterMediaUncheckedCreateNestedManyWithoutMediaRoleInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutMediaRoleInput
 }
 
 export type MediaRoleCreateOrConnectWithoutWeaponMediaInput = {
@@ -438,6 +525,7 @@ export type MediaRoleUpdateWithoutWeaponMediaInput = {
   itemMedia?: Prisma.ItemMediaUpdateManyWithoutMediaRoleNestedInput
   campaignMedia?: Prisma.CampaignMediaUpdateManyWithoutMediaRoleNestedInput
   chapterMedia?: Prisma.ChapterMediaUpdateManyWithoutMediaRoleNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutMediaRoleNestedInput
 }
 
 export type MediaRoleUncheckedUpdateWithoutWeaponMediaInput = {
@@ -449,6 +537,7 @@ export type MediaRoleUncheckedUpdateWithoutWeaponMediaInput = {
   itemMedia?: Prisma.ItemMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
   campaignMedia?: Prisma.CampaignMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
   chapterMedia?: Prisma.ChapterMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
 }
 
 export type MediaRoleCreateWithoutCampaignMediaInput = {
@@ -460,6 +549,7 @@ export type MediaRoleCreateWithoutCampaignMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaCreateNestedManyWithoutMediaRoleInput
   itemMedia?: Prisma.ItemMediaCreateNestedManyWithoutMediaRoleInput
   chapterMedia?: Prisma.ChapterMediaCreateNestedManyWithoutMediaRoleInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutMediaRoleInput
 }
 
 export type MediaRoleUncheckedCreateWithoutCampaignMediaInput = {
@@ -471,6 +561,7 @@ export type MediaRoleUncheckedCreateWithoutCampaignMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUncheckedCreateNestedManyWithoutMediaRoleInput
   itemMedia?: Prisma.ItemMediaUncheckedCreateNestedManyWithoutMediaRoleInput
   chapterMedia?: Prisma.ChapterMediaUncheckedCreateNestedManyWithoutMediaRoleInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutMediaRoleInput
 }
 
 export type MediaRoleCreateOrConnectWithoutCampaignMediaInput = {
@@ -498,6 +589,7 @@ export type MediaRoleUpdateWithoutCampaignMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUpdateManyWithoutMediaRoleNestedInput
   itemMedia?: Prisma.ItemMediaUpdateManyWithoutMediaRoleNestedInput
   chapterMedia?: Prisma.ChapterMediaUpdateManyWithoutMediaRoleNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutMediaRoleNestedInput
 }
 
 export type MediaRoleUncheckedUpdateWithoutCampaignMediaInput = {
@@ -509,6 +601,7 @@ export type MediaRoleUncheckedUpdateWithoutCampaignMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
   itemMedia?: Prisma.ItemMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
   chapterMedia?: Prisma.ChapterMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
 }
 
 export type MediaRoleCreateWithoutChapterMediaInput = {
@@ -520,6 +613,7 @@ export type MediaRoleCreateWithoutChapterMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaCreateNestedManyWithoutMediaRoleInput
   itemMedia?: Prisma.ItemMediaCreateNestedManyWithoutMediaRoleInput
   campaignMedia?: Prisma.CampaignMediaCreateNestedManyWithoutMediaRoleInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutMediaRoleInput
 }
 
 export type MediaRoleUncheckedCreateWithoutChapterMediaInput = {
@@ -531,6 +625,7 @@ export type MediaRoleUncheckedCreateWithoutChapterMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUncheckedCreateNestedManyWithoutMediaRoleInput
   itemMedia?: Prisma.ItemMediaUncheckedCreateNestedManyWithoutMediaRoleInput
   campaignMedia?: Prisma.CampaignMediaUncheckedCreateNestedManyWithoutMediaRoleInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutMediaRoleInput
 }
 
 export type MediaRoleCreateOrConnectWithoutChapterMediaInput = {
@@ -558,6 +653,7 @@ export type MediaRoleUpdateWithoutChapterMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUpdateManyWithoutMediaRoleNestedInput
   itemMedia?: Prisma.ItemMediaUpdateManyWithoutMediaRoleNestedInput
   campaignMedia?: Prisma.CampaignMediaUpdateManyWithoutMediaRoleNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutMediaRoleNestedInput
 }
 
 export type MediaRoleUncheckedUpdateWithoutChapterMediaInput = {
@@ -569,6 +665,7 @@ export type MediaRoleUncheckedUpdateWithoutChapterMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
   itemMedia?: Prisma.ItemMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
   campaignMedia?: Prisma.CampaignMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
 }
 
 export type MediaRoleCreateWithoutSurvivorMediaInput = {
@@ -580,6 +677,7 @@ export type MediaRoleCreateWithoutSurvivorMediaInput = {
   itemMedia?: Prisma.ItemMediaCreateNestedManyWithoutMediaRoleInput
   campaignMedia?: Prisma.CampaignMediaCreateNestedManyWithoutMediaRoleInput
   chapterMedia?: Prisma.ChapterMediaCreateNestedManyWithoutMediaRoleInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutMediaRoleInput
 }
 
 export type MediaRoleUncheckedCreateWithoutSurvivorMediaInput = {
@@ -591,6 +689,7 @@ export type MediaRoleUncheckedCreateWithoutSurvivorMediaInput = {
   itemMedia?: Prisma.ItemMediaUncheckedCreateNestedManyWithoutMediaRoleInput
   campaignMedia?: Prisma.CampaignMediaUncheckedCreateNestedManyWithoutMediaRoleInput
   chapterMedia?: Prisma.ChapterMediaUncheckedCreateNestedManyWithoutMediaRoleInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutMediaRoleInput
 }
 
 export type MediaRoleCreateOrConnectWithoutSurvivorMediaInput = {
@@ -618,6 +717,7 @@ export type MediaRoleUpdateWithoutSurvivorMediaInput = {
   itemMedia?: Prisma.ItemMediaUpdateManyWithoutMediaRoleNestedInput
   campaignMedia?: Prisma.CampaignMediaUpdateManyWithoutMediaRoleNestedInput
   chapterMedia?: Prisma.ChapterMediaUpdateManyWithoutMediaRoleNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutMediaRoleNestedInput
 }
 
 export type MediaRoleUncheckedUpdateWithoutSurvivorMediaInput = {
@@ -629,6 +729,7 @@ export type MediaRoleUncheckedUpdateWithoutSurvivorMediaInput = {
   itemMedia?: Prisma.ItemMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
   campaignMedia?: Prisma.CampaignMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
   chapterMedia?: Prisma.ChapterMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
 }
 
 export type MediaRoleCreateWithoutSpecialInfectedMediaInput = {
@@ -640,6 +741,7 @@ export type MediaRoleCreateWithoutSpecialInfectedMediaInput = {
   itemMedia?: Prisma.ItemMediaCreateNestedManyWithoutMediaRoleInput
   campaignMedia?: Prisma.CampaignMediaCreateNestedManyWithoutMediaRoleInput
   chapterMedia?: Prisma.ChapterMediaCreateNestedManyWithoutMediaRoleInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutMediaRoleInput
 }
 
 export type MediaRoleUncheckedCreateWithoutSpecialInfectedMediaInput = {
@@ -651,6 +753,7 @@ export type MediaRoleUncheckedCreateWithoutSpecialInfectedMediaInput = {
   itemMedia?: Prisma.ItemMediaUncheckedCreateNestedManyWithoutMediaRoleInput
   campaignMedia?: Prisma.CampaignMediaUncheckedCreateNestedManyWithoutMediaRoleInput
   chapterMedia?: Prisma.ChapterMediaUncheckedCreateNestedManyWithoutMediaRoleInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutMediaRoleInput
 }
 
 export type MediaRoleCreateOrConnectWithoutSpecialInfectedMediaInput = {
@@ -678,6 +781,7 @@ export type MediaRoleUpdateWithoutSpecialInfectedMediaInput = {
   itemMedia?: Prisma.ItemMediaUpdateManyWithoutMediaRoleNestedInput
   campaignMedia?: Prisma.CampaignMediaUpdateManyWithoutMediaRoleNestedInput
   chapterMedia?: Prisma.ChapterMediaUpdateManyWithoutMediaRoleNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutMediaRoleNestedInput
 }
 
 export type MediaRoleUncheckedUpdateWithoutSpecialInfectedMediaInput = {
@@ -689,6 +793,7 @@ export type MediaRoleUncheckedUpdateWithoutSpecialInfectedMediaInput = {
   itemMedia?: Prisma.ItemMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
   campaignMedia?: Prisma.CampaignMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
   chapterMedia?: Prisma.ChapterMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
 }
 
 export type MediaRoleCreateWithoutCommonInfectedVariantMediaInput = {
@@ -700,6 +805,7 @@ export type MediaRoleCreateWithoutCommonInfectedVariantMediaInput = {
   itemMedia?: Prisma.ItemMediaCreateNestedManyWithoutMediaRoleInput
   campaignMedia?: Prisma.CampaignMediaCreateNestedManyWithoutMediaRoleInput
   chapterMedia?: Prisma.ChapterMediaCreateNestedManyWithoutMediaRoleInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutMediaRoleInput
 }
 
 export type MediaRoleUncheckedCreateWithoutCommonInfectedVariantMediaInput = {
@@ -711,6 +817,7 @@ export type MediaRoleUncheckedCreateWithoutCommonInfectedVariantMediaInput = {
   itemMedia?: Prisma.ItemMediaUncheckedCreateNestedManyWithoutMediaRoleInput
   campaignMedia?: Prisma.CampaignMediaUncheckedCreateNestedManyWithoutMediaRoleInput
   chapterMedia?: Prisma.ChapterMediaUncheckedCreateNestedManyWithoutMediaRoleInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutMediaRoleInput
 }
 
 export type MediaRoleCreateOrConnectWithoutCommonInfectedVariantMediaInput = {
@@ -738,6 +845,7 @@ export type MediaRoleUpdateWithoutCommonInfectedVariantMediaInput = {
   itemMedia?: Prisma.ItemMediaUpdateManyWithoutMediaRoleNestedInput
   campaignMedia?: Prisma.CampaignMediaUpdateManyWithoutMediaRoleNestedInput
   chapterMedia?: Prisma.ChapterMediaUpdateManyWithoutMediaRoleNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutMediaRoleNestedInput
 }
 
 export type MediaRoleUncheckedUpdateWithoutCommonInfectedVariantMediaInput = {
@@ -749,6 +857,7 @@ export type MediaRoleUncheckedUpdateWithoutCommonInfectedVariantMediaInput = {
   itemMedia?: Prisma.ItemMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
   campaignMedia?: Prisma.CampaignMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
   chapterMedia?: Prisma.ChapterMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
 }
 
 export type MediaRoleCreateWithoutItemMediaInput = {
@@ -760,6 +869,7 @@ export type MediaRoleCreateWithoutItemMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaCreateNestedManyWithoutMediaRoleInput
   campaignMedia?: Prisma.CampaignMediaCreateNestedManyWithoutMediaRoleInput
   chapterMedia?: Prisma.ChapterMediaCreateNestedManyWithoutMediaRoleInput
+  gameMedia?: Prisma.GameMediaCreateNestedManyWithoutMediaRoleInput
 }
 
 export type MediaRoleUncheckedCreateWithoutItemMediaInput = {
@@ -771,6 +881,7 @@ export type MediaRoleUncheckedCreateWithoutItemMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUncheckedCreateNestedManyWithoutMediaRoleInput
   campaignMedia?: Prisma.CampaignMediaUncheckedCreateNestedManyWithoutMediaRoleInput
   chapterMedia?: Prisma.ChapterMediaUncheckedCreateNestedManyWithoutMediaRoleInput
+  gameMedia?: Prisma.GameMediaUncheckedCreateNestedManyWithoutMediaRoleInput
 }
 
 export type MediaRoleCreateOrConnectWithoutItemMediaInput = {
@@ -798,6 +909,7 @@ export type MediaRoleUpdateWithoutItemMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUpdateManyWithoutMediaRoleNestedInput
   campaignMedia?: Prisma.CampaignMediaUpdateManyWithoutMediaRoleNestedInput
   chapterMedia?: Prisma.ChapterMediaUpdateManyWithoutMediaRoleNestedInput
+  gameMedia?: Prisma.GameMediaUpdateManyWithoutMediaRoleNestedInput
 }
 
 export type MediaRoleUncheckedUpdateWithoutItemMediaInput = {
@@ -809,6 +921,7 @@ export type MediaRoleUncheckedUpdateWithoutItemMediaInput = {
   commonInfectedVariantMedia?: Prisma.CommonInfectedVariantMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
   campaignMedia?: Prisma.CampaignMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
   chapterMedia?: Prisma.ChapterMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
+  gameMedia?: Prisma.GameMediaUncheckedUpdateManyWithoutMediaRoleNestedInput
 }
 
 
@@ -824,6 +937,7 @@ export type MediaRoleCountOutputType = {
   itemMedia: number
   campaignMedia: number
   chapterMedia: number
+  gameMedia: number
 }
 
 export type MediaRoleCountOutputTypeSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
@@ -834,6 +948,7 @@ export type MediaRoleCountOutputTypeSelect<ExtArgs extends runtime.Types.Extensi
   itemMedia?: boolean | MediaRoleCountOutputTypeCountItemMediaArgs
   campaignMedia?: boolean | MediaRoleCountOutputTypeCountCampaignMediaArgs
   chapterMedia?: boolean | MediaRoleCountOutputTypeCountChapterMediaArgs
+  gameMedia?: boolean | MediaRoleCountOutputTypeCountGameMediaArgs
 }
 
 /**
@@ -895,6 +1010,13 @@ export type MediaRoleCountOutputTypeCountChapterMediaArgs<ExtArgs extends runtim
   where?: Prisma.ChapterMediaWhereInput
 }
 
+/**
+ * MediaRoleCountOutputType without action
+ */
+export type MediaRoleCountOutputTypeCountGameMediaArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  where?: Prisma.GameMediaWhereInput
+}
+
 
 export type MediaRoleSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
@@ -906,6 +1028,7 @@ export type MediaRoleSelect<ExtArgs extends runtime.Types.Extensions.InternalArg
   itemMedia?: boolean | Prisma.MediaRole$itemMediaArgs<ExtArgs>
   campaignMedia?: boolean | Prisma.MediaRole$campaignMediaArgs<ExtArgs>
   chapterMedia?: boolean | Prisma.MediaRole$chapterMediaArgs<ExtArgs>
+  gameMedia?: boolean | Prisma.MediaRole$gameMediaArgs<ExtArgs>
   _count?: boolean | Prisma.MediaRoleCountOutputTypeDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["mediaRole"]>
 
@@ -933,6 +1056,7 @@ export type MediaRoleInclude<ExtArgs extends runtime.Types.Extensions.InternalAr
   itemMedia?: boolean | Prisma.MediaRole$itemMediaArgs<ExtArgs>
   campaignMedia?: boolean | Prisma.MediaRole$campaignMediaArgs<ExtArgs>
   chapterMedia?: boolean | Prisma.MediaRole$chapterMediaArgs<ExtArgs>
+  gameMedia?: boolean | Prisma.MediaRole$gameMediaArgs<ExtArgs>
   _count?: boolean | Prisma.MediaRoleCountOutputTypeDefaultArgs<ExtArgs>
 }
 export type MediaRoleIncludeCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {}
@@ -948,6 +1072,7 @@ export type $MediaRolePayload<ExtArgs extends runtime.Types.Extensions.InternalA
     itemMedia: Prisma.$ItemMediaPayload<ExtArgs>[]
     campaignMedia: Prisma.$CampaignMediaPayload<ExtArgs>[]
     chapterMedia: Prisma.$ChapterMediaPayload<ExtArgs>[]
+    gameMedia: Prisma.$GameMediaPayload<ExtArgs>[]
   }
   scalars: runtime.Types.Extensions.GetPayloadResult<{
     id: string
@@ -1353,6 +1478,7 @@ export interface Prisma__MediaRoleClient<T, Null = never, ExtArgs extends runtim
   itemMedia<T extends Prisma.MediaRole$itemMediaArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.MediaRole$itemMediaArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$ItemMediaPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   campaignMedia<T extends Prisma.MediaRole$campaignMediaArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.MediaRole$campaignMediaArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$CampaignMediaPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   chapterMedia<T extends Prisma.MediaRole$chapterMediaArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.MediaRole$chapterMediaArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$ChapterMediaPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+  gameMedia<T extends Prisma.MediaRole$gameMediaArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.MediaRole$gameMediaArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$GameMediaPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   /**
    * Attaches callbacks for the resolution and/or rejection of the Promise.
    * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -1942,6 +2068,30 @@ export type MediaRole$chapterMediaArgs<ExtArgs extends runtime.Types.Extensions.
   take?: number
   skip?: number
   distinct?: Prisma.ChapterMediaScalarFieldEnum | Prisma.ChapterMediaScalarFieldEnum[]
+}
+
+/**
+ * MediaRole.gameMedia
+ */
+export type MediaRole$gameMediaArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  /**
+   * Select specific fields to fetch from the GameMedia
+   */
+  select?: Prisma.GameMediaSelect<ExtArgs> | null
+  /**
+   * Omit specific fields from the GameMedia
+   */
+  omit?: Prisma.GameMediaOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.GameMediaInclude<ExtArgs> | null
+  where?: Prisma.GameMediaWhereInput
+  orderBy?: Prisma.GameMediaOrderByWithRelationInput | Prisma.GameMediaOrderByWithRelationInput[]
+  cursor?: Prisma.GameMediaWhereUniqueInput
+  take?: number
+  skip?: number
+  distinct?: Prisma.GameMediaScalarFieldEnum | Prisma.GameMediaScalarFieldEnum[]
 }
 
 /**

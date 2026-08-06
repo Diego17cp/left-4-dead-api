@@ -142,6 +142,11 @@ export type MediaRole = Prisma.MediaRoleModel
  */
 export type Media = Prisma.MediaModel
 /**
+ * Model GameMedia
+ * 
+ */
+export type GameMedia = Prisma.GameMediaModel
+/**
  * Model WeaponMedia
  * 
  */
