@@ -1,0 +1,23 @@
+{
+  "slug": "left-4-dead-2",
+  "name": "Left 4 Dead 2",
+  "description": "Left 4 Dead 2 is a cooperative first-person shooter survival horror video game. Set in the American South, it follows four new survivors as they battle through hordes of infected, including the iconic Special Infected.",
+  "releaseDate": "2009-11-17",
+  "media": [
+    {
+      "role": "cover",
+      "file": "cover.webp",
+      "type": "image/webp"
+    },
+    {
+      "role": "logo",
+      "file": "logo.svg",
+      "type": "image/svg+xml"
+    },
+    {
+      "role": "banner",
+      "file": "banner.webp",
+      "type": "image/webp"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "left-4-dead",
+  "name": "Left 4 Dead",
+  "description": "Left 4 Dead is a cooperative first-person shooter survival horror video game. Developed by Valve South, it was released for Microsoft Windows and Xbox 360 on November 18, 2008, and later for Mac OS X on October 5, 2010. The game is set in the immediate aftermath of a zombie apocalypse, following the journey of four survivors as they attempt to escape the overrun region of the Eastern United States. Left 4 Dead is known for its fast-paced gameplay, emphasis on teamwork, and the 'Director' AI system, which dynamically adjusts the game's difficulty and pacing based on the players' performance.",
+  "releaseDate": "2008-11-18",
+  "media": [
+    {
+      "role": "cover",
+      "file": "cover.webp",
+      "type": "image/webp"
+    },
+    {
+      "role": "logo",
+      "file": "logo.svg",
+      "type": "image/svg+xml"
+    },
+    {
+      "role": "banner",
+      "file": "banner.webp",
+      "type": "image/webp"
+    }
+  ]
+}
