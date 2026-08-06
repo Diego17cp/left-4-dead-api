@@ -337,12 +337,16 @@ model GameMedia {
   gameId    String @map("game_id")
   mediaId   String @map("media_id")
   mediaRoleId String @map("media_role_id")
+  displayOrder Int @map("display_order")
 
   game      Game      @relation(fields: [gameId], references: [id], onDelete: Cascade)
   media     Media     @relation(fields: [mediaId], references: [id], onDelete: Cascade)
   mediaRole MediaRole @relation(fields: [mediaRoleId], references: [id], onUpdate: Cascade, onDelete: Restrict)
 
   @@id([gameId, mediaId, mediaRoleId])
+  @@unique([gameId, mediaRoleId, displayOrder])
+  @@index([gameId])
+  @@index([mediaId])
   @@map("game_media")
 }
 
