@@ -18,6 +18,4 @@ const rootRoute: FastifyPluginAsync = async (fastify) => {
   });
 }
 
-export default fp(rootRoute, {
-  name: "root-route"
-})
+export default rootRoute;
