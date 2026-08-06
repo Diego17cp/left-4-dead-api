@@ -12,11 +12,13 @@
     "db:studio": "prisma studio"
   },
   "dependencies": {
+    "@fastify/cors": "11.3.0",
     "@fastify/helmet": "13.1.0",
     "@prisma/adapter-pg": "latest",
     "@prisma/client": "latest",
     "dotenv": "17.4.2",
-    "fastify": "5.11.2"
+    "fastify": "5.11.2",
+    "fastify-plugin": "6.0.0"
   },
   "devDependencies": {
     "@types/node": "25.9.2",

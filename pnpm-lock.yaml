@@ -8,8 +8,11 @@ importers:
 
   .:
     dependencies:
+      '@fastify/cors':
+        specifier: 11.3.0
+        version: 11.3.0
       '@fastify/helmet':
-        specifier: ^13.1.0
+        specifier: 13.1.0
         version: 13.1.0
       '@prisma/adapter-pg':
         specifier: latest
@@ -21,8 +24,11 @@ importers:
         specifier: 17.4.2
         version: 17.4.2
       fastify:
-        specifier: ^5.11.2
+        specifier: 5.11.2
         version: 5.11.2
+      fastify-plugin:
+        specifier: 6.0.0
+        version: 6.0.0
     devDependencies:
       '@types/node':
         specifier: 25.9.2
@@ -211,6 +217,9 @@ packages:
 
   '@fastify/ajv-compiler@4.0.5':
     resolution: {integrity: sha512-KoWKW+MhvfTRWL4qrhUwAAZoaChluo0m0vbiJlGMt2GXvL4LVPQEjt8kSpHI3IBq5Rez8fg+XeH3cneztq+C7A==}
+
+  '@fastify/cors@11.3.0':
+    resolution: {integrity: sha512-ggQGua+xHv1MvePbPr0v//xLYEsCXbWspquXCJS9Ot5YoRXq8J8ZWzHnxDBVnbtXosvistXo6LtNzOJswf64Fw==}
 
   '@fastify/error@4.2.0':
     resolution: {integrity: sha512-RSo3sVDXfHskiBZKBPRgnQTtIqpi/7zhJOEmAxCiBcM7d0uwdGdxLlsCaLzGs8v8NnxIRlfG0N51p5yFaOentQ==}
@@ -1081,6 +1090,11 @@ snapshots:
       ajv: 8.20.0
       ajv-formats: 3.0.1(ajv@8.20.0)
       fast-uri: 3.1.5
+
+  '@fastify/cors@11.3.0':
+    dependencies:
+      fastify-plugin: 6.0.0
+      toad-cache: 3.7.4
 
   '@fastify/error@4.2.0': {}
 
