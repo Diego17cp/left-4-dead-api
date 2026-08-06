@@ -22,6 +22,7 @@ model Game {
   commonInfectedVariants CommonInfectedVariant[]
   items                  Item[]
   weapons                Weapon[]
+  gameMedia              GameMedia[]
 
   @@index([slug])
   @@map("games")
@@ -300,6 +301,7 @@ model MediaRole {
   itemMedia                  ItemMedia[]
   campaignMedia              CampaignMedia[]
   chapterMedia               ChapterMedia[]
+  gameMedia                  GameMedia[]
 
   @@map("media_roles")
 }
@@ -324,10 +326,24 @@ model Media {
   itemMedia                  ItemMedia[]
   campaignMedia              CampaignMedia[]
   chapterMedia               ChapterMedia[]
+  gameMedia                  GameMedia[]
 
   @@index([mediaTypeId])
   @@index([storagePath])
   @@map("media")
+}
+
+model GameMedia {
+  gameId    String @map("game_id")
+  mediaId   String @map("media_id")
+  mediaRoleId String @map("media_role_id")
+
+  game      Game      @relation(fields: [gameId], references: [id], onDelete: Cascade)
+  media     Media     @relation(fields: [mediaId], references: [id], onDelete: Cascade)
+  mediaRole MediaRole @relation(fields: [mediaRoleId], references: [id], onUpdate: Cascade, onDelete: Restrict)
+
+  @@id([gameId, mediaId, mediaRoleId])
+  @@map("game_media")
 }
 
 model WeaponMedia {
