@@ -7,9 +7,12 @@ const envSchema = z.object({
 	NODE_ENV: z
 		.enum(["development", "production", "test"])
 		.default("development"),
+	SUPABASE_URL: z.url(),
+	SUPABASE_SERVICE_ROLE_KEY: z.string(),
+	SUPABASE_STORAGE_BUCKET: z.string(),
 });
 
-export const env = envSchema.parse(process.env)
+export const env = envSchema.parse(process.env);
 
-export const isDevelopment = env.NODE_ENV === "development"
-export const isProduction = env.NODE_ENV === "production"
+export const isDevelopment = env.NODE_ENV === "development";
+export const isProduction = env.NODE_ENV === "production";
