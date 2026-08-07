@@ -12,14 +12,15 @@ import {
 } from "@/generated/prisma/client";
 import { GameResponseDTO } from "./game-response.dto";
 import { MediaRelationMapper } from "@/shared/media/media-relation.mapper";
+import { GameDetailInclude } from "../contracts/game-includes";
 
-type GameWithIncludes = Game & {
-	campaigns?: Campaign[];
+export type GameWithIncludes = Game & {
+	campaigns: Campaign[];
+	survivors: Survivor[];
+	specialInfected: SpecialInfected[];
+	commonInfectedVariants: CommonInfectedVariant[];
 	weapons?: Weapon[];
 	items?: Item[];
-	survivors?: Survivor[];
-	specialInfected?: SpecialInfected[];
-	commonInfectedVariants?: CommonInfectedVariant[];
 	gameMedia?: (GameMedia & {
 		media: Media;
 		mediaRole: MediaRole;
@@ -27,7 +28,7 @@ type GameWithIncludes = Game & {
 };
 
 export class GameResponseMapper {
-	static toResponse(game: GameWithIncludes): GameResponseDTO {
+	static toResponse(game: GameWithIncludes, includes: GameDetailInclude[] = []): GameResponseDTO {
 		const mediaGrouped = game.gameMedia
 			? MediaRelationMapper.groupAndMap(game.gameMedia)
 			: undefined;
@@ -37,24 +38,44 @@ export class GameResponseMapper {
 			slug: game.slug,
 			description: game.description,
 			release_date: game.releaseDate,
-			campaigns: game.campaigns?.map((c) => ({
-				name: c.name,
-				slug: c.slug,
-			})),
+			campaigns: game.campaigns.map((c) => {
+				const base = { name: c.name, slug: c.slug };
+				if (!includes.includes("campaigns")) return base;
+				return {
+					...base,
+					description: c.description,
+					release_date: c.releaseDate,
+				};
+			}),
+			survivors: game.survivors.map((s) => {
+				const base = { name: s.name, slug: s.slug };
+				if (!includes.includes("survivors")) return base;
+				return {
+					...base,
+					biography: s.biography,
+					gender: s.gender,
+					age: s.age,
+					occupation: s.occupation,
+				};
+			}),
+			special_infected: game.specialInfected.map((s) => {
+				const base = { name: s.name, slug: s.slug };
+				if (!includes.includes("specialInfected")) return base;
+				return {
+					...base,
+					description: s.description,
+				};
+			}),
+			common_infected_variants: game.commonInfectedVariants.map((c) => {
+				const base = { name: c.name, slug: c.slug };
+				if (!includes.includes("commonInfectedVariants")) return base;
+				return {
+					...base,
+					specialTrait: c.specialTrait,
+				};
+			}),
 			weapons: game.weapons?.map((w) => ({ name: w.name, slug: w.slug })),
 			items: game.items?.map((i) => ({ name: i.name, slug: i.slug })),
-			survivors: game.survivors?.map((s) => ({
-				name: s.name,
-				slug: s.slug,
-			})),
-			special_infected: game.specialInfected?.map((s) => ({
-				name: s.name,
-				slug: s.slug,
-			})),
-			common_infected_variants: game.commonInfectedVariants?.map((c) => ({
-				name: c.name,
-				slug: c.slug,
-			})),
 			media: mediaGrouped
 				? {
 						cover: mediaGrouped.cover?.[0]

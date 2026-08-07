@@ -1,4 +1,39 @@
-// TODO: The details may show summarized relations and if the user wants the full relation, it should be included in the includes
+export interface CampaignSummaryDTO {
+	name: string;
+	slug: string;
+}
+export interface CampaignDetailDTO extends CampaignSummaryDTO {
+	description: string | null;
+	release_date: Date | null;
+}
+
+export interface SurvivorSummaryDTO {
+	name: string;
+	slug: string;
+}
+export interface SurvivorDetailDTO extends SurvivorSummaryDTO {
+	biography: string | null;
+	gender: string;
+	age: number | null;
+	occupation: string | null;
+}
+
+export interface SpecialInfectedSummaryDTO {
+	name: string;
+	slug: string;
+}
+export interface SpecialInfectedDetailDTO extends SpecialInfectedSummaryDTO {
+	description: string | null;
+}
+
+export interface CommonInfectedVariantSummaryDTO {
+	name: string;
+	slug: string;
+}
+export interface CommonInfectedVariantDetailDTO extends CommonInfectedVariantSummaryDTO {
+	specialTrait: string | null;
+}
+
 
 export interface IncludeDTO {
 	name: string;
@@ -21,11 +56,13 @@ export interface GameResponseDTO {
 	slug: string;
 	description: string | null;
 	release_date: Date | null;
-	campaigns?: IncludeDTO[];
+	// Default relations included
+	campaigns: CampaignSummaryDTO[] | CampaignDetailDTO[];
+	survivors: SurvivorSummaryDTO[] | SurvivorDetailDTO[];
+	special_infected: SpecialInfectedSummaryDTO[] | SpecialInfectedDetailDTO[];
+	common_infected_variants: CommonInfectedVariantSummaryDTO[] | CommonInfectedVariantDetailDTO[];
+	// Optional relations
+	media?: GameMediaResponseDTO;
 	weapons?: IncludeDTO[];
 	items?: IncludeDTO[];
-	survivors?: IncludeDTO[];
-	special_infected?: IncludeDTO[];
-	common_infected_variants?: IncludeDTO[];
-	media?: GameMediaResponseDTO;
 }

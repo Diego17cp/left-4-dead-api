@@ -2,7 +2,7 @@ import { GamesRepository } from "../repositories/games.repository";
 import { GameListResponseDTO } from "../dtos/game-list-response.dto";
 import { GameListResponseMapper } from "../dtos/game-list-response.mapper";
 import { GameResponseDTO } from "../dtos/game-response.dto";
-import { GameResponseMapper } from "../dtos/game-response.mapper";
+import { GameResponseMapper, GameWithIncludes } from "../dtos/game-response.mapper";
 import { GameDetailInclude, GameListInclude } from "../contracts/game-includes";
 import { NotFoundError } from "@/core/errors";
 
@@ -26,6 +26,6 @@ export class GamesService {
 		if (!game) {
 			throw new NotFoundError("Game not found");
 		}
-		return GameResponseMapper.toResponse(game);
+		return GameResponseMapper.toResponse(game as unknown as GameWithIncludes, includes);
 	}
 }

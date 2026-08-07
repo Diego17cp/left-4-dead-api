@@ -1,9 +1,82 @@
 import { DatabaseConnection } from "@/config";
 import { Prisma } from "@/generated/prisma/client";
-import { GameDetailInclude, GameListInclude } from "../contracts/game-includes";
+import {
+	GAME_DETAIL_DEFAULT_INCLUDES,
+	GameDetailInclude,
+	GameListInclude,
+} from "../contracts/game-includes";
 
 export class GamesRepository {
 	private db = DatabaseConnection.getInstance().getPrismaClient();
+	private buildDefaultIncludes(): Prisma.GameInclude {
+		return {
+			campaigns: {
+				select: { name: true, slug: true },
+			},
+			survivors: {
+				select: { name: true, slug: true },
+			},
+			specialInfected: {
+				select: { name: true, slug: true },
+			},
+			commonInfectedVariants: {
+				select: { name: true, slug: true },
+			},
+		};
+	}
+	private buildEnrichedInclude(
+		include: GameDetailInclude,
+	): Partial<Prisma.GameInclude> {
+		switch (include) {
+			case "campaigns":
+				return {
+					campaigns: {
+						select: {
+							name: true,
+							slug: true,
+							description: true,
+							releaseDate: true,
+						},
+					},
+				};
+			case "survivors":
+				return {
+					survivors: {
+						select: {
+							name: true,
+							slug: true,
+							biography: true,
+							gender: true,
+							age: true,
+							occupation: true,
+						},
+					},
+				};
+			case "media":
+				return {
+					gameMedia: {
+						include: {
+							media: true,
+							mediaRole: true,
+						},
+					},
+				};
+			case "specialInfected":
+				return {
+					specialInfected: {
+						select: { name: true, slug: true, description: true },
+					},
+				};
+			case "commonInfectedVariants":
+				return {
+					commonInfectedVariants: {
+						select: { name: true, slug: true, specialTrait: true },
+					},
+				};
+			default:
+				return {};
+		}
+	}
 	private parseIncludes(
 		includes: (GameListInclude | GameDetailInclude)[],
 	): Prisma.GameInclude {
@@ -59,23 +132,24 @@ export class GamesRepository {
 	}
 
 	async findById(id: string, includes: GameDetailInclude[]) {
-		const prismaIncludes = this.parseIncludes(includes);
+		const prismaIncludes = this.buildDefaultIncludes();
+		for (const include of includes) {
+			Object.assign(prismaIncludes, this.buildEnrichedInclude(include));
+		}
 		return this.db.game.findUnique({
 			where: { id },
-			include: Object.keys(prismaIncludes).length
-				? prismaIncludes
-				: undefined,
+			include: prismaIncludes,
 		});
 	}
 
 	async findBySlug(slug: string, includes: GameDetailInclude[]) {
-		// TODO: The details may show summarized relations and if the user wants the full relation, it should be included in the includes
-		const prismaIncludes = this.parseIncludes(includes);
+		const prismaIncludes = this.buildDefaultIncludes();
+		for (const include of includes) {
+			Object.assign(prismaIncludes, this.buildEnrichedInclude(include));
+		}
 		return this.db.game.findUnique({
 			where: { slug },
-			include: Object.keys(prismaIncludes).length
-				? prismaIncludes
-				: undefined,
+			include: prismaIncludes,
 		});
 	}
 }
