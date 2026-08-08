@@ -1,0 +1,15 @@
+{
+  "game": "left-4-dead",
+  "contentSource": "Official",
+  "name": "No Mercy",
+  "slug": "no-mercy",
+  "description": "The No Mercy campaign finds you on the rooftop of an obliterated apartment complex, deep in the heart of the once-thriving metropolis of Fairfield—now completely overrun with hordes of Infected. A voice from a bullhorn calls out from a rescue helicopter: Get to the roof of nearby Mercy Hospital and be airlifted to safety. Even if it means shooting your way through narrow alleys, open sewers and seething waves of zombies to get there.",
+  "releaseDate": "2008-11-18",
+  "media": [
+    {
+      "role": "cover",
+      "file": "cover.webp",
+      "type": "image/webp"
+    }
+  ]
+}
