@@ -1,31 +1,52 @@
+import { DatabaseConnection } from "@/config";
 import { Persister } from "@/ingestion/core/contracts/persister";
 import { GameAggregate } from "./game.types";
-import { DatabaseConnection } from "@/config";
-import { persistGameMedia } from "@/ingestion/shared/media/media-persistence";
-
-const prisma = DatabaseConnection.getInstance().getPrismaClient();
+import { persistMediaRecords } from "@/ingestion/shared/media/media-persistence";
 
 export const gamePersister: Persister<GameAggregate> = {
-	async persist(aggregates) {
-		for (const aggregate of aggregates) {
-			await prisma.$transaction(async (tx) => {
-				const game = await tx.game.upsert({
-					where: {
-						slug: aggregate.game.slug,
-					},
+	async persist(games) {
+		const db = DatabaseConnection.getInstance().getPrismaClient();
+
+		for (const game of games) {
+			await db.$transaction(async (tx) => {
+				const gameRecord = await tx.game.upsert({
+					where: { slug: game.slug },
 					update: {
-						...aggregate.game,
+						name: game.name,
+						description: game.description,
+						releaseDate: game.releaseDate,
 					},
 					create: {
-						...aggregate.game,
+						name: game.name,
+						slug: game.slug,
+						description: game.description,
+						releaseDate: game.releaseDate,
 					},
 				});
-        await persistGameMedia(
-          tx,
-          game.id,
-          aggregate.media,
-          aggregate.game.slug
-        )
+
+				if (game.media && game.media.length > 0) {
+					const basePath = `games/${game.slug}/media`;
+					const persistedMedia = await persistMediaRecords(tx, game.media, basePath);
+
+					for (const m of persistedMedia) {
+						await tx.gameMedia.upsert({
+							where: {
+								gameId_mediaId_mediaRoleId: {
+									gameId: gameRecord.id,
+									mediaId: m.mediaId,
+									mediaRoleId: m.mediaRoleId,
+								},
+							},
+							update: { displayOrder: m.displayOrder },
+							create: {
+								gameId: gameRecord.id,
+								mediaId: m.mediaId,
+								mediaRoleId: m.mediaRoleId,
+								displayOrder: m.displayOrder,
+							},
+						});
+					}
+				}
 			});
 		}
 	},

@@ -5,6 +5,7 @@ import { gameMapper } from "./game.mapper";
 import { gamePersister } from "./game.persister";
 
 export const gameIngestionModule: IngestionModule<GameManifest, GameAggregate> = {
+	id: "game",
 	name: "games",
 	resource: "games",
 	schema: gameManifestSchema,

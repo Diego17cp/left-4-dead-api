@@ -13,12 +13,10 @@ export interface GameMediaManifest {
 }
 
 export interface GameAggregate {
-	game: {
 		slug: string;
 		name: string;
 		description: string | null;
 		releaseDate: Date | null;
-	};
 
 	media: GameMediaAggregate[];
 }
