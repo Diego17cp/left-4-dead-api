@@ -1,0 +1,15 @@
+{
+  "game": "left-4-dead",
+  "contentSource": "DLC",
+  "name": "Crash Course",
+  "slug": "crash-course",
+  "description": "Crash Course begins shortly after the events of No Mercy. The helicopter rescue pilot from the Rooftop Finale succumbs to the Infection and Zoey shoots him in mid-flight. The helicopter crashes in an industrial area outside of the city of Fairfield in Whitney County.",
+  "releaseDate": "2009-09-29",
+  "media": [
+    {
+      "role": "cover",
+      "file": "cover.webp",
+      "type": "image/webp"
+    }
+  ]
+}

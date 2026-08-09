@@ -1,0 +1,15 @@
+{
+  "game": "left-4-dead",
+  "contentSource": "Official",
+  "name": "Blood Harvest",
+  "slug": "blood-harvest",
+  "description": "After their rescue aircraft is lost, the Survivors hide out in a forest until learning of a nearby military outpost located at a barricaded farmhouse. They set off through the forest and follow a series of train tracks until entering a military controlled area only to discover the outpost is abandoned. A radio call to the army base at Millhaven triggers the finale and they must hold out until an armored personnel carrier arrives.",
+  "releaseDate": "2008-11-18",
+  "media": [
+    {
+      "role": "cover",
+      "file": "cover.webp",
+      "type": "image/webp"
+    }
+  ]
+}

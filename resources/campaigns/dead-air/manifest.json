@@ -1,0 +1,15 @@
+{
+  "game": "left-4-dead",
+  "contentSource": "Official",
+  "name": "Dead Air",
+  "slug": "dead-air",
+  "description": "Dead Air takes place after the events of Death Toll. The campaign opens with the Survivors hiding in a rooftop greenhouse when a low-flying C-130 sparks agreement that the local airport may still be operating evacuation flights. Thereafter the campaign has The Survivors make their way through Newburg to Metro International Airport where they must refuel their escape aircraft.",
+  "releaseDate": "2008-11-18",
+  "media": [
+    {
+      "role": "cover",
+      "file": "cover.webp",
+      "type": "image/webp"
+    }
+  ]
+}

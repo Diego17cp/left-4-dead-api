@@ -1,0 +1,15 @@
+{
+  "game": "left-4-dead",
+  "contentSource": "DLC",
+  "name": "The Sacrifice",
+  "slug": "the-sacrifice",
+  "description": "The Sacrifice is the fifth and final official campaign for Left 4 Dead. It serves as a bridge between the events of the game and its downloadable content expansions.",
+  "releaseDate": "2009-10-05",
+  "media": [
+    {
+      "role": "cover",
+      "file": "cover.webp",
+      "type": "image/webp"
+    }
+  ]
+}

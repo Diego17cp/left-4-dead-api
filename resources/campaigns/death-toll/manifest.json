@@ -1,0 +1,15 @@
+{
+  "game": "left-4-dead",
+  "contentSource": "Official",
+  "name": "Death Toll",
+  "slug": "death-toll",
+  "description": "Spanning five chapters, Death Toll is set in and around a small (cf. road side population sign) town named Riverside where the Survivors believe the military may be holding out. The chapter takes place after the Crash Course campaign in which the survivors head to Riverside and their motivation for striving to reach the town center is based on no more than a vaguely expressed notion that the military may be holding out in Riverside, and a shared awareness that they have no other realistic option.",
+  "releaseDate": "2008-11-18",
+  "media": [
+    {
+      "role": "cover",
+      "file": "cover.webp",
+      "type": "image/webp"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "game": "left-4-dead",
+  "contentSource": "DLC",
+  "name": "The Last Stand",
+  "slug": "the-last-stand",
+  "description": "The Last Stand begins in the small, typically quiet coastal town of Port Clinton, Ohio, which has been overtaken by the Green Flu. The Survivors are alerted to a potential military safe zone, which turns out to be a U.S. Coast Guard station. The campaign follows their struggle to reach this location, enduring intense hordes of Infected along the way.",
+  "releaseDate": "2020-10-08",
+  "media": [
+    {
+      "role": "cover",
+      "file": "cover.webp",
+      "type": "image/webp"
+    }
+  ]
+}
