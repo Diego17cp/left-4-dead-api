@@ -1,3 +1,5 @@
+import { MediaItemResponseDTO } from "@/shared/media/media.types";
+
 export interface CampaignSummaryDTO {
 	name: string;
 	slug: string;
@@ -38,11 +40,6 @@ export interface CommonInfectedVariantDetailDTO extends CommonInfectedVariantSum
 export interface IncludeDTO {
 	name: string;
 	slug: string;
-}
-
-export interface MediaItemResponseDTO {
-	url: string;
-	mimeType: string;
 }
 
 export type GameMediaResponseDTO = Record<

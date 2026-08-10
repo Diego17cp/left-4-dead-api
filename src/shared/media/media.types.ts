@@ -16,3 +16,8 @@ export interface MediaRelationLike {
   };
   media: MediaLike;
 }
+
+export interface MediaItemResponseDTO {
+	url: string;
+	mimeType: string;
+}
