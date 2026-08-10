@@ -32,24 +32,18 @@ export const campaignPersister: Persister<ResolvedCampaign> = {
 					const basePath = `campaigns/${campaign.slug}/media`;
 					const persistedMedia = await persistMediaRecords(tx, campaign.media, basePath);
 
-					for (const m of persistedMedia) {
-						await tx.campaignMedia.upsert({
-							where: {
-								campaignId_mediaId_mediaRoleId: {
-									campaignId: campaignRecord.id,
-									mediaId: m.mediaId,
-									mediaRoleId: m.mediaRoleId,
-								},
-							},
-							update: { displayOrder: m.displayOrder },
-							create: {
-								campaignId: campaignRecord.id,
-								mediaId: m.mediaId,
-								mediaRoleId: m.mediaRoleId,
-								displayOrder: m.displayOrder,
-							},
-						});
-					}
+					await tx.campaignMedia.deleteMany({
+						where: { campaignId: campaignRecord.id },
+					});
+
+					await tx.campaignMedia.createMany({
+						data: persistedMedia.map((m) => ({
+							campaignId: campaignRecord.id,
+							mediaId: m.mediaId,
+							mediaRoleId: m.mediaRoleId,
+							displayOrder: m.displayOrder,
+						})),
+					});
 				}
 			});
 		}
