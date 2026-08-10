@@ -1,0 +1,15 @@
+{
+  "game": "left-4-dead-2",
+  "contentSource": "Official",
+  "name": "Swamp Fever",
+  "slug": "swamp-fever",
+  "description": "Chronologically, it follows on from Dark Carnival and picks up the Survivors' story in wake of Nick shooting the helicopter pilot due to the latter becoming an Infected. Once they have shaken themselves out following the helicopter crash, the Survivors find themselves stranded in the middle of nowhere with their only route to safety going through a gator farm, a downed commercial airliner, swamp villages and finally at an abandoned plantation where their rescue awaits them. Along the way, they meet a new breed of Infected, the Mud Men.",
+  "releaseDate": "2009-11-17",
+  "media": [
+    {
+      "role": "cover",
+      "file": "cover.webp",
+      "type": "image/webp"
+    }
+  ]
+}

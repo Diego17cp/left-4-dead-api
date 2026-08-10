@@ -1,0 +1,15 @@
+{
+  "game": "left-4-dead-2",
+  "contentSource": "DLC",
+  "name": "The Passing",
+  "slug": "the-passing",
+  "description": "The campaign starts on the outskirts of Savannah, Georgia, and serves as a crossover between the original Left 4 Dead and Left 4 Dead 2, featuring returning characters from the first game.",
+  "releaseDate": "2010-04-22",
+  "media": [
+    {
+      "role": "cover",
+      "file": "cover.webp",
+      "type": "image/webp"
+    }
+  ]
+}

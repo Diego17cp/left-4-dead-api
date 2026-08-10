@@ -1,0 +1,15 @@
+{
+  "game": "left-4-dead-2",
+  "contentSource": "Official",
+  "name": "The Parish",
+  "slug": "the-parish",
+  "description": "On leaving Virgil's boat at the Waterfront Market, it is immediately evident that the city has been overrun with Infected and that the military has begun to execute a plan to abandon it entirely, covering their retreat with aerial bombing. To complete the campaign, the Survivors must make their way through the Infected-infested city, traversing not only a memorial park but an overrun CEDA evacuation center, impound lot, bombed out freeway, and cemetery. The Bridge finale is particularly challenging as it obliges Survivors to fight their way across the bridge in the face of rapidly spawning waves of Infected.",
+  "releaseDate": "2009-11-17",
+  "media": [
+    {
+      "role": "cover",
+      "file": "cover.webp",
+      "type": "image/webp"
+    }
+  ]
+}

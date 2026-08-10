@@ -1,0 +1,15 @@
+{
+  "game": "left-4-dead-2",
+  "contentSource": "DLC",
+  "name": "Cold Stream",
+  "slug": "cold-stream",
+  "description": "Cold Stream begins with the Survivors having found refuge in an abandoned construction site on the outskirts of a small town in Georgia. Following the directions of an anonymous radio broadcaster, they set off in search of a military convoy with the intention of finding the means of reaching a temporary evacuation point at Fort Ridgeway. Along the way, they must traverse the flooded ruins of the nearby town of Rustgartner as well as an overgrown forest, an industrial estate, and finally the outskirts of Fort Ridgeway itself. It is an exclusively offline campaign: it is possible to start a game with fewer than four players, in which case the AI Director will supply competent bot companions.",
+  "releaseDate": "2011-02-16",
+  "media": [
+    {
+      "role": "cover",
+      "file": "cover.webp",
+      "type": "image/webp"
+    }
+  ]
+}

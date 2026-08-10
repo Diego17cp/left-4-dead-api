@@ -1,0 +1,15 @@
+{
+  "game": "left-4-dead-2",
+  "contentSource": "Official",
+  "name": "Dead Center",
+  "slug": "dead-center",
+  "description": "The campaign starts on top of The Vannah Hotel which was once CEDA's central operations and evacuation base but which is now overrun and partially ablaze. The Survivors arrive on the hotel rooftop just too late to board the last evacuation helicopter. With no other option open to them, they all agree that the best thing to do is to get across town to the other CEDA facility at the Liberty Mall.",
+  "releaseDate": "2009-11-17",
+  "media": [
+    {
+      "role": "cover",
+      "file": "cover.webp",
+      "type": "image/webp"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "game": "left-4-dead-2",
+  "contentSource": "Official",
+  "name": "Hard Rain",
+  "slug": "hard-rain",
+  "description": "The campaign takes place after Swamp Fever. It is set in the riverside town of Ducatel, Mississippi (referred to as Milltown in the chapter title) as a hurricane approaches. At the start of the campaign, Virgil drops off the Survivors with a mission to find and bring back diesel fuel for his boat. The mission is to travel to the Ducatel Diesel gas station through the abandoned town of Ducatel, the Witch-infested ruins of the Ducatel Sugar mill and a cane field populated with Infected. Once they have the diesel, a hurricane arrives and the area immediately floods, obliging the Survivors to retrace their steps through knee-deep water that impedes their progress and squalls of wind and rain that reduce visibility and make hearing difficult.",
+  "releaseDate": "2009-11-17",
+  "media": [
+    {
+      "role": "cover",
+      "file": "cover.webp",
+      "type": "image/webp"
+    }
+  ]
+}

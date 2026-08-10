@@ -1,0 +1,15 @@
+{
+  "game": "left-4-dead-2",
+  "contentSource": "Official",
+  "name": "Dark Carnival",
+  "slug": "dark-carnival",
+  "description": "The campaign begins in the middle of a rundown amusement park, located in the heart of Georgia. The Survivors must fight their way through hordes of Infected to reach the main attraction, a massive roller coaster that can be used to escape the area.",
+  "releaseDate": "2009-11-17",
+  "media": [
+    {
+      "role": "cover",
+      "file": "cover.webp",
+      "type": "image/webp"
+    }
+  ]
+}
