@@ -29,7 +29,7 @@ export const campaignPersister: Persister<ResolvedCampaign> = {
 				});
 
 				if (campaign.media && campaign.media.length > 0) {
-					const basePath = `games/${campaign.gameSlug}/campaigns/${campaign.slug}/media`;
+					const basePath = `campaigns/${campaign.slug}/media`;
 					const persistedMedia = await persistMediaRecords(tx, campaign.media, basePath);
 
 					for (const m of persistedMedia) {
