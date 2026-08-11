@@ -1,0 +1,14 @@
+{
+  "campaign": "dead-air",
+  "slug": "the-greenhouse",
+  "name": "The Greenhouse",
+  "description": "The Survivors are driving on the I-20 interstate when Bill radios in to say that he's seeing a military checkpoint ahead, so the Survivors turn off to avoid the checkpoint. However, as the Survivors' car runs out of fuel, they're forced to get out and continue the rest of the way on foot. The Survivors then come across a greenhouse, where they get a radio message from the military at an airport, telling them that the safer place for the survivors is the airport. The Survivors make their way across the country to the airport.",
+  "chapterNumber": 1,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

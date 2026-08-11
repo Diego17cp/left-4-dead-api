@@ -1,0 +1,14 @@
+{
+  "campaign": "dead-air",
+  "slug": "the-construction-site",
+  "name": "The Construction Site",
+  "description": "The Survivors exit the safe room and walk down an alleyway to find themselves in an unfinished construction site. The way to the next alley blocked by a barricade which must be removed by destroying attached gas canisters. This sets off an explosion which brings in a horde that must be combated.",
+  "chapterNumber": 3,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

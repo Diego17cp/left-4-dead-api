@@ -1,0 +1,14 @@
+{
+  "campaign": "blood-harvest",
+  "slug": "the-train-station",
+  "name": "The Train Station",
+  "description": "Survivors exit the safe room, pass through some woods and find a barn where one of the characters will suggest searching for supplies. These woods and barn are thickly populated with Common Infected, and at least one horde will spawn as the Survivors approach the barn. The usual Special Infected will also put in appearances in the barn's vicinity.",
+  "chapterNumber": 4,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

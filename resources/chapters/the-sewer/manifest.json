@@ -1,0 +1,14 @@
+{
+  "campaign": "no-mercy",
+  "name": "The Sewer",
+  "slug": "the-sewer",
+  "description": "This chapter has the Survivors fighting an infected horde before entering a warehouse and the Fairfield sewer system to exit via a manhole in front of Mercy Hospital.",
+  "chapterNumber": 3,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

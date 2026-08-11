@@ -1,0 +1,14 @@
+{
+  "campaign": "death-toll",
+  "slug": "the-town",
+  "name": "The Town",
+  "description": "The Town is the fourth chapter of the third campaign, Death Toll. It begins inside of a safe house constructed within a church that draws a border between rural and suburban Riverside. Unfortunately, the Infection has hit this small town hard. The Survivors' goal for this chapter is to make their way to the river, where there's still a chance that they might be rescued.",
+  "chapterNumber": 4,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

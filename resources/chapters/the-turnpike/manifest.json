@@ -1,0 +1,14 @@
+{
+  "campaign": "death-toll",
+  "slug": "the-turnpike",
+  "name": "The Turnpike",
+  "description": "The Survivors start on a highway leading to the 'historic' town of Riverside. It is nighttime and before them is a litter of abandoned cars. One of the Survivors says (even though it was already mentioned in the Crash Course campaign) that they heard that the military was holding out in Riverside and as they have no better plan, it is good idea to head there.",
+  "chapterNumber": 1,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

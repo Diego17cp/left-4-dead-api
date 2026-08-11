@@ -1,0 +1,14 @@
+{
+  "campaign": "death-toll",
+  "slug": "boathouse-finale",
+  "name": "Boathouse Finale",
+  "description": "The Boathouse Finale is the fifth and final chapter of the third campaign, Death Toll. The Survivors must fight their way from the safe room, through Riverside Park, to get to a boathouse on the riverbank to call on the radio for a boat that is circling outside the city to come and pick them up. When they call for rescue, the Infected attack, as with every finale. The Survivors must stay alive until the boat comes to rescue them, fighting off multiple hordes and several Special Infected, including two or three Tanks. When the boat arrives, they must run on to the boat and board it, upon which the credits begin to roll.",
+  "chapterNumber": 5,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

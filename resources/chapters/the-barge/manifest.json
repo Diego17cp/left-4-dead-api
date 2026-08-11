@@ -1,0 +1,14 @@
+{
+  "campaign": "the-sacrifice",
+  "slug": "the-barge",
+  "name": "The Barge",
+  "description": "The Survivors must load a large pipe onto a barge in a marina and then call for a rescue helicopter to take them to a safe location. Along the way, they must fight off hordes of Infected, including a Tank, and navigate through a flooded industrial area.",
+  "chapterNumber": 2,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

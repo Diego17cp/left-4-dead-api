@@ -1,0 +1,14 @@
+{
+  "campaign": "dead-air",
+  "slug": "the-crane",
+  "name": "The Crane",
+  "description": "Starting from the Harbor View Hotel, the Survivors make their way through the city's industrial district, battling hordes of Infected as they search for a way to reach the airport.",
+  "chapterNumber": 2,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "campaign": "no-mercy",
+  "name": "Rooftop Finale",
+  "slug": "rooftop-finale",
+  "description": "The Rooftop Finale is the fifth and final level of the No Mercy campaign. Upon reaching the hospital roof, the Survivors find a makeshift defensive position in one of the main structures and must use a radio to alert the helicopter to their presence. The pilot tells them to prepare themselves and to call again once they are ready. Once the second call is made, the helicopter will begin an approach to the helipad but the pilot warns that it will take some time get there. He quotes an estimated arrival time (which is periodically updated on the radio during the finale) that is a purely nominal value bearing no relationship to actual elapsed game time.",
+  "chapterNumber": 5,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

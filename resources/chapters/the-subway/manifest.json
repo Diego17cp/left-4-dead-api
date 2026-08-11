@@ -1,0 +1,14 @@
+{
+  "campaign": "no-mercy",
+  "name": "The Subway",
+  "slug": "the-subway",
+  "description": "The subway system is overrun with infected and comprehensively wrecked. Survivors traverse a network of tunnels, enter a subway electricity generating station, pass through a suite of offices and finally get back out on the street to reach a safe house housed in a pawn shop.",
+  "chapterNumber": 2,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

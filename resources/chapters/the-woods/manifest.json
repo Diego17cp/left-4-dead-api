@@ -1,0 +1,14 @@
+{
+  "campaign": "blood-harvest",
+  "slug": "the-woods",
+  "name": "The Woods",
+  "description": "The Survivors escape from the farmhouse and find themselves in the open woods. They make their way through the woods, fending off hordes of Infected along the way.",
+  "chapterNumber": 1,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

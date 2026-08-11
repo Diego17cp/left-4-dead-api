@@ -1,0 +1,14 @@
+{
+  "campaign": "no-mercy",
+  "name": "The Apartments",
+  "slug": "the-apartments",
+  "description": "The Survivors start off on the roof of an apartment block on Holly Street. News Chopper 5 flies past and the pilot uses a loudhailer to announce that anyone who can hear him should make their way to Mercy Hospital where they will be rescued. The Survivors take up this opportunity and Bill says it is a good idea to get off the overrun streets and take The Subway which leads directly to Mercy Hospital.",
+  "chapterNumber": 1,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

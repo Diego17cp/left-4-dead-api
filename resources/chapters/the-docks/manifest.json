@@ -1,0 +1,14 @@
+{
+  "campaign": "the-sacrifice",
+  "slug": "the-docks",
+  "name": "The Docks",
+  "description": "The Survivors start on a boat in a harbor and must make their way through the docks to a safe room. The docks are filled with warehouses, shipping containers, and other industrial structures, providing cover and ambush opportunities for the Infected.",
+  "chapterNumber": 1,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

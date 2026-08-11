@@ -1,0 +1,14 @@
+{
+  "campaign": "dead-air",
+  "slug": "runway-finale",
+  "name": "Runway Finale",
+  "description": "The Survivors must make their way from the departure level of the airport concourse to the taxiway and runway in order to reach a plane and escape the area.",
+  "chapterNumber": 5,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

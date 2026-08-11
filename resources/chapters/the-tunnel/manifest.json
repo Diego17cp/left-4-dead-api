@@ -1,0 +1,14 @@
+{
+  "campaign": "blood-harvest",
+  "slug": "the-tunnel",
+  "name": "The Tunnel",
+  "description": "The Survivors must fight their way through a railroad repair workshop to reach the tracks which run through a semi-destroyed underground tunnel. On the way, they are forced to open an security-alarmed emergency door which triggers a horde.",
+  "chapterNumber": 2,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

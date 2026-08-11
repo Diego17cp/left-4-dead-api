@@ -1,0 +1,14 @@
+{
+  "campaign": "blood-harvest",
+  "slug": "farmhouse-finale",
+  "name": "Farmhouse Finale",
+  "description": "Survivors reach a farmhouse where they must defend themselves against several hordes of Common and Special Infected while waiting for military rescue.",
+  "chapterNumber": 5,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

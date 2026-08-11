@@ -1,0 +1,14 @@
+{
+  "campaign": "death-toll",
+  "name": "The Drains",
+  "slug": "the-drains",
+  "description": "The Survivors navigate through the claustrophobic, maze-like sewer tunnels beneath the city, battling relentless hordes of Infected in the pitch darkness. They finally emerge into the daylight, only to find themselves surrounded by a massive swarm of Infected in an open industrial area.",
+  "chapterNumber": 2,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

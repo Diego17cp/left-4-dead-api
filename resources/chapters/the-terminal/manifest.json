@@ -1,0 +1,14 @@
+{
+  "campaign": "dead-air",
+  "slug": "the-terminal",
+  "name": "The Terminal",
+  "description": "The Survivors exit the safe room and walk through a series of offices and break-away rooms at the airport's conference center. Once they reach the lobby of the terminal, the Survivors start a crashed van which breaks down a barricade in their path. This action alerts a horde and the Survivors must either fight it or run to safety. The Survivors next pass through the baggage handling area and come out into the airport concourse at a security checkpoint. Inadvertently walking though a working metal detector will set it off and activate a horde otherwise reaching the safe room simply involves moving up to the departure level and finding the safe room door.",
+  "chapterNumber": 4,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

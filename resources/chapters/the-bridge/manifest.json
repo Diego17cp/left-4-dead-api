@@ -1,0 +1,14 @@
+{
+  "campaign": "blood-harvest",
+  "slug": "the-bridge",
+  "name": "The Bridge",
+  "description": "The Survivors exit the tunnel and re-enter the forest. They follow a pathway through a gully up to a service building connected to an extension of the railroad tunnel. By entering this building and descending a flight of stairs, the Survivors are able to re-join the tracks in the open air once again.",
+  "chapterNumber": 3,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

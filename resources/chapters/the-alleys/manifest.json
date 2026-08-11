@@ -1,0 +1,14 @@
+{
+  "campaign": "crash-course",
+  "name": "The Alleys",
+  "slug": "the-alleys",
+  "description": "Takes place at night immediately following the No Mercy finale. The rescue helicopter pilot turns into an Infected mid-flight; Zoey shoots him, causing the chopper to crash in an industrial area outside Fairfield.After regrouping at the crash site, the Survivors navigate through a network of industrial back-alleys, warehouses, and factories until they reach the main road at Riverside Boulevard. Finding a bridge blocked by a military barricade, they fire an abandoned howitzer cannon to blast through the obstruction. Finally, they cross the bridge and drop down into a warehouse on the right to reach the safe room.",
+  "chapterNumber": 1,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

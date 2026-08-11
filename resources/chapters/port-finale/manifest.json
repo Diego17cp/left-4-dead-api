@@ -1,0 +1,14 @@
+{
+  "campaign": "the-sacrifice",
+  "slug": "port-finale",
+  "name": "Port Finale",
+  "description": "Port Finale is the third and last chapter in both The Sacrifice campaign and the Left 4 Dead game. With safety almost within reach, a lowered road bridge near Rayford Port prevents the Survivors taking their chosen sailboat (refer to The Sacrifice comic) out to sea. The Survivors must fight their way through the port, battling hordes of Infected, and activate a generator to raise the bridge.",
+  "chapterNumber": 3,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

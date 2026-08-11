@@ -1,0 +1,14 @@
+{
+  "campaign": "the-last-stand",
+  "slug": "the-lighthouse",
+  "name": "The Lighthouse",
+  "description": "The Survivors find themselves in a lighthouse on a coastal cliffside, with hordes of Infected swarming the area as they attempt to escape. The Survivors must fight their way through the lighthouse and the surrounding area to reach a safe room.",
+  "chapterNumber": 1,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

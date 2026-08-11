@@ -1,0 +1,14 @@
+{
+  "campaign": "death-toll",
+  "slug": "the-church",
+  "name": "The Church",
+  "description": "The Survivors are forced to make their way through a small, devastated church and its adjacent cemetery. After battling through the infected-infested churchyard, they reach a locked gate and must find a way to open it to proceed.",
+  "chapterNumber": 3,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

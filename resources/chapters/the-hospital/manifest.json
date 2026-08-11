@@ -1,0 +1,14 @@
+{
+  "campaign": "no-mercy",
+  "name": "The Hospital",
+  "slug": "the-hospital",
+  "description": "The Hospital is the fourth chapter of the campaign No Mercy. The action takes place in Mercy Hospital—a modern high-rise hospital building located in the downtown area of Fairfield city. The hospital has been overrun with Infected largely comprising patients, medical and service staff.",
+  "chapterNumber": 4,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

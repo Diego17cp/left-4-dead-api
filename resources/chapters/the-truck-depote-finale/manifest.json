@@ -1,0 +1,14 @@
+{
+  "campaign": "crash-course",
+  "slug": "the-truck-depote-finale",
+  "name": "The Truck Depot",
+  "description": "The Survivors race through an industrial park and across a massive truck depot as horde after horde of Infected pursue them across open ground. As the horde overwhelms them, the Survivors trigger a gas station explosion to clear a path and make their way to an old pickup truck, which they use to escape the area.",
+  "chapterNumber": 4,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}
