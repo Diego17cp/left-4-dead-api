@@ -1,0 +1,14 @@
+{
+  "campaign": "dark-carnival",
+  "name": "The Coaster",
+  "slug": "the-coaster",
+  "description": "The Survivors must leave the safe room, navigate an abnormally long Tunnel of Love and make their way towards the signature attraction: an all-wood roller coaster, appropriately named \"The Screaming Oak\". To Ellis' delight, the Survivors must \"run The Screaming Oak\" and survive a prototype gauntlet crescendo event to reach a chapter-ending safe house in a fairground queue-booth.",
+  "chapterNumber": 3,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

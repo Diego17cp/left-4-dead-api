@@ -1,0 +1,14 @@
+{
+  "campaign": "hard-rain",
+  "name": "Town Scape",
+  "slug": "town-scape",
+  "description": "The Town Escape features the usual end-of-campaign finale. This time, the Survivors arrive back at their point of departure with a supply of diesel fuel. They must climb onto the roof of the Burger Tank outlet and turn on its advertising sign in order to signal to Virgil to come in and pick them up. Turning on the sign triggers the finale, obliging the Survivors to defend themselves until Virgil arrives in his boat at the nearby dock.",
+  "chapterNumber": 5,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

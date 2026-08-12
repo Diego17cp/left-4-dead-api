@@ -1,0 +1,14 @@
+{
+  "campaign": "dead-center",
+  "name": "The Hotel",
+  "slug": "the-hotel",
+  "description": "The Survivors arrive at The Hotel with the immediate objective of reaching a safe room on the hotel's ground floor. On their way down, they face repeated Infected attacks, discover that New Orleans is the primary evacuation center, flee through burning-floor levels, experience the benefits of Bile Bombs and introduce themselves to one another in an elevator with malfunctioning doors.",
+  "chapterNumber": 1,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

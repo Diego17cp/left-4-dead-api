@@ -1,0 +1,14 @@
+{
+  "campaign": "the-parish",
+  "name": "The Waterfront",
+  "slug": "the-waterfront",
+  "description": "The Waterfront is the first chapter of the campaign The Parish in Left 4 Dead 2. The Survivors have now finally arrived in New Orleans. Virgil leaves them off at a dock, trusting they themselves can make it to the bridge for evacuation on their own, thus the journey there begins by getting through a waterfront market and some streets.",
+  "chapterNumber": 1,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

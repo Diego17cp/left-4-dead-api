@@ -1,0 +1,14 @@
+{
+  "campaign": "swamp-fever",
+  "name": "Plank Country",
+  "slug": "plank-country",
+  "description": "Plank Country is the first chapter of the campaign Swamp Fever in Left 4 Dead 2. The map begins with the Survivors leaving the railway box car in which they found temporary shelter in the wake of their Dark Carnival helicopter pilot turning into a zombie, obliging Nick to shoot him and bringing the helicopter down in the Louisiana swamps. In front of the Survivors is an abandoned gas station near a collection of trailer homes and shotgun shacks bordering a tourist attraction gator farm (Earl's Gator Village) and many square miles of bayou. The townspeople mistakenly thought they could wait out the Infection by barricading their community, to which end they had fought off Infected whilst spurning outside help and refugees. Unfortunately the plan failed and everyone has either fled in panic, died or become Infected.",
+  "chapterNumber": 1,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

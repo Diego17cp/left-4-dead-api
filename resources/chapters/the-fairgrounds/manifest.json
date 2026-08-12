@@ -1,0 +1,14 @@
+{
+  "campaign": "dark-carnival",
+  "name": "The Fairgrounds",
+  "slug": "the-fairgrounds",
+  "description": "The Survivors progress through the suburbs is brought to a dead halt by an impenetrable mass of traffic. It contains a small-scale Gauntlet Crescendo Event whereby opening a gate also turns on a loud carousel that attracts a horde of Infected. The Survivors must run through this fast spawning threat in order to reach the control lever that switches it off. Unfortunately the horde continues to spawn for quite some time thereafter and the subsequent fight is thus invariably fast, furious and tense.",
+  "chapterNumber": 2,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

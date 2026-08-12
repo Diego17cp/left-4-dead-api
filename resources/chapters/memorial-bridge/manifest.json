@@ -1,0 +1,14 @@
+{
+  "campaign": "cold-stream",
+  "name": "Memorial Bridge",
+  "slug": "memorial-bridge",
+  "description": "The Survivors leave the safe room and climb a series of stairs, dealing with a small handful of passive Common Infected found along the way. A ladder leads up to the open air, and gives access to the roof of a concrete service structure, located in a small park next to the Memorial Bridge. The park is densely populated with Common Infected who will respond aggressively to the sight of the Survivors.",
+  "chapterNumber": 3,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

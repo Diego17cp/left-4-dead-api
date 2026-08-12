@@ -1,0 +1,14 @@
+{
+  "campaign": "hard-rain",
+  "name": "The Sugar Mill",
+  "slug": "the-sugar-mill",
+  "description": "The Survivors arrive at the Ducatel Sugar Mill. With the road to the gas station blocked, they are forced to enter the sugar mill to reach the gas station. Once inside, the Survivors must venture through the various buildings of the mill, fighting off hordes of Infected along the way.",
+  "chapterNumber": 2,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

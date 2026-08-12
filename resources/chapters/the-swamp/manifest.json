@@ -1,0 +1,14 @@
+{
+  "campaign": "swamp-fever",
+  "name": "The Swamp",
+  "slug": "the-swamp",
+  "description": "It begins in a drainage culvert beneath a rail track causeway that has been fashioned into a safe room. The Survivors must navigate a series of knee-deep swamps or bayous intersected with patches of dryer ground and indicative pathways made up of planks resting over the water. By following the planks, players encounter the ruins of a long-abandoned boathouse and a jetty which yield various supplies. A nearby plume of smoke above the trees brings them to an expanse of bayou in the center of which is a crashed civilian jet airliner. On the way to the plane, a dead military paratrooper will be found draped in a tree and will often give up a Tier 2 weapon, often as well as a throwable item.",
+  "chapterNumber": 2,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

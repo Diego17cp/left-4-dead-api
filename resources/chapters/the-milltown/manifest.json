@@ -1,0 +1,14 @@
+{
+  "campaign": "hard-rain",
+  "name": "The Milltown",
+  "slug": "the-milltown",
+  "description": "The Survivors and Virgil realize that they do not have enough gas to make it to New Orleans. Virgil drops the Survivors off at a Burger Tank in the town of Ducatel, tasking them to retrieve some gas from the nearby gas station. However, once the Survivors get to the gas station, it has been depleted of all fuel and the only remaining gas is two miles away at another station. The Survivors must walk across yards and through homes, paying close attention to the landmarks while fighting the Infected. They walk past a playground, a garage sale and then eventually find a road that leads to a nearby safe room near the sugar mill.",
+  "chapterNumber": 1,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

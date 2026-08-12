@@ -1,0 +1,14 @@
+{
+  "campaign": "the-parish",
+  "name": "The Park",
+  "slug": "the-park",
+  "description": "The Park is the second chapter of The Parish campaign. It involves the Survivors fighting their way through a park and a military evacuation station. A keynote feature involves Survivors facing a Gauntlet Crescendo Event that requires them to race through a fenced maze at an overrun evacuation center, and climb a scaffolding tower in order to shut off a zombie-provoking alarm. The chapter is of average length and is very linear in nature. It begins in Bienville Park, moves to a decontamination trailer with an alarmed door, traverses the gauntlet maze, a Bus Station and ends at a safe room near a freeway leading to the Veterans Memorial Bridge.",
+  "chapterNumber": 2,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "campaign": "swamp-fever",
+  "name": "Shanty Town",
+  "slug": "shanty-town",
+  "description": "Shanty Town is the third chapter of the campaign Swamp Fever in Left 4 Dead 2. The Survivors find themselves in the community of Village En Marais, which is overrun by the Infected. This chapter is home to a Crescendo Event, in which a rusty ramp must be dropped to move to the next shack on stilts. The loud creaking of the rusted ramp attracts the Infected. There is a mixture of houses; some stand above the swamp water on stilts, others do not and are half flooded by the rising swamp waters.",
+  "chapterNumber": 3,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

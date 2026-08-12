@@ -1,0 +1,14 @@
+{
+  "campaign": "dark-carnival",
+  "name": "The Highway",
+  "slug": "the-highway",
+  "description": "The highway is a long stretch of road filled with abandoned cars and trucks, blocking the Survivors' path to the carnival. Finding the only way to the carnival they must traverse a highway off ramp and proceed under the overpass. The carnival searchlights can be seen off in the distance. The Survivors then need to navigate through an abandoned motel as the road to the carnival is blocked by a tractor trailer.",
+  "chapterNumber": 1,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

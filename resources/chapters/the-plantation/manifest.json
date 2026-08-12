@@ -1,0 +1,14 @@
+{
+  "campaign": "swamp-fever",
+  "name": "The Plantation",
+  "slug": "the-plantation",
+  "description": "The Plantation is the fourth chapter of the campaign Swamp Fever in Left 4 Dead 2. In this chapter's finale, the Survivors must hold out through the usual alternate Horde-Tank sequences until Virgil arrives in his fishing boat to rescue them. The action takes place during a journey to and at a rundown plantation house with an overgrown formal garden fronting a gated wall that leads on down to a half-flooded river jetty. This chapter's finale is unique because on higher difficulties, two Tanks may spawn at once during the second Tank attack. During the finale, players are confined to an area comprising the plantation house and its garden until enough time has passed. Then the gate at riverfront wall is blown apart, thus allowing them to sprint to Virgil's boat. Various strategies to complete this chapter are outlined below.",
+  "chapterNumber": 4,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

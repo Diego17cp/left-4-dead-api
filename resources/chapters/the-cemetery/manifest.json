@@ -1,0 +1,14 @@
+{
+  "campaign": "the-parish",
+  "name": "The Cemetery",
+  "slug": "the-cemetery",
+  "description": "After exiting the safe room located in a maintenance room underneath the freeway, the Survivors make their way through residential New Orleans towards an open manhole, take a foul but brief trip through the sewers, and then quietly navigate an abandoned impound lot before reaching the next safe house at the far end of the dangerous and ever-changing Saint Roches Cemetery.",
+  "chapterNumber": 3,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

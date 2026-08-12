@@ -1,0 +1,14 @@
+{
+  "campaign": "the-passing",
+  "name": "The Port",
+  "slug": "the-port",
+  "description": "The third and last chapter in Left 4 Dead 2's The Passing campaign. It follows a basic Scavenge format wherein players must retrieve a set number of gas cans and refuel a generator to enable the Rayford Bridge to be lowered whilst under continual attack from Common and Special Infected interspersed with Tanks. Zoey and Francis provide direct covering fire and a constant stream of throwables and healing items while Louis operates a Heavy Machine Gun on the bridge.",
+  "chapterNumber": 3,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "campaign": "dead-center",
+  "name": "The Streets",
+  "slug": "the-streets",
+  "description": "After escaping the burning hotel, the Survivors follow the helicopter as they head towards the evacuation center at the mall. This chapter contains a Crescendo Event in which the Survivors must obtain a pack of Cola from a Save 4 Less convenience store, with an alarmed door, for the owner of a nearby gun store. He returns the favor by clearing the roadblock that prevents the Survivors from reaching Liberty Mall.",
+  "chapterNumber": 2,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "campaign": "dead-center",
+  "name": "Atrium Finale",
+  "slug": "atrium-finale",
+  "description": "Finding Liberty Mall completely overrun and abandoned by CEDA, Ellis comes up with the idea of escaping in Jimmy Gibbs Junior's Stock Car, which fortuitously had been put on public display in the mall just before the Infection hit Savannah. Unfortunately for safety reasons, the car's gas tank is empty, and this requires the Survivors to dash around the zombie-infested mall atrium retrieving a requisite number of Gas Cans and pour them into the car's gas tank before the car can be started and rammed out of the mall's front doors.",
+  "chapterNumber": 4,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

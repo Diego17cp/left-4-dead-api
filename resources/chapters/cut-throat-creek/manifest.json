@@ -1,0 +1,14 @@
+{
+  "campaign": "cold-stream",
+  "name": "Cut-Throat Creek",
+  "slug": "cut-throat-creek",
+  "description": "On leaving the safe room, the Survivors find themselves in a fenced woodland area with a storage building to the left. In order to continue Survivors use a radio in the storage building to call for help. They must then activate a large hangar door which triggers a never-ending Horde. From this point on they must fight their way against the pressure of these enemies to a rescue helicopter hovering over a forest recreation facility once occupied, but now abandoned, by CEDA.",
+  "chapterNumber": 4,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "campaign": "cold-stream",
+  "name": "South Pine Stream",
+  "slug": "south-pine-stream",
+  "description": "On exiting the safe room, the Survivors find themselves in a large tunnel filled with a fast flowing stream. The sun is quite low and shines directly into players' eyes making it difficult to see but fortunately there are only a couple of passive Common Infected to deal with at first. Moving forward with the water, the survivors emerge in a steep-sided creek bed filled with large boulders around and behind which lurk numerous Common Infected.",
+  "chapterNumber": 2,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

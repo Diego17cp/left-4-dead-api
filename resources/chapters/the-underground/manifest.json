@@ -1,0 +1,14 @@
+{
+  "campaign": "the-passing",
+  "name": "The Underground",
+  "slug": "the-underground",
+  "description": "Players exit the safe room and head through Rayford's streets and buildings until they encounter a main thoroughfare featuring a bar with a jukebox. The entrance to Rayford's seedy historic under-the-river tour is located in this bar's basement. From there the Survivors must travel through a swamp and onto a tugboat.",
+  "chapterNumber": 2,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

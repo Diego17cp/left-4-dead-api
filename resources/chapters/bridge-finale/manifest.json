@@ -1,0 +1,14 @@
+{
+  "campaign": "the-parish",
+  "name": "Bridge Finale",
+  "slug": "bridge-finale",
+  "description": "The Bridge Finale is the final chapter of The Parish campaign. In this chapter, the Survivors must fight their way across a bridge to reach a military evacuation station. Along the way, they will face hordes of Common Infected and a Tank. The Survivors must make their way to a helicopter at the end of the bridge to escape.",
+  "chapterNumber": 5,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

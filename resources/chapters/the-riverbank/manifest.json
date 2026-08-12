@@ -1,0 +1,14 @@
+{
+  "campaign": "the-passing",
+  "name": "The Riverbank",
+  "slug": "the-riverbank",
+  "description": "After escaping from Savannah in Jimmy Gibbs Junior's stock car, Ellis, Nick, Rochelle, and Coach find their way blocked, as the Rayford bridge has been raised by the original Left 4 Dead Survivors at the end of The Sacrifice campaign.",
+  "chapterNumber": 1,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

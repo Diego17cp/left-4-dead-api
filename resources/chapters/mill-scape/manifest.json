@@ -1,0 +1,14 @@
+{
+  "campaign": "hard-rain",
+  "name": "Mill Scape",
+  "slug": "mill-scape",
+  "description": "Mill Scape is the third chapter of the Hard Rain campaign in Left 4 Dead 2. The Survivors must race back to Virgil's boat with the gas cans they've collected, but the journey is fraught with peril. The weather has worsened, with heavy rain and dark clouds obscuring the sun, causing all the Wandering Witches to revert to their normal, aggressive state. This chapter features a higher concentration of Worker Infected and a decrease in the number of Witches compared to previous chapters. Players must be cautious, as the swamp water slows movement significantly, putting them at a disadvantage against Tanks. Additionally, the rooftops, while offering an alternative path, make Survivors vulnerable to Smokers, who can separate the team.",
+  "chapterNumber": 3,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

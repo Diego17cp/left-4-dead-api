@@ -1,0 +1,14 @@
+{
+  "campaign": "dead-center",
+  "name": "The Mall",
+  "slug": "the-mall",
+  "description": "After obtaining Cola for the gun store owner, the Survivors make their way to Liberty Mall, where they hope to take a helicopter to the airport to escape the city. They enter the mall and fight their way through the infected, eventually making their way to the rooftops where the military is waiting for them.",
+  "chapterNumber": 3,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

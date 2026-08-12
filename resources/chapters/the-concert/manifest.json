@@ -1,0 +1,14 @@
+{
+  "campaign": "dark-carnival",
+  "name": "The Concert",
+  "slug": "the-concert",
+  "description": "The Concert is the fifth and last chapter of Dark Carnival. The Survivors must attract a helicopter by starting up the Midnight Riders concert at The Peach Pit stadium (a stadium in Whispering Oaks Amusement Park), which includes opening lights, the use of fireworks, and playing the sound system on full blast on a concert stage. The lights, fireworks and loud sound trigger a massive horde attack.",
+  "chapterNumber": 5,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "campaign": "hard-rain",
+  "name": "Return to Town",
+  "slug": "return-to-town",
+  "description": "In Return To Town, the Survivors must make their way back to the boat through a storm-flooded Ducatel in the midst of a hurricane of driving wind and rain. With the weather worsening and the Infected closing in, the survivors must fight their way through the storm and the Infected to get to the boat.",
+  "chapterNumber": 4,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

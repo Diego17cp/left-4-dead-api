@@ -1,0 +1,14 @@
+{
+  "campaign": "the-parish",
+  "name": "The Quarter",
+  "slug": "the-quarter",
+  "description": "This chapter takes players through New Orleans' French Quarter, where the players must traverse streets, bars, bistros and apartment buildings. Its highlight is a Crescendo Event in which players must activate a Mardi Gras float to get across from one building to another; unfortunately, its loud rendition of \"When the Saints Go Marching In,\" titled \"The Saints Will Never Come,\" attracts hordes of Common Infected.",
+  "chapterNumber": 4,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

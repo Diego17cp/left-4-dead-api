@@ -1,0 +1,14 @@
+{
+  "campaign": "dark-carnival",
+  "name": "The Barns",
+  "slug": "the-barns",
+  "description": "The Survivors must make their way through some more of the park's grounds and across the rooftops of the barns before finding a way to get into The Peach Pit stadium.",
+  "chapterNumber": 4,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}

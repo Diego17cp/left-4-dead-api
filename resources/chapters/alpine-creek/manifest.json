@@ -1,0 +1,14 @@
+{
+  "campaign": "cold-stream",
+  "name": "Alpine Creek",
+  "slug": "alpine-creek",
+  "description": "Alpine Creek is the first chapter of the Cold Stream campaign. It involves the Survivors fighting their way through a forest and a creek to reach a safe house.",
+  "chapterNumber": 1,
+  "media": [
+    {
+      "role": "thumbnail",
+      "file": "thumbnail.webp",
+      "type": "image/webp"
+    }
+  ]
+}
