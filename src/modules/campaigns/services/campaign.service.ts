@@ -11,6 +11,7 @@ import {
 	CampaignResponseMapper,
 	CampaignWithIncludes,
 } from "../dtos/campaign-response.mapper";
+import { CampaignListFilters } from "../contracts/campaign-filters";
 
 export class CampaignService {
 	private static repo = new CampaignRepository();
@@ -19,11 +20,12 @@ export class CampaignService {
 		includes: CampaignListInclude[],
 		page: number,
 		limit: number,
+		filters: CampaignListFilters,
 	): Promise<{
 		data: CampaignListResponseDTO[];
 		total: number;
 	}> {
-		const { data, total } = await this.repo.findList(includes, page, limit);
+		const { data, total } = await this.repo.findList(includes, page, limit, filters);
 		return {
 			data: CampaignListResponseMapper.toResponse(data),
 			total,
