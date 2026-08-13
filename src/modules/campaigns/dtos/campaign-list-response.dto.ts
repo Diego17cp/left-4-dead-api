@@ -1,6 +1,6 @@
 import { MediaItemResponseDTO } from "@/shared/media/media.types";
 
-export interface GameListGameDTO {
+export interface CampaignListGameDTO {
   name: string;
   slug: string;
 }
@@ -16,6 +16,6 @@ export interface CampaignListResponseDTO {
   slug: string;
   description: string | null;
   release_date: Date | null;
-  game?: GameListGameDTO;
+  game?: CampaignListGameDTO;
   media?: CampaignMediaResponseDTO;
 }
