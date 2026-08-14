@@ -4,6 +4,7 @@ export interface MediaAggregate {
 	role: string;
 	file: string;
 	mimeType: string;
+	displayOrder?: number;
 }
 
 export interface PersistedMediaResult {
@@ -46,7 +47,7 @@ export const persistMediaRecords = async (
 		results.push({
 			mediaId: mediaRecord.id,
 			mediaRoleId,
-			displayOrder: index,
+			displayOrder: file.displayOrder ?? index,
 		});
 	}
 
