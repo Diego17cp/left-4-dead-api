@@ -46,12 +46,14 @@ export class SurvivorListResponseMapper {
 								? mediaGrouped.portrait.map((item) => ({
 										url: item.url,
 										mimeType: item.mimeType,
+										display_order: item.display_order,
 									}))
 								: undefined,
 							renders: mediaGrouped.render
 								? mediaGrouped.render.map((item) => ({
 										url: item.url,
 										mimeType: item.mimeType,
+										display_order: item.display_order,
 									}))
 								: undefined,
 						}
