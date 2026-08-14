@@ -1,0 +1,36 @@
+{
+  "game": "left-4-dead",
+  "name": "Zoey",
+  "slug": "zoey",
+  "description": "Zoey is a quick-thinking and brave college student who is always willing to put herself in danger to help others",
+  "biography": "A Philadelphia film student who skipped classes to watch horror movies, Zoey learned shooting skills from her police officer father. During the initial outbreak, an infected attacked her family. Her mother turned and mauled her father, who shot the mother before asking Zoey to perform a mercy-killing on him. She shot her father to prevent his transformation, only to later discover he might have been an immune carrier, making his death potentially in vain.",
+  "gender": "female",
+  "age": 20,
+  "occupation": "A college student studying film before the outbreak",
+  "media": [
+    {
+      "role": "portrait",
+      "file": "portrait-selection.webp",
+      "type": "image/webp",
+      "displayOrder": 0
+    },
+    {
+      "role": "portrait",
+      "file": "portrait-ingame.webp",
+      "type": "image/webp",
+      "displayOrder": 1
+    },
+    {
+      "role": "render",
+      "file": "render1.webp",
+      "type": "image/webp",
+      "displayOrder": 0
+    },
+    {
+      "role": "render",
+      "file": "render2.webp",
+      "type": "image/webp",
+      "displayOrder": 1
+    }
+  ]
+}

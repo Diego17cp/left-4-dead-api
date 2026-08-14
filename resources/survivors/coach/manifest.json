@@ -1,0 +1,36 @@
+{
+  "game": "left-4-dead-2",
+  "name": "Coach",
+  "slug": "coach",
+  "description": "Coach is a 44-year-old high school health teacher and religious father figure from Savannah",
+  "biography": "A 44-year-old high school health teacher and religious father figure from Savannah. A severe college knee injury ruined his promising career as a professional defensive lineman, forcing him into teaching. When the infection hit, he rejected CEDA's orders, stepped up as the group's optimistic leader, and used his coaching skills to guide the survivors toward New Orleans. He uses his loud motivation to keep the team standing and brandishes a chainsaw as his signature tool of survival.",
+  "gender": "male",
+  "age": 44,
+  "occupation": "High School Football Coach",
+  "media": [
+    {
+      "role": "portrait",
+      "file": "portrait-selection.webp",
+      "type": "image/webp",
+      "displayOrder": 0
+    },
+    {
+      "role": "portrait",
+      "file": "portrait-ingame.webp",
+      "type": "image/webp",
+      "displayOrder": 1
+    },
+    {
+      "role": "render",
+      "file": "render1.webp",
+      "type": "image/webp",
+      "displayOrder": 0
+    },
+    {
+      "role": "render",
+      "file": "render2.webp",
+      "type": "image/webp",
+      "displayOrder": 1
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "game": "left-4-dead-2",
+  "name": "Ellis \"El\"",
+  "slug": "ellis",
+  "description": "Ellis is an upbeat and optimistic mechanic from Savannah who often tries to keep morale up",
+  "biography": "A 23-year-old upbeat mechanic from Savannah who treats the apocalypse as a fun dare to impress his friends. Before the outbreak, he split his time between his garage, his buddies, and Sunday dinners with his mother. Exceptionally optimistic and naive, he is famous for telling absurd, endless stories about his friend Keith. He falls deeply in love with Zoey during their brief meeting and uses his mechanic skills to repair the stock car they use to escape Savannah.",
+  "gender": "male",
+  "age": 23,
+  "occupation": "Auto mechanic at a local repair shop",
+  "media": [
+    {
+      "role": "portrait",
+      "file": "portrait-selection.webp",
+      "type": "image/webp",
+      "displayOrder": 0
+    },
+    {
+      "role": "portrait",
+      "file": "portrait-ingame.webp",
+      "type": "image/webp",
+      "displayOrder": 1
+    },
+    {
+      "role": "render",
+      "file": "render1.webp",
+      "type": "image/webp",
+      "displayOrder": 0
+    },
+    {
+      "role": "render",
+      "file": "render2.webp",
+      "type": "image/webp",
+      "displayOrder": 1
+    }
+  ]
+}

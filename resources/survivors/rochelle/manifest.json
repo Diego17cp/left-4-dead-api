@@ -1,0 +1,36 @@
+{
+  "game": "left-4-dead-2",
+  "name": "Rochelle \"Ro\"",
+  "slug": "rochelle",
+  "description": "Rochelle is a level-headed associate news producer who finds herself in the midst of the zombie apocalypse",
+  "biography": "A 29-year-old associate news producer from Cleveland who was sent to Savannah to cover the evacuation center. Originally stuck doing menial office tasks, her big break turned into a war zone when the infection hit. Known for her level-headedness and wearing a Depeche Mode shirt, she acts as the mature 'big sister' of the group, balancing Nick's cynicism and Ellis's immaturity. She uses her sharp wit and journalistic drive to keep the team unified and focused on escaping to New Orleans.",
+  "gender": "female",
+  "age": 29,
+  "occupation": "Associate television producer for a news channel",
+  "media": [
+    {
+      "role": "portrait",
+      "file": "portrait-selection.webp",
+      "type": "image/webp",
+      "displayOrder": 0
+    },
+    {
+      "role": "portrait",
+      "file": "portrait-ingame.webp",
+      "type": "image/webp",
+      "displayOrder": 1
+    },
+    {
+      "role": "render",
+      "file": "render1.webp",
+      "type": "image/webp",
+      "displayOrder": 0
+    },
+    {
+      "role": "render",
+      "file": "render2.webp",
+      "type": "image/webp",
+      "displayOrder": 1
+    }
+  ]
+}

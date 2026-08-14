@@ -1,0 +1,36 @@
+{
+  "game": "left-4-dead",
+  "name": "Francis",
+  "slug": "francis",
+  "description": "Francis is a former member of a biker gang who is tough and street-smart",
+  "biography": "Two days into the outbreak, Francis was caught stealing a TV. Later at a bar, his girlfriend Sandra got infected and bit him, but his friend Duke shot her. Realizing the apocalypse brought total lawlessness, Francis and his friends moved to the roof to hunt infected with shotguns. Eventually, his friends succumbed to the virus or were left behind, leading Francis to join the main survivor group to ensure his own survival.",
+  "gender": "male",
+  "age": 36,
+  "occupation": "A rebellious motorcyclist and member of a biker gang",
+  "media": [
+    {
+      "role": "portrait",
+      "file": "portrait-selection.webp",
+      "type": "image/webp",
+      "displayOrder": 0
+    },
+    {
+      "role": "portrait",
+      "file": "portrait-ingame.webp",
+      "type": "image/webp",
+      "displayOrder": 1
+    },
+    {
+      "role": "render",
+      "file": "render1.webp",
+      "type": "image/webp",
+      "displayOrder": 0
+    },
+    {
+      "role": "render",
+      "file": "render2.webp",
+      "type": "image/webp",
+      "displayOrder": 1
+    }
+  ]
+}

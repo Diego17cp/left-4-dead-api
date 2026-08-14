@@ -1,0 +1,36 @@
+{
+  "game": "left-4-dead",
+  "name": "William \"Bill\" Overbeck",
+  "slug": "bill",
+  "description": "Bill is a tough and resourceful survivor who knows how to use weapons and gadgets to fight off the infected",
+  "biography": "Vietnam War veteran with permanent knee damage from shrapnel. Two days after the infection started, Bill was at a veterans hospital for surgery. As the anesthesia kicked in, an infected nurse killed the medical staff. Bill fought off the anesthesia, killed the nurse with a bonesaw, and escaped the hospital horde. He returned home to put on his military fatigues, ready for war.",
+  "gender": "male",
+  "age": 55,
+  "occupation": "Special Operations Soldier and War Veteran",
+  "media": [
+    {
+      "role": "portrait",
+      "file": "portrait-selection.webp",
+      "type": "image/webp",
+      "displayOrder": 0
+    },
+    {
+      "role": "portrait",
+      "file": "portrait-ingame.webp",
+      "type": "image/webp",
+      "displayOrder": 1
+    },
+    {
+      "role": "render",
+      "file": "render1.webp",
+      "type": "image/webp",
+      "displayOrder": 0
+    },
+    {
+      "role": "render",
+      "file": "render2.webp",
+      "type": "image/webp",
+      "displayOrder": 1
+    }
+  ]
+}

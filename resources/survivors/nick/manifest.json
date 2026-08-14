@@ -1,0 +1,36 @@
+{
+  "game": "left-4-dead-2",
+  "name": "Nicolas \"Nick\"",
+  "slug": "nick",
+  "description": "Nick is a smooth-talking gambler and former con artist who is distrustful of others but proves to be a loyal ally",
+  "biography": "A 35-year-old cynical gambler and con artist who arrived in Savannah for a riverboat poker cruise, only to get trapped by the outbreak. Having spent his life drifting to avoid jail, he initially prioritizes self-preservation and deeply distrusts his team, wearing an expensive, tailored white suit that gets increasingly bloodied. Over time, he develops a protective, genuine bond with the group—especially with Ellis—gradually shifting from an uncooperative cynic into a loyal ally.",
+  "gender": "male",
+  "age": 35,
+  "occupation": "Professional gambler, con artist, and petty criminal",
+  "media": [
+    {
+      "role": "portrait",
+      "file": "portrait-selection.webp",
+      "type": "image/webp",
+      "displayOrder": 0
+    },
+    {
+      "role": "portrait",
+      "file": "portrait-ingame.webp",
+      "type": "image/webp",
+      "displayOrder": 1
+    },
+    {
+      "role": "render",
+      "file": "render1.webp",
+      "type": "image/webp",
+      "displayOrder": 0
+    },
+    {
+      "role": "render",
+      "file": "render2.webp",
+      "type": "image/webp",
+      "displayOrder": 1
+    }
+  ]
+}
