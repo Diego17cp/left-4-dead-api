@@ -9,6 +9,7 @@ export async function seedMediaRoles(prisma: PrismaClient) {
 		{ name: "thumbnail" },
 		{ name: "screenshot" },
 		{ name: "render" },
+		{ name: "portrait" }
 	];
 
 	for (const mediaRole of mediaRoles) {
