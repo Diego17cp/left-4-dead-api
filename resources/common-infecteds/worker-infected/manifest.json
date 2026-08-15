@@ -1,0 +1,14 @@
+{
+  "game": "left-4-dead-2",
+  "name": "Worker Infected",
+  "slug": "worker-infected",
+  "description": "An Uncommon Infected found primarily in the 'Hard Rain' campaign. They wear highly visible reflective vests and hardhats, but their key feature is their ear protection, which makes them completely immune to the sound distraction of Pipe Bombs. They can still be attracted by Bile Bombs, though they will prioritize survivors if the bile fails to hit another infected. Variants include airport baggage handlers introduced in later updates",
+  "specialTrait": "They're immune to pipe bombs thanks to their ear protectors and can withstand more gunfire",
+  "media": [
+    {
+      "role": "render",
+      "file": "render.webp",
+      "type": "image/webp"
+    }
+  ]
+}

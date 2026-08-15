@@ -1,0 +1,14 @@
+{
+  "game": "left-4-dead-2",
+  "name": "Jimmy Gibbs Junior",
+  "slug": "jimmy-gibbs-junior",
+  "description": "A legendary stock car racing champion idolized by Coach and Ellis, who appears as an extremely rare Uncommon Infected in The Atrium campaign (spawning every 15 days). He is the strongest Uncommon Infected in the game with 3,000 HP, complete immunity to fire, and headshot damage resistance. He cannot be distracted by Pipe Bombs or Bile Bombs, and his attacks blind players with motor oil. He wears his iconic racing suit featuring a 'GOODBYE' sponsor parody patch",
+  "specialTrait": "Massive health (3,000 HP), total immunity to fire/incendiary attacks (Molotov cocktails, homemade bombs, bile), and blindness caused by motor oil",
+  "media": [
+    {
+      "role": "render",
+      "file": "render.webp",
+      "type": "image/webp"
+    }
+  ]
+}

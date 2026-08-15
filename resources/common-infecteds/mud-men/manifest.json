@@ -1,0 +1,14 @@
+{
+  "game": "left-4-dead-2",
+  "name": "Mud Men",
+  "slug": "mud-men",
+  "description": "An Uncommon Infected found primarily in 'Swamp Fever' and muddy or sewer areas of other campaigns. They sprint on all fours low to the ground, making them faster and harder to hit than standard zombies, though they stand up when idle or shoved. Their successful melee attacks fling mud onto the survivor's screen, increasingly obscuring and blurring their vision. They use mud as natural camouflage and must be dispatched quickly using gunfire or melee weapons when vision is compromised",
+  "specialTrait": "They walk on all fours, are fast in the water, and blind their prey with mud",
+  "media": [
+    {
+      "role": "render",
+      "file": "render.webp",
+      "type": "image/webp"
+    }
+  ]
+}

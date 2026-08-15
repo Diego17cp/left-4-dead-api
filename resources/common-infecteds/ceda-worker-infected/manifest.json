@@ -1,0 +1,14 @@
+{
+  "game": "left-4-dead-2",
+  "name": "CEDA Worker Infected",
+  "slug": "ceda-worker-infected",
+  "description": "An Uncommon Infected wearing a bulky hazmat suit, appearing in campaigns like Dead Center, No Mercy, and The Sacrifice. Due to their suits, they are completely immune to fire damage from Molotovs and incendiary ammo, though they will eventually die if left standing in flames. When killed, they have a chance to drop a usable Bile Bomb from their belt. Shooting them triggers a realistic air-hissing sound and splatters blood across their visor. They appear in yellow, green, and dark blue variants depending on the campaign map",
+  "specialTrait": "Immunity to fire and the impact of the Bile Bomb",
+  "media": [
+    {
+      "role": "render",
+      "file": "render.webp",
+      "type": "image/webp"
+    }
+  ]
+}

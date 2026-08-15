@@ -1,0 +1,14 @@
+{
+  "game": "left-4-dead-2",
+  "name": "Fallen Survivor",
+  "slug": "fallen-survivor",
+  "description": "A heavily equipped rare Uncommon Infected found in 'The Passing' campaign. He wears militia attire with a boonie hat and carries a random assortment of loot (Molotovs, Pipe Bombs, Pills, or Medkits) which he drops upon death. He possesses massive health, runs away from survivors when startled, and is completely immune to fire. He can be lured by Pipe Bombs and Bile Bombs, and can only be easily dispatched using melee weapons, explosive ammo, or headshots while he is idle",
+  "specialTrait": "It has 1,000 HP, flees when attacked, and is guaranteed to drop medical or throwable items",
+  "media": [
+    {
+      "role": "render",
+      "file": "render.webp",
+      "type": "image/webp"
+    }
+  ]
+}

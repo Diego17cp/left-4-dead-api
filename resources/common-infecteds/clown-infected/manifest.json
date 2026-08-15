@@ -1,0 +1,14 @@
+{
+  "game": "left-4-dead-2",
+  "name": "Clown Infected",
+  "slug": "clown-infected",
+  "description": "An Uncommon Infected found exclusively in the 'Dark Carnival' campaign. Wearing oversized squeaky shoes, their movement attracts and gathers nearby Common Infected into a trailing horde that ruthlessly follows them without causing them harm. Shoving a Clown makes their nose honk, and killing them causes their followers to momentarily confuse and swarm their corpse before attacking. They feature a unique horde musical theme, a water-squirting flower, and pants in various bright color combinations",
+  "specialTrait": "They attract crowds with their noisy shoes, and their nose beeps when they die",
+  "media": [
+    {
+      "role": "render",
+      "file": "render.webp",
+      "type": "image/webp"
+    }
+  ]
+}

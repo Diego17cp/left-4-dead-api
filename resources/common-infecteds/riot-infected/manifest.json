@@ -1,0 +1,14 @@
+{
+  "game": "left-4-dead-2",
+  "name": "Riot Infected",
+  "slug": "riot-infected",
+  "description": "An Uncommon Infected found in 'The Parish' campaign, originally hired as private security guards by CEDA. They wear full tactical armor that renders them completely immune to bullets, sharp weapons, and blunt melee attacks from the front. They can only be damaged by targeting their unprotected backs, shoving them to expose their rear, or using explosive and incendiary attacks. Their armor features the word 'SECURITY' on the chest",
+  "specialTrait": "They are immune to frontal attacks due to their armor; they may drop batons if killed from behind",
+  "media": [
+    {
+      "role": "render",
+      "file": "render.webp",
+      "type": "image/webp"
+    }
+  ]
+}
