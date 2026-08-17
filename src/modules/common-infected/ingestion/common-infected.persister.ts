@@ -27,7 +27,7 @@ export const commonInfectedPersister: Persister<ResolvedCommonInfected> = {
 				});
 
 				if (common.media && common.media.length > 0) {
-					const basePath = `common-infected/${common.slug}/media`;
+					const basePath = `common-infecteds/${common.slug}/media`;
 					const persistedMedia = await persistMediaRecords(
 						tx,
 						common.media,
