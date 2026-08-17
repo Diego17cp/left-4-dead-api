@@ -1,0 +1,30 @@
+{
+  "game": "left-4-dead-2",
+  "name": "The Spitter",
+  "slug": "spitter",
+  "description": "A Special Infected that spits a ball of corrosive acid, creating a large, stationary pool on the ground that deals increasing damage over time. Her primary role is to deny territory, preventing survivors from clustering together or blocking their paths during critical moments. Although her acid can deal the highest potential damage of any playable infected, it is short-lived and easy to avoid. Upon death, she drops a smaller puddle of acid, and her attack triggers a 20-second cooldown",
+  "media": [
+    {
+      "role": "render",
+      "file": "render-1.webp",
+      "type": "image/webp",
+      "displayOrder": 0
+    },
+    {
+      "role": "render",
+      "file": "render-2.webp",
+      "type": "image/webp",
+      "displayOrder": 1
+    },
+    {
+      "role": "portrait",
+      "file": "portrait.webp",
+      "type": "image/webp"
+    },
+    {
+      "role": "icon",
+      "file": "ability-icon.webp",
+      "type": "image/webp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "game": "left-4-dead-2",
+  "name": "The Charger",
+  "slug": "charger",
+  "description": "A heavily mutated Special Infected utilizing an oversized arm to act as an infected battering ram. The Charger specializes in scattering tightly grouped survivors, rushing at high speed to grab one target and carry them away while sending the remaining teammates flying. He cannot stop or steer mid-charge, but his immense bulk makes him entirely immune to being shoved by survivors, allowing him to repeatedly smash his grabbed victim into the ground",
+  "media": [
+    {
+      "role": "render",
+      "file": "render-1.webp",
+      "type": "image/webp",
+      "displayOrder": 0
+    },
+    {
+      "role": "render",
+      "file": "render-2.webp",
+      "type": "image/webp",
+      "displayOrder": 1
+    },
+    {
+      "role": "portrait",
+      "file": "portrait.webp",
+      "type": "image/webp"
+    },
+    {
+      "role": "icon",
+      "file": "ability-icon.webp",
+      "type": "image/webp"
+    }
+  ]
+}

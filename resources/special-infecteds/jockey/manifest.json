@@ -1,0 +1,30 @@
+{
+  "game": "left-4-dead-2",
+  "name": "The Jockey",
+  "slug": "jockey",
+  "description": "A small, fast, and highly agile Special Infected that excels at leaping onto the heads of unsuspecting survivors. Once attached, the Jockey forces the player into a struggle for movement control, steering them away from their team and into lethal environmental hazards, oncoming hordes, or behind obstructions. The most effective counter to free a trapped teammate is a swift melee shove",
+  "media": [
+    {
+      "role": "render",
+      "file": "render-1.webp",
+      "type": "image/webp",
+      "displayOrder": 0
+    },
+    {
+      "role": "render",
+      "file": "render-2.webp",
+      "type": "image/webp",
+      "displayOrder": 1
+    },
+    {
+      "role": "portrait",
+      "file": "portrait.webp",
+      "type": "image/webp"
+    },
+    {
+      "role": "icon",
+      "file": "ability-icon.webp",
+      "type": "image/webp"
+    }
+  ]
+}

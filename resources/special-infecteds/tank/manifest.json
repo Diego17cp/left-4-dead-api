@@ -1,0 +1,30 @@
+{
+  "game": "left-4-dead",
+  "name": "The Tank",
+  "slug": "tank",
+  "description": "The most powerful Special Infected alongside the Witch, relying entirely on raw brute force and agility. The Tank can easily wipe out entire squads by pummeling survivors to death or throwing massive chunks of concrete to stun them. Because healthy survivors can run slightly faster than him, his main strategy is to trap the team in tight areas, requiring total group coordination to be brought down",
+  "media": [
+    {
+      "role": "render",
+      "file": "l4d1-render.webp",
+      "type": "image/webp",
+      "displayOrder": 0
+    },
+    {
+      "role": "render",
+      "file": "l4d2-render.webp",
+      "type": "image/webp",
+      "displayOrder": 1
+    },
+    {
+      "role": "portrait",
+      "file": "portrait.webp",
+      "type": "image/webp"
+    },
+    {
+      "role": "icon",
+      "file": "ability-icon.webp",
+      "type": "image/webp"
+    }
+  ]
+}

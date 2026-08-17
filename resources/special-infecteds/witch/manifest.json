@@ -1,0 +1,25 @@
+{
+  "game": "left-4-dead",
+  "name": "The Witch",
+  "slug": "witch",
+  "description": "A passive yet highly lethal Special Infected that remains crying in place unless startled. The Witch is extremely sensitive to flashlights, loud noises, and nearby survivors, growling as a warning before entering an enraged state. If fully startled or shot at, she targets and chases down her agitator at extreme speeds, incapacitating or killing them instantly on higher difficulties. Survivors must turn off lights and sneak around her to avoid a deadly encounter",
+  "media": [
+    {
+      "role": "render",
+      "file": "render.webp",
+      "type": "image/webp",
+      "displayOrder": 0
+    },
+    {
+      "role": "render",
+      "file": "bride-render.webp",
+      "type": "image/webp",
+      "displayOrder": 1
+    },
+    {
+      "role": "portrait",
+      "file": "portrait.webp",
+      "type": "image/webp"
+    }
+  ]
+}

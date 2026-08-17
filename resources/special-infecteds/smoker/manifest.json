@@ -1,0 +1,30 @@
+{
+  "game": "left-4-dead",
+  "name": "The Smoker",
+  "slug": "smoker",
+  "description": "A long-range Special Infected characterized by his extremely long tongue. The Smoker works best from hidden rooftop vantage points, launching his tongue at high speeds to ensnare and drag survivors back toward him to claw them. If an obstacle blocks the path, the tongue tightens and chokes the victim, leaving them helpless and hanging as perfect targets for coordinated teammate attacks",
+  "media": [
+    {
+      "role": "render",
+      "file": "l4d1-render.webp",
+      "type": "image/webp",
+      "displayOrder": 0
+    },
+    {
+      "role": "render",
+      "file": "l4d2-render.webp",
+      "type": "image/webp",
+      "displayOrder": 1
+    },
+    {
+      "role": "portrait",
+      "file": "portrait.webp",
+      "type": "image/webp"
+    },
+    {
+      "role": "icon",
+      "file": "ability-icon.webp",
+      "type": "image/webp"
+    }
+  ]
+}
