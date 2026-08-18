@@ -26,7 +26,7 @@ export const specialInfectedPersister: Persister<ResolvedSpecialInfected> = {
 					},
 				});
 				if (special.media && special.media.length > 0) {
-					const basePath = `special-infected/${special.slug}/media`;
+					const basePath = `special-infecteds/${special.slug}/media`;
 					const persistedMedia = await persistMediaRecords(
 						tx,
 						special.media,
