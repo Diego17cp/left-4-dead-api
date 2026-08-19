@@ -1,6 +1,7 @@
 import { DatabaseConnection } from "@/config";
 import { ReferenceCache } from "./reference-cache"
 import { loadCampaigns, loadContentSources, loadGames } from "./loaders";
+import { loadItemCategories } from "./loaders/load-item-categories";
 
 export const createReferenceCache = async () => {
   const prisma = DatabaseConnection.getInstance().getPrismaClient();
@@ -20,6 +21,11 @@ export const createReferenceCache = async () => {
     "contentSources",
     cache => loadContentSources(cache, prisma),
   );
+
+  cache.register(
+    "itemCategories",
+    cache => loadItemCategories(cache, prisma),
+  )
 
   await cache.loadAll();
 
