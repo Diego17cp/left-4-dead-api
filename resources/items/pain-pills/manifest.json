@@ -1,0 +1,14 @@
+{
+  "game": "left-4-dead",
+  "itemCategory": "Healing",
+  "name": "Pain Pills",
+  "slug": "pain-pills",
+  "description": "A temporary healing item carried on the survivor's hip that instantly grants 50 temporary health points. This health does not heal permanent wounds and decays at a rate of 1 point every 3 seconds (lasting up to 2.5 minutes without taking damage). Taking pills can remove the low-health movement speed penalty if total health goes above 40. Incoming enemy damage reduces permanent health first before consuming this temporary health pool",
+  "media": [
+    {
+      "role": "render",
+      "file": "render.webp",
+      "type": "image/webp"
+    }
+  ]
+}

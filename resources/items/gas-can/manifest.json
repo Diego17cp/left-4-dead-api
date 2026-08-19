@@ -1,0 +1,33 @@
+{
+  "game": "left-4-dead",
+  "itemCategory": "Carryable",
+  "name": "Gas Can",
+  "slug": "gas-can",
+  "description": "A highly versatile environmental item found across both games. Standard red cans release a massive wall of fire when shot, serving as a powerful defensive trap against hordes, though stacking them can accidentally cause fatal team damage. Left 4 Dead 2 introduces yellow cans as core objectives for Scavenge mode and specific finales (like Dead Center) to refuel generators or vehicles. Unlike red cans, yellow ones can be ignited by Spitter acid once dropped. Green diesel variants also exist in Hard Rain and The Last Stand strictly as campaign objectives",
+  "media": [
+    {
+      "role": "render",
+      "file": "gasoline-render.webp",
+      "type": "image/webp",
+      "displayOrder": 0
+    },
+    {
+      "role": "render",
+      "file": "diesel-render.webp",
+      "type": "image/webp",
+      "displayOrder": 2
+    },
+    {
+      "role": "render",
+      "file": "fuel-render.webp",
+      "type": "image/webp",
+      "displayOrder": 1
+    },
+    {
+      "role": "render",
+      "file": "lighthouse-gas-can-render.webp",
+      "type": "image/webp",
+      "displayOrder": 3
+    }
+  ]
+}

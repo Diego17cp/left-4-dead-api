@@ -1,0 +1,14 @@
+{
+  "game": "left-4-dead-2",
+  "itemCategory": "Special",
+  "name": "Cola Pack",
+  "slug": "cola-pack",
+  "description": "A unique mission item found exclusively in the 'Dead Center' campaign. Survivors must retrieve a six-pack of cola from a grocery store—triggering a loud burglar alarm crescendo event—and deliver it to Whitaker to clear a blocked path. The player carrying the Cola cannot use weapons and is limited to standard melee shoves, which are subject to a fatigue timer. For gameplay balance, the glass bottles are completely invincible, capable of cracking infected skulls and deflecting gunfire without breaking",
+  "media": [
+    {
+      "role": "render",
+      "file": "render.webp",
+      "type": "image/webp"
+    }
+  ]
+}

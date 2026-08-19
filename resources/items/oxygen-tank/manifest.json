@@ -1,0 +1,14 @@
+{
+  "game": "left-4-dead",
+  "itemCategory": "Carryable",
+  "name": "Oxygen Tank",
+  "slug": "oxygen-tank",
+  "description": "A rare environmental explosive that acts as a delayed time bomb. When shot with standard gunfire, it emits a high-pitched hissing sound while venting gas for a few seconds before detonating. However, a close-range shotgun blast will trigger an instant explosion. Carrying it restricts the player to melee shoves. Due to its dull green color and flat profile, it is hard to spot during chaotic hordes. It is commonly found near ambulances, hospitals, and finale maps",
+  "media": [
+    {
+      "role": "render",
+      "file": "render.webp",
+      "type": "image/webp"
+    }
+  ]
+}

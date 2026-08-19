@@ -1,0 +1,14 @@
+{
+  "game": "left-4-dead",
+  "itemCategory": "Healing",
+  "name": "First Aid Kit",
+  "slug": "first-aid-kit",
+  "description": "A vital healing item that restores 80% of a survivor's missing permanent health and resets their incapacitation counter. Using it takes five seconds (reduced to three seconds under Adrenaline), during which the user is completely defenseless. Spawns are dynamically managed by the AI Director based on difficulty and team health, making them extremely rare on Expert. Found in safe houses and first aid cabinets, they can be swapped for Defibrillators or Ammo Upgrades in Left 4 Dead 2",
+  "media": [
+    {
+      "role": "render",
+      "file": "render.webp",
+      "type": "image/webp"
+    }
+  ]
+}

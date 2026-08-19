@@ -1,0 +1,14 @@
+{
+  "game": "left-4-dead-2",
+  "itemCategory": "Carryable",
+  "name": "Fireworks",
+  "slug": "fireworks",
+  "description": "A specialized environmental explosive item found exclusively in the final chapter of the 'Dark Carnival' campaign. Discovered in an open locker below the concert stage, these boxes can be carried, accurately dropped, or thrown over short distances. When shot or exposed to flame, they detonate into a wide field of exploding firecrackers. This blast delivers a much wider and significantly more devastating fire-damage area-of-effect than standard Molotovs or Gas Cans",
+  "media": [
+    {
+      "role": "render",
+      "file": "render.webp",
+      "type": "image/webp"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "game": "left-4-dead-2",
+  "itemCategory": "Upgrade",
+  "name": "Explosive Ammo",
+  "slug": "explosive-ammo",
+  "description": "A deployable upgrade that fills one magazine with explosive rounds, granting instant kills on Common Infected and stumbling most Special Infected (except Tanks). The blast radius scales with the weapon's base damage, turning shotgun buckshot into high-accuracy, long-range explosive slugs. In competitive Versus mode, it causes player-controlled infected to suffer a brief stumble and tinnitus. However, it inflicts severe self and friendly-fire splash damage in close quarters and can prematurely detonate environmental hazards like gas cans",
+  "media": [
+    {
+      "role": "render",
+      "file": "render.webp",
+      "type": "image/webp"
+    }
+  ]
+}

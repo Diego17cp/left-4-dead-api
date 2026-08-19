@@ -1,0 +1,14 @@
+{
+  "game": "left-4-dead-2",
+  "itemCategory": "Healing",
+  "name": "Defibrillator",
+  "slug": "defibrillator",
+  "description": "A single-use medical resource exclusive to Left 4 Dead 2 that revives a dead survivor's corpse, reviving them with 50 permanent health and resetting their incapacitation counter. It takes three seconds to use and occupies the main healing inventory slot, meaning it cannot be carried alongside a First Aid Kit. It is highly valuable in Expert, Realism, and Versus modes where traditional rescue closets are disabled. The device outlines dead teammates with a faint red glow when equipped",
+  "media": [
+    {
+      "role": "render",
+      "file": "render.webp",
+      "type": "image/webp"
+    }
+  ]
+}

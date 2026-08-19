@@ -1,0 +1,14 @@
+{
+  "game": "left-4-dead",
+  "itemCategory": "Carryable",
+  "name": "Propane Tank",
+  "slug": "propane-tank",
+  "description": "A common environmental explosive item found across both games, appearing as a domestic gas canister. Players can pick up, drop accurately, or throw the tank over short distances to set up tactical traps during finales. Shooting it or exposing it to passive fire triggers an instant explosion similar to a Pipe Bomb, making it highly effective at clearing hordes or stumbling heavy targets like Tanks. It can also be used as an improvised melee weapon, and its blast radius is uniquely buffed in the Crash Course DLC",
+  "media": [
+    {
+      "role": "render",
+      "file": "render.webp",
+      "type": "image/webp"
+    }
+  ]
+}

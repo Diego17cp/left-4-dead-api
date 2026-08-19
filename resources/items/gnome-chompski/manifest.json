@@ -1,0 +1,14 @@
+{
+  "game": "left-4-dead-2",
+  "itemCategory": "Special",
+  "name": "Gnome Chompski",
+  "slug": "gnome-chompski",
+  "description": "A garden gnome object and improvised weapon originally hidden in the 'Dark Carnival' campaign. Players can win him by scoring over 750 points at the shooting gallery minigame. Carrying him all the way to the rescue chopper unlocks the famous 'GUARDIN' GNOME' achievement for the whole team. He also stars in his own mutation, 'Last Gnome on Earth', where survivors must carry him through every safehouse. He originally debuted in Valve's Half-Life 2: Episode Two",
+  "media": [
+    {
+      "role": "render",
+      "file": "render.webp",
+      "type": "image/webp"
+    }
+  ]
+}

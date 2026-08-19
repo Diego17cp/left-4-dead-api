@@ -1,0 +1,14 @@
+{
+  "game": "left-4-dead-2",
+  "itemCategory": "Upgrade",
+  "name": "Incendiary Ammo",
+  "slug": "incendiary-ammo",
+  "description": "A special deployment item that modifies a primary weapon's magazine to ignite infected upon contact. These rounds guarantee a one-hit kill against Common and Uncommon Infected across all difficulties. Special Infected stay ignited for 5 seconds when hit, while a Witch takes 15 seconds to burn completely. CEDA agents and Jimmy Gibbs Jr. are immune to the fire effect. When deployed with a Grenade Launcher, it creates a massive, Molotov-like explosion that sets targets ablaze instead of staggering them",
+  "media": [
+    {
+      "role": "render",
+      "file": "render.webp",
+      "type": "image/webp"
+    }
+  ]
+}

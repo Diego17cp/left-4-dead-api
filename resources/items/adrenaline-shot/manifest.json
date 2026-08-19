@@ -1,0 +1,14 @@
+{
+  "game": "left-4-dead-2",
+  "itemCategory": "Healing",
+  "name": "Adrenaline Shot",
+  "slug": "adrenaline-shot",
+  "description": "A temporary healing consumable that grants 25 temporary health points and a powerful 15-second energy boost. During this window, the survivor moves faster, suffers no melee fatigue, runs normally through water, and is immune to being slowed down by horde attacks. It cuts interaction times in half for healing, reviving, and filling gas cans, but triggers temporary visual tunnel vision and monophonic sound distortions",
+  "media": [
+    {
+      "role": "render",
+      "file": "render.webp",
+      "type": "image/webp"
+    }
+  ]
+}
